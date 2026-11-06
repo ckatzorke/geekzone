@@ -1,7 +1,7 @@
 {
  "year": 2026,
  "listUrl": "https://letterboxd.com/ckatzorke/list/geekzone-2026/",
- "generated": "2026-11-06",
+ "generated": "2026-11-07",
  "stats": {
   "count": 111,
   "avgLbRating": 3.22,
@@ -170,6 +170,24 @@
  },
  "podcasters": [
   {
+   "name": "Christian",
+   "user": "ckatzorke",
+   "hasData": true,
+   "profile": "https://letterboxd.com/ckatzorke/",
+   "watched": 93,
+   "rated": 92,
+   "avgRating": 3.65,
+   "best": [
+    "save-the-green-planet",
+    "mad-max-fury-road"
+   ],
+   "bestValue": 5.0,
+   "worst": [
+    "in-the-lost-lands"
+   ],
+   "worstValue": 1.0
+  },
+  {
    "name": "Tax",
    "user": "audiotax",
    "hasData": false,
@@ -207,19 +225,6 @@
    "bestValue": null,
    "worst": [],
    "worstValue": null
-  },
-  {
-   "name": "Christian",
-   "user": "ckatzorke",
-   "hasData": false,
-   "profile": "https://letterboxd.com/ckatzorke/",
-   "watched": 0,
-   "rated": 0,
-   "avgRating": null,
-   "best": [],
-   "bestValue": null,
-   "worst": [],
-   "worstValue": null
   }
  ],
  "films": [
@@ -239,7 +244,9 @@
    "lbRatingCount": 1203277,
    "url": "https://letterboxd.com/film/the-long-walk-2025/",
    "poster": "assets/posters/the-long-walk-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "children-of-the-corn-2020",
@@ -274,7 +281,9 @@
    "lbRatingCount": 612063,
    "url": "https://letterboxd.com/film/the-running-man-2025/",
    "poster": "assets/posters/the-running-man-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "the-running-man",
@@ -292,7 +301,9 @@
    "lbRatingCount": 184331,
    "url": "https://letterboxd.com/film/the-running-man/",
    "poster": "assets/posters/the-running-man.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "freaky-tales",
@@ -311,7 +322,9 @@
    "lbRatingCount": 88941,
    "url": "https://letterboxd.com/film/freaky-tales/",
    "poster": "assets/posters/freaky-tales.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "nobody-2",
@@ -329,7 +342,9 @@
    "lbRatingCount": 270263,
    "url": "https://letterboxd.com/film/nobody-2/",
    "poster": "assets/posters/nobody-2.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "warfare",
@@ -347,7 +362,9 @@
    "lbRatingCount": 601643,
    "url": "https://letterboxd.com/film/warfare/",
    "poster": "assets/posters/warfare.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "hi-five",
@@ -366,7 +383,9 @@
    "lbRatingCount": 10150,
    "url": "https://letterboxd.com/film/hi-five/",
    "poster": "assets/posters/hi-five.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "escape-from-the-21st-century",
@@ -384,7 +403,9 @@
    "lbRatingCount": 19557,
    "url": "https://letterboxd.com/film/escape-from-the-21st-century/",
    "poster": "assets/posters/escape-from-the-21st-century.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "tammy-and-the-t-rex",
@@ -402,7 +423,9 @@
    "lbRatingCount": 31701,
    "url": "https://letterboxd.com/film/tammy-and-the-t-rex/",
    "poster": "assets/posters/tammy-and-the-t-rex.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "the-life-of-chuck",
@@ -419,7 +442,9 @@
    "lbRatingCount": 355282,
    "url": "https://letterboxd.com/film/the-life-of-chuck/",
    "poster": "assets/posters/the-life-of-chuck.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "smile-2-2024",
@@ -436,7 +461,9 @@
    "lbRatingCount": 1180352,
    "url": "https://letterboxd.com/film/smile-2-2024/",
    "poster": "assets/posters/smile-2-2024.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "code-3",
@@ -454,7 +481,9 @@
    "lbRatingCount": 45618,
    "url": "https://letterboxd.com/film/code-3/",
    "poster": "assets/posters/code-3.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "the-toxic-avenger-2023",
@@ -472,7 +501,9 @@
    "lbRatingCount": 79265,
    "url": "https://letterboxd.com/film/the-toxic-avenger-2023/",
    "poster": "assets/posters/the-toxic-avenger-2023.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "bugonia",
@@ -490,7 +521,9 @@
    "lbRatingCount": 2164093,
    "url": "https://letterboxd.com/film/bugonia/",
    "poster": "assets/posters/bugonia.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "save-the-green-planet",
@@ -508,7 +541,9 @@
    "lbRatingCount": 34501,
    "url": "https://letterboxd.com/film/save-the-green-planet/",
    "poster": "assets/posters/save-the-green-planet.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 5.0
+   }
   },
   {
    "slug": "fountain-of-youth-2025",
@@ -544,7 +579,9 @@
    "lbRatingCount": 88043,
    "url": "https://letterboxd.com/film/the-wrecking-crew-2026/",
    "poster": "assets/posters/the-wrecking-crew-2026.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "i-know-what-you-did-last-summer-2025",
@@ -562,7 +599,9 @@
    "lbRatingCount": 429671,
    "url": "https://letterboxd.com/film/i-know-what-you-did-last-summer-2025/",
    "poster": "assets/posters/i-know-what-you-did-last-summer-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 1.5
+   }
   },
   {
    "slug": "predator-badlands",
@@ -580,7 +619,9 @@
    "lbRatingCount": 549496,
    "url": "https://letterboxd.com/film/predator-badlands/",
    "poster": "assets/posters/predator-badlands.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "the-black-phone",
@@ -597,7 +638,9 @@
    "lbRatingCount": 1693174,
    "url": "https://letterboxd.com/film/the-black-phone/",
    "poster": "assets/posters/the-black-phone.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "black-phone-2",
@@ -614,7 +657,9 @@
    "lbRatingCount": 674916,
    "url": "https://letterboxd.com/film/black-phone-2/",
    "poster": "assets/posters/black-phone-2.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 2.5
+   }
   },
   {
    "slug": "baby-assassins-3",
@@ -633,7 +678,9 @@
    "lbRatingCount": 6746,
    "url": "https://letterboxd.com/film/baby-assassins-3/",
    "poster": "assets/posters/baby-assassins-3.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "ballerina-2025",
@@ -651,7 +698,9 @@
    "lbRatingCount": 553066,
    "url": "https://letterboxd.com/film/ballerina-2025/",
    "poster": "assets/posters/ballerina-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "silent-night-deadly-night-2025",
@@ -668,7 +717,9 @@
    "lbRatingCount": 33569,
    "url": "https://letterboxd.com/film/silent-night-deadly-night-2025/",
    "poster": "assets/posters/silent-night-deadly-night-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "together-2025",
@@ -685,7 +736,9 @@
    "lbRatingCount": 904721,
    "url": "https://letterboxd.com/film/together-2025/",
    "poster": "assets/posters/together-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "u-are-the-universe",
@@ -703,7 +756,9 @@
    "lbRatingCount": 14045,
    "url": "https://letterboxd.com/film/u-are-the-universe/",
    "poster": "assets/posters/u-are-the-universe.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "bring-her-back",
@@ -720,7 +775,9 @@
    "lbRatingCount": 1147038,
    "url": "https://letterboxd.com/film/bring-her-back/",
    "poster": "assets/posters/bring-her-back.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "war-machine-2026",
@@ -738,7 +795,9 @@
    "lbRatingCount": 269626,
    "url": "https://letterboxd.com/film/war-machine-2026/",
    "poster": "assets/posters/war-machine-2026.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "28-years-later-the-bone-temple",
@@ -756,7 +815,9 @@
    "lbRatingCount": 876365,
    "url": "https://letterboxd.com/film/28-years-later-the-bone-temple/",
    "poster": "assets/posters/28-years-later-the-bone-temple.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "terrifier-2016",
@@ -772,7 +833,9 @@
    "lbRatingCount": 807186,
    "url": "https://letterboxd.com/film/terrifier-2016/",
    "poster": "assets/posters/terrifier-2016.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "weapons-2025",
@@ -789,7 +852,9 @@
    "lbRatingCount": 3460777,
    "url": "https://letterboxd.com/film/weapons-2025/",
    "poster": "assets/posters/weapons-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "project-hail-mary",
@@ -808,7 +873,9 @@
    "lbRatingCount": 4730611,
    "url": "https://letterboxd.com/film/project-hail-mary/",
    "poster": "assets/posters/project-hail-mary.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "send-help",
@@ -826,7 +893,9 @@
    "lbRatingCount": 1184760,
    "url": "https://letterboxd.com/film/send-help/",
    "poster": "assets/posters/send-help.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "in-the-lost-lands",
@@ -845,7 +914,9 @@
    "lbRatingCount": 31705,
    "url": "https://letterboxd.com/film/in-the-lost-lands/",
    "poster": "assets/posters/in-the-lost-lands.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 1.0
+   }
   },
   {
    "slug": "sisu-road-to-revenge",
@@ -863,7 +934,9 @@
    "lbRatingCount": 78131,
    "url": "https://letterboxd.com/film/sisu-road-to-revenge/",
    "poster": "assets/posters/sisu-road-to-revenge.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "marco-2024",
@@ -881,7 +954,9 @@
    "lbRatingCount": 26528,
    "url": "https://letterboxd.com/film/marco-2024/",
    "poster": "assets/posters/marco-2024.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 2.0
+   }
   },
   {
    "slug": "redux-redux",
@@ -899,7 +974,9 @@
    "lbRatingCount": 21757,
    "url": "https://letterboxd.com/film/redux-redux/",
    "poster": "assets/posters/redux-redux.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "el-camino-a-breaking-bad-movie",
@@ -935,7 +1012,9 @@
    "lbRatingCount": 335510,
    "url": "https://letterboxd.com/film/they-will-kill-you/",
    "poster": "assets/posters/they-will-kill-you.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "the-punisher-one-last-kill",
@@ -953,7 +1032,9 @@
    "lbRatingCount": 184520,
    "url": "https://letterboxd.com/film/the-punisher-one-last-kill/",
    "poster": "assets/posters/the-punisher-one-last-kill.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "good-boy-2025",
@@ -969,7 +1050,9 @@
    "lbRatingCount": 276625,
    "url": "https://letterboxd.com/film/good-boy-2025/",
    "poster": "assets/posters/good-boy-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 2.5
+   }
   },
   {
    "slug": "lee-cronins-the-mummy",
@@ -986,7 +1069,9 @@
    "lbRatingCount": 450627,
    "url": "https://letterboxd.com/film/lee-cronins-the-mummy/",
    "poster": "assets/posters/lee-cronins-the-mummy.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "scream-7",
@@ -1004,7 +1089,9 @@
    "lbRatingCount": 632405,
    "url": "https://letterboxd.com/film/scream-7/",
    "poster": "assets/posters/scream-7.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 1.5
+   }
   },
   {
    "slug": "good-luck-have-fun-dont-die",
@@ -1022,7 +1109,9 @@
    "lbRatingCount": 334381,
    "url": "https://letterboxd.com/film/good-luck-have-fun-dont-die/",
    "poster": "assets/posters/good-luck-have-fun-dont-die.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "mortal-kombat-ii",
@@ -1040,7 +1129,9 @@
    "lbRatingCount": 347814,
    "url": "https://letterboxd.com/film/mortal-kombat-ii/",
    "poster": "assets/posters/mortal-kombat-ii.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 2.0
+   }
   },
   {
    "slug": "wolfs",
@@ -1091,7 +1182,9 @@
    "lbRatingCount": 1660,
    "url": "https://letterboxd.com/film/aliens-expanded/",
    "poster": "assets/posters/aliens-expanded.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "ready-or-not-2-here-i-come",
@@ -1109,7 +1202,9 @@
    "lbRatingCount": 707688,
    "url": "https://letterboxd.com/film/ready-or-not-2-here-i-come/",
    "poster": "assets/posters/ready-or-not-2-here-i-come.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "master-of-the-universe-2026",
@@ -1144,7 +1239,9 @@
    "lbRatingCount": 37645,
    "url": "https://letterboxd.com/film/get-away-2/",
    "poster": "assets/posters/get-away-2.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "the-drama",
@@ -1180,7 +1277,9 @@
    "lbRatingCount": 3518696,
    "url": "https://letterboxd.com/film/spider-man-homecoming/",
    "poster": "assets/posters/spider-man-homecoming.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "spider-man-far-from-home",
@@ -1198,7 +1297,9 @@
    "lbRatingCount": 3154774,
    "url": "https://letterboxd.com/film/spider-man-far-from-home/",
    "poster": "assets/posters/spider-man-far-from-home.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "spider-man-no-way-home",
@@ -1216,7 +1317,9 @@
    "lbRatingCount": 4366348,
    "url": "https://letterboxd.com/film/spider-man-no-way-home/",
    "poster": "assets/posters/spider-man-no-way-home.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "avengers-infinity-war",
@@ -1235,7 +1338,9 @@
    "lbRatingCount": 4166623,
    "url": "https://letterboxd.com/film/avengers-infinity-war/",
    "poster": "assets/posters/avengers-infinity-war.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "avengers-endgame",
@@ -1254,7 +1359,9 @@
    "lbRatingCount": 4231701,
    "url": "https://letterboxd.com/film/avengers-endgame/",
    "poster": "assets/posters/avengers-endgame.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "minions-monsters-2026",
@@ -1291,7 +1398,9 @@
    "lbRatingCount": 6789,
    "url": "https://letterboxd.com/film/smugglers-2023/",
    "poster": "assets/posters/smugglers-2023.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "the-gangster-the-cop-the-devil",
@@ -1309,7 +1418,9 @@
    "lbRatingCount": 95653,
    "url": "https://letterboxd.com/film/the-gangster-the-cop-the-devil/",
    "poster": "assets/posters/the-gangster-the-cop-the-devil.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "deliver-us-from-evil-2020",
@@ -1327,7 +1438,9 @@
    "lbRatingCount": 12127,
    "url": "https://letterboxd.com/film/deliver-us-from-evil-2020/",
    "poster": "assets/posters/deliver-us-from-evil-2020.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "no-tears-for-the-dead",
@@ -1345,7 +1458,9 @@
    "lbRatingCount": 5370,
    "url": "https://letterboxd.com/film/no-tears-for-the-dead/",
    "poster": "assets/posters/no-tears-for-the-dead.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "the-man-from-nowhere",
@@ -1363,7 +1478,9 @@
    "lbRatingCount": 66967,
    "url": "https://letterboxd.com/film/the-man-from-nowhere/",
    "poster": "assets/posters/the-man-from-nowhere.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "a-bittersweet-life",
@@ -1381,7 +1498,9 @@
    "lbRatingCount": 66511,
    "url": "https://letterboxd.com/film/a-bittersweet-life/",
    "poster": "assets/posters/a-bittersweet-life.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "the-sheep-detectives",
@@ -1453,7 +1572,9 @@
    "lbRatingCount": 4713909,
    "url": "https://letterboxd.com/film/spider-man-brand-new-day/",
    "poster": "assets/posters/spider-man-brand-new-day.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "supergirl-2026",
@@ -1471,7 +1592,9 @@
    "lbRatingCount": 915679,
    "url": "https://letterboxd.com/film/supergirl-2026/",
    "poster": "assets/posters/supergirl-2026.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "cold-storage-2026",
@@ -1489,7 +1612,9 @@
    "lbRatingCount": 132221,
    "url": "https://letterboxd.com/film/cold-storage-2026/",
    "poster": "assets/posters/cold-storage-2026.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "the-furious",
@@ -1507,7 +1632,9 @@
    "lbRatingCount": 160891,
    "url": "https://letterboxd.com/film/the-furious/",
    "poster": "assets/posters/the-furious.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "obsession-2025",
@@ -1524,7 +1651,9 @@
    "lbRatingCount": 5475380,
    "url": "https://letterboxd.com/film/obsession-2025/",
    "poster": "assets/posters/obsession-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "deathstalker-2025",
@@ -1542,7 +1671,9 @@
    "lbRatingCount": 11433,
    "url": "https://letterboxd.com/film/deathstalker-2025/",
    "poster": "assets/posters/deathstalker-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "primate-2025",
@@ -1559,7 +1690,9 @@
    "lbRatingCount": 305227,
    "url": "https://letterboxd.com/film/primate-2025/",
    "poster": "assets/posters/primate-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 2.0
+   }
   },
   {
    "slug": "finch",
@@ -1595,7 +1728,9 @@
    "lbRatingCount": 339981,
    "url": "https://letterboxd.com/film/mad-max/",
    "poster": "assets/posters/mad-max.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "mad-max-2",
@@ -1613,7 +1748,9 @@
    "lbRatingCount": 268435,
    "url": "https://letterboxd.com/film/mad-max-2/",
    "poster": "assets/posters/mad-max-2.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "mad-max-beyond-thunderdome",
@@ -1632,7 +1769,9 @@
    "lbRatingCount": 177393,
    "url": "https://letterboxd.com/film/mad-max-beyond-thunderdome/",
    "poster": "assets/posters/mad-max-beyond-thunderdome.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 2.5
+   }
   },
   {
    "slug": "mad-max-fury-road",
@@ -1650,7 +1789,9 @@
    "lbRatingCount": 2311402,
    "url": "https://letterboxd.com/film/mad-max-fury-road/",
    "poster": "assets/posters/mad-max-fury-road.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 5.0
+   }
   },
   {
    "slug": "furiosa-a-mad-max-saga",
@@ -1668,7 +1809,9 @@
    "lbRatingCount": 1108334,
    "url": "https://letterboxd.com/film/furiosa-a-mad-max-saga/",
    "poster": "assets/posters/furiosa-a-mad-max-saga.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.5
+   }
   },
   {
    "slug": "no-other-choice-2025",
@@ -1686,7 +1829,9 @@
    "lbRatingCount": 917562,
    "url": "https://letterboxd.com/film/no-other-choice-2025/",
    "poster": "assets/posters/no-other-choice-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "little-brother-2026",
@@ -1720,7 +1865,9 @@
    "lbRatingCount": 99726,
    "url": "https://letterboxd.com/film/normal-2025/",
    "poster": "assets/posters/normal-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "mayday-2026",
@@ -1756,7 +1903,9 @@
    "lbRatingCount": 3452137,
    "url": "https://letterboxd.com/film/backrooms-2026/",
    "poster": "assets/posters/backrooms-2026.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "black-widow-2021",
@@ -1774,7 +1923,9 @@
    "lbRatingCount": 1828842,
    "url": "https://letterboxd.com/film/black-widow-2021/",
    "poster": "assets/posters/black-widow-2021.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "shang-chi-and-the-legend-of-the-ten-rings",
@@ -1792,7 +1943,9 @@
    "lbRatingCount": 1683252,
    "url": "https://letterboxd.com/film/shang-chi-and-the-legend-of-the-ten-rings/",
    "poster": "assets/posters/shang-chi-and-the-legend-of-the-ten-rings.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "eternals",
@@ -1810,7 +1963,9 @@
    "lbRatingCount": 1357205,
    "url": "https://letterboxd.com/film/eternals/",
    "poster": "assets/posters/eternals.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 2.0
+   }
   },
   {
    "slug": "doctor-strange-in-the-multiverse-of-madness",
@@ -1828,7 +1983,9 @@
    "lbRatingCount": 2389223,
    "url": "https://letterboxd.com/film/doctor-strange-in-the-multiverse-of-madness/",
    "poster": "assets/posters/doctor-strange-in-the-multiverse-of-madness.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "thor-love-and-thunder",
@@ -1846,7 +2003,9 @@
    "lbRatingCount": 1792869,
    "url": "https://letterboxd.com/film/thor-love-and-thunder/",
    "poster": "assets/posters/thor-love-and-thunder.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "black-panther-wakanda-forever",
@@ -1864,7 +2023,9 @@
    "lbRatingCount": 1454280,
    "url": "https://letterboxd.com/film/black-panther-wakanda-forever/",
    "poster": "assets/posters/black-panther-wakanda-forever.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 2.5
+   }
   },
   {
    "slug": "insidious-out-of-the-further",
@@ -1881,7 +2042,9 @@
    "lbRatingCount": 316962,
    "url": "https://letterboxd.com/film/insidious-out-of-the-further/",
    "poster": "assets/posters/insidious-out-of-the-further.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "return-to-silent-hill",
@@ -1898,7 +2061,9 @@
    "lbRatingCount": 190248,
    "url": "https://letterboxd.com/film/return-to-silent-hill/",
    "poster": "assets/posters/return-to-silent-hill.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 2.0
+   }
   },
   {
    "slug": "companion-2025",
@@ -1916,7 +2081,9 @@
    "lbRatingCount": 1729916,
    "url": "https://letterboxd.com/film/companion-2025/",
    "poster": "assets/posters/companion-2025.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "the-runner-2026-2",
@@ -1985,7 +2152,9 @@
    "lbRatingCount": 646293,
    "url": "https://letterboxd.com/film/hokum/",
    "poster": "assets/posters/hokum.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "hotel-inferno",
@@ -2002,7 +2171,9 @@
    "lbRatingCount": 2078,
    "url": "https://letterboxd.com/film/hotel-inferno/",
    "poster": "assets/posters/hotel-inferno.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "host-2020",
@@ -2018,7 +2189,9 @@
    "lbRatingCount": 271583,
    "url": "https://letterboxd.com/film/host-2020/",
    "poster": "assets/posters/host-2020.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "the-final-girls",
@@ -2035,7 +2208,9 @@
    "lbRatingCount": 122246,
    "url": "https://letterboxd.com/film/the-final-girls/",
    "poster": "assets/posters/the-final-girls.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "exit-8",
@@ -2053,7 +2228,9 @@
    "lbRatingCount": 385437,
    "url": "https://letterboxd.com/film/exit-8/",
    "poster": "assets/posters/exit-8.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.0
+   }
   },
   {
    "slug": "barbarian-2022",
@@ -2071,7 +2248,9 @@
    "lbRatingCount": 1732291,
    "url": "https://letterboxd.com/film/barbarian-2022/",
    "poster": "assets/posters/barbarian-2022.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "v-h-s-halloween",
@@ -2094,7 +2273,9 @@
    "lbRatingCount": 80081,
    "url": "https://letterboxd.com/film/v-h-s-halloween/",
    "poster": "assets/posters/v-h-s-halloween.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "zombie-flesh-eaters",
@@ -2110,7 +2291,9 @@
    "lbRatingCount": 60161,
    "url": "https://letterboxd.com/film/zombie-flesh-eaters/",
    "poster": "assets/posters/zombie-flesh-eaters.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "evil-dead-burn",
@@ -2126,7 +2309,9 @@
    "lbRatingCount": 521398,
    "url": "https://letterboxd.com/film/evil-dead-burn/",
    "poster": "assets/posters/evil-dead-burn.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "pinocchio-unstrung",
@@ -2144,7 +2329,9 @@
    "lbRatingCount": 21580,
    "url": "https://letterboxd.com/film/pinocchio-unstrung/",
    "poster": "assets/posters/pinocchio-unstrung.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 3.5
+   }
   },
   {
    "slug": "cemetery-of-terror",
@@ -2176,7 +2363,9 @@
    "lbRatingCount": 529194,
    "url": "https://letterboxd.com/film/evil-dead/",
    "poster": "assets/posters/evil-dead.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": 4.0
+   }
   },
   {
    "slug": "the-beyond",
@@ -2192,7 +2381,9 @@
    "lbRatingCount": 73505,
    "url": "https://letterboxd.com/film/the-beyond/",
    "poster": "assets/posters/the-beyond.jpg",
-   "ratings": {}
+   "ratings": {
+    "ckatzorke": null
+   }
   }
  ]
 }
