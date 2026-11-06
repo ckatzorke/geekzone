@@ -6,11 +6,13 @@ Aufruf:  python3 scripts/fetch_letterboxd.py [--year 2026] [--refresh]
 Ergebnis: data/films-<jahr>.json  (+ Poster unter assets/posters/)
 Podcaster-Daten: Letterboxd-Export (Settings → Data → Export) je Person als
   data/exports/<user>.zip  oder entpackt unter  data/exports/<user>/
+Podcast-Folgen: aus https://www.geekzone.de/feed/mp3 (Korrekturen: data/episode-overrides.json)
 HTTP-Antworten werden unter .cache/ zwischengespeichert; --refresh ignoriert den Cache.
 """
 import argparse
 import csv
 import datetime as dt
+import email.utils
 import hashlib
 import html
 import io
@@ -40,11 +42,23 @@ PODCASTERS = [
 REFRESH = False
 
 
-def fetch(url, binary=False):
-    """GET mit Datei-Cache. Gibt None bei 404 zurück."""
+def fetch(url, binary=False, fresh=False):
+    """GET mit Datei-Cache. Gibt None bei 404 zurück.
+
+    fresh=True: immer neu laden (z.B. Podcast-Feed), Cache nur als Rückfall bei Netzfehlern.
+    """
     CACHE.mkdir(exist_ok=True)
     key = CACHE / hashlib.sha1(url.encode()).hexdigest()
-    if key.exists() and not REFRESH:
+    if fresh and key.exists():
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = r.read()
+            key.write_bytes(data)
+            return data if binary else data.decode("utf-8")
+        except (urllib.error.URLError, TimeoutError) as e:
+            print(f"    {url} nicht erreichbar ({e}) – nutze Cache", file=sys.stderr)
+    if key.exists() and (not REFRESH or fresh):
         data = key.read_bytes()
         return None if data == b"__404__" else (data if binary else data.decode("utf-8"))
     for attempt in range(4):
@@ -178,6 +192,140 @@ def load_export(user):
     return out
 
 
+# ---------------------------------------------------------------------------
+# Podcast-Folgen: In welcher Geekzone wurde ein Film besprochen?
+# ---------------------------------------------------------------------------
+FEED_URL = "https://www.geekzone.de/feed/mp3"
+ROMAN = {"ii": "2", "iii": "3", "iv": "4", "v": "5", "vi": "6"}
+ARTICLES = {"the", "a", "an"}
+APOS = str.maketrans({c: "'" for c in "‘’´`ʼ"})
+PEOPLE_PAREN = re.compile(r"\s*\((?=[^()]*\b(?:Peter|Philipp|Fipps|Christian|Tax|Sidekick|alle)\b)[^()]*\)", re.I)
+
+
+def tokens(s):
+    s = html.unescape(s or "").lower().replace("&", " and ").translate(APOS)
+    toks = re.findall(r"[^\W_]+", s.replace("'", ""))
+    return tuple(ROMAN.get(t, t) for t in toks if t not in ARTICLES)
+
+
+def load_episodes(year):
+    """Liest den Podcast-Feed; liefert Folgen des Jahres (+ Januar des Folgejahres)."""
+    xml = fetch(FEED_URL, fresh=True)
+    eps = []
+    for it in re.findall(r"<item>(.*?)</item>", xml, re.S):
+        title = html.unescape(re.search(r"<title>(.*?)</title>", it, re.S).group(1)).strip()
+        date = email.utils.parsedate_to_datetime(re.search(r"<pubDate>(.*?)</pubDate>", it).group(1))
+        if not (date.year == year or (date.year == year + 1 and date.month == 1)):
+            continue
+        m = re.match(r"GZ\s*(\d+)", title)
+        if not m or re.search(r"\bPLAY\b", title):  # PLAY-Folgen behandeln Spiele, nicht Filme
+            continue
+        link = (re.search(r"<link>(.*?)</link>", it) or [None, ""])[1].strip()
+        path = link.rstrip("/").rsplit("/", 1)[-1]
+        desc = html.unescape((re.search(r"<description>(.*?)</description>", it, re.S) or [None, ""])[1])
+        eps.append({
+            "id": f"GZ{m.group(1)}",
+            "no": int(m.group(1)),
+            "title": re.sub(r"^GZ\s*\d+\s*:\s*", "", title),
+            "date": date.date().isoformat(),
+            "url": f"https://www.geekzone.de/{path}/" if path else link,
+            "bullets": re.findall(r"^\s*[-–•*]\s*(.+?)\s*$", desc, re.M),
+        })
+    return sorted(eps, key=lambda e: e["no"])
+
+
+def _bullet_parts(bullet):
+    """Bereinigt einen Themenpunkt und zerlegt ihn in Teilstücke [(tokens, jahr|None)]."""
+    b = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", bullet)      # Markdown-Links
+    b = re.sub(r"https?://\S+", "", b)                         # nackte URLs
+    b = PEOPLE_PAREN.sub("", b)                                # (Peter, Sidekick: …)
+    b = re.sub(r"\((?!\d{4}\))[^()]*\)", "", b)                # sonstige Klammern außer (1979)
+    b = re.sub(r"\s+im\s+(?:Kino|Stream\w*)\b", "", b, flags=re.I)
+    pieces = [b] + re.split(r"\s+[-–]\s+|,\s+|\s+&\s+|:\s+|\s+und\s+", b)
+    out = []
+    for p in pieces:
+        t = tokens(p)
+        yr = None
+        if t and re.fullmatch(r"(19|20)\d\d", t[-1]):
+            yr, t = int(t[-1]), t[:-1]
+        if t:
+            out.append((t, yr))
+    return out
+
+
+def _contains(hay, needle):
+    n = len(needle)
+    return any(hay[i:i + n] == needle for i in range(len(hay) - n + 1))
+
+
+def assign_episodes(films, year):
+    eps = load_episodes(year)
+    print(f"Feed: {len(eps)} Folgen aus {year}", file=sys.stderr)
+    ftok = {f["slug"]: tokens(f["title"]) for f in films}
+    hits = {f["slug"]: {} for f in films}  # slug -> {ep_id: "match"|"inferred"|"manual"}
+
+    for ep in eps:
+        for bullet in ep["bullets"]:
+            if re.search(r"youtube\.com|youtu\.be", bullet):  # Trailer-/News-Links, keine Besprechung
+                continue
+            exact, partial = set(), set()
+            for part, yr in _bullet_parts(bullet):
+                for f in films:
+                    t = ftok[f["slug"]]
+                    if yr and f["year"] != yr:
+                        continue
+                    if t == part:
+                        exact.add(f["slug"])
+                    elif len(t) >= 2 and _contains(part, t):
+                        partial.add(f["slug"])
+            # "Evil Dead" nicht zusätzlich zu "Evil Dead Burn" zählen
+            found = exact | {s for s in partial
+                             if not any(o != s and len(ftok[o]) > len(ftok[s]) and _contains(ftok[o], ftok[s])
+                                        for o in exact | partial)}
+            for s in found:
+                hits[s][ep["id"]] = "match"
+
+    # Lücken über die (chronologische) Listenreihenfolge schließen:
+    # liegen die nächsten erkannten Nachbarn in derselben Folge, gehört der Film vermutlich dazu.
+    matched = [i for i, f in enumerate(films) if hits[f["slug"]]]
+    for i, f in enumerate(films):
+        if hits[f["slug"]]:
+            continue
+        prev = next((j for j in reversed(matched) if j < i), None)
+        nxt = next((j for j in matched if j > i), None)
+        if prev is None or nxt is None:
+            continue
+        common = set(hits[films[prev]["slug"]]) & set(hits[films[nxt]["slug"]])
+        if common:
+            hits[f["slug"]][min(common, key=lambda e: int(e[2:]))] = "inferred"
+
+    # Manuelle Korrekturen: data/episode-overrides.json  {"slug": ["GZ121"], …}  ([] = keine Folge)
+    ov_file = ROOT / "data" / "episode-overrides.json"
+    if ov_file.exists():
+        for slug, ids in json.loads(ov_file.read_text()).items():
+            if slug in hits:
+                hits[slug] = {i: "manual" for i in ids}
+
+    by_id = {e["id"]: e for e in eps}
+    for f in films:
+        f["episodes"] = [
+            {"id": i, "no": by_id[i]["no"] if i in by_id else int(i[2:]),
+             "title": by_id.get(i, {}).get("title", ""), "url": by_id.get(i, {}).get("url"),
+             "date": by_id.get(i, {}).get("date"), "how": how}
+            for i, how in sorted(hits[f["slug"]].items(), key=lambda kv: int(kv[0][2:]))
+        ]
+    n_match = sum(1 for f in films if any(e["how"] == "match" for e in f["episodes"]))
+    n_inf = sum(1 for f in films if f["episodes"] and all(e["how"] == "inferred" for e in f["episodes"]))
+    missing = [f["title"] for f in films if not f["episodes"]]
+    print(f"  Folgen zugeordnet: {n_match} per Titel, {n_inf} über Listenreihenfolge, {len(missing)} ohne", file=sys.stderr)
+    for f in films:
+        if f["episodes"] and all(e["how"] == "inferred" for e in f["episodes"]):
+            print(f"    abgeleitet: {f['title']} ({f['year']}) → {f['episodes'][0]['id']}", file=sys.stderr)
+    for t in missing:
+        print(f"    ohne Folge: {t}", file=sys.stderr)
+    return [{k: e[k] for k in ("id", "no", "title", "date", "url")} for e in eps]
+
+
 def extremes(films, key):
     rated = [f for f in films if f.get(key) is not None]
     if not rated:
@@ -236,6 +384,8 @@ def main():
     if missing_exports:
         print(f"WARNUNG: kein Export für {', '.join(missing_exports)} unter data/exports/<user>/", file=sys.stderr)
 
+    episodes = assign_episodes(films, args.year)
+
     # --- Statistiken ---
     lb = [f["lbRating"] for f in films if f["lbRating"] is not None]
     genre_counts = Counter(g for f in films for g in f["genres"])
@@ -271,6 +421,7 @@ def main():
         "generated": dt.date.today().isoformat(),
         "stats": stats,
         "podcasters": people,
+        "episodes": episodes,
         "films": films,
     }
     dest = ROOT / "data" / f"films-{args.year}.json"

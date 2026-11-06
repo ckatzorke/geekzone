@@ -227,6 +227,92 @@
    "worstValue": null
   }
  ],
+ "episodes": [
+  {
+   "id": "GZ118",
+   "no": 118,
+   "title": "WATCH - Nobody is perfect",
+   "date": "2026-01-21",
+   "url": "https://www.geekzone.de/120-gz118/"
+  },
+  {
+   "id": "GZ119",
+   "no": 119,
+   "title": "Fantasy Filmfest White Nights 2026",
+   "date": "2026-01-27",
+   "url": "https://www.geekzone.de/121-gz119/"
+  },
+  {
+   "id": "GZ121",
+   "no": 121,
+   "title": "WATCH - Cool gemacht!",
+   "date": "2026-03-01",
+   "url": "https://www.geekzone.de/123-gz121/"
+  },
+  {
+   "id": "GZ123",
+   "no": 123,
+   "title": "WATCH - Tabaluga im MCU",
+   "date": "2026-03-29",
+   "url": "https://www.geekzone.de/125-gz123/"
+  },
+  {
+   "id": "GZ125",
+   "no": 125,
+   "title": "WATCH - Der Finnisher",
+   "date": "2026-04-26",
+   "url": "https://www.geekzone.de/127-gz125/"
+  },
+  {
+   "id": "GZ127",
+   "no": 127,
+   "title": "WATCH - The Good Boys",
+   "date": "2026-05-24",
+   "url": "https://www.geekzone.de/129-gz127/"
+  },
+  {
+   "id": "GZ130",
+   "no": 130,
+   "title": "WATCH - Flackerer",
+   "date": "2026-06-28",
+   "url": "https://www.geekzone.de/132-gz130/"
+  },
+  {
+   "id": "GZ132",
+   "no": 132,
+   "title": "WATCH - Swingerfreunde in ihren 60ern",
+   "date": "2026-07-26",
+   "url": "https://www.geekzone.de/134-gz132/"
+  },
+  {
+   "id": "GZ134",
+   "no": 134,
+   "title": "WATCH - Zusammen in die Strip Mall",
+   "date": "2026-08-23",
+   "url": "https://www.geekzone.de/136-gz134/"
+  },
+  {
+   "id": "GZ136",
+   "no": 136,
+   "title": "WATCH - Kann man schon kucken",
+   "date": "2026-09-19",
+   "url": "https://www.geekzone.de/138-gz136/"
+  },
+  {
+   "id": "GZ138",
+   "no": 138,
+   "title": "WATCH - Türlich, türlich (sicher, Digger)",
+   "date": "2026-10-18",
+   "url": "https://www.geekzone.de/140-gz138/"
+  },
+  {
+   "id": "GZ139",
+   "no": 139,
+   "title": "SPECIAL - Horroctober 2026",
+   "date": "2026-10-25",
+   "url": "https://www.geekzone.de/141-gz139/"
+  }
+ ],
  "films": [
   {
    "slug": "the-long-walk-2025",
@@ -246,7 +332,25 @@
    "poster": "assets/posters/the-long-walk-2025.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    },
+    {
+     "id": "GZ125",
+     "no": 125,
+     "title": "WATCH - Der Finnisher",
+     "url": "https://www.geekzone.de/127-gz125/",
+     "date": "2026-04-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "children-of-the-corn-2020",
@@ -263,7 +367,17 @@
    "lbRatingCount": 13488,
    "url": "https://letterboxd.com/film/children-of-the-corn-2020/",
    "poster": "assets/posters/children-of-the-corn-2020.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-running-man-2025",
@@ -283,7 +397,25 @@
    "poster": "assets/posters/the-running-man-2025.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    },
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-running-man",
@@ -303,7 +435,17 @@
    "poster": "assets/posters/the-running-man.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "freaky-tales",
@@ -324,7 +466,25 @@
    "poster": "assets/posters/freaky-tales.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    },
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "nobody-2",
@@ -344,7 +504,17 @@
    "poster": "assets/posters/nobody-2.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "warfare",
@@ -364,7 +534,17 @@
    "poster": "assets/posters/warfare.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "hi-five",
@@ -385,7 +565,17 @@
    "poster": "assets/posters/hi-five.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "escape-from-the-21st-century",
@@ -405,7 +595,17 @@
    "poster": "assets/posters/escape-from-the-21st-century.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "tammy-and-the-t-rex",
@@ -425,7 +625,17 @@
    "poster": "assets/posters/tammy-and-the-t-rex.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "the-life-of-chuck",
@@ -444,7 +654,17 @@
    "poster": "assets/posters/the-life-of-chuck.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "smile-2-2024",
@@ -463,7 +683,17 @@
    "poster": "assets/posters/smile-2-2024.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ118",
+     "no": 118,
+     "title": "WATCH - Nobody is perfect",
+     "url": "https://www.geekzone.de/120-gz118/",
+     "date": "2026-01-21",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "code-3",
@@ -483,7 +713,17 @@
    "poster": "assets/posters/code-3.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-toxic-avenger-2023",
@@ -503,7 +743,17 @@
    "poster": "assets/posters/the-toxic-avenger-2023.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "bugonia",
@@ -523,7 +773,17 @@
    "poster": "assets/posters/bugonia.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "save-the-green-planet",
@@ -543,7 +803,17 @@
    "poster": "assets/posters/save-the-green-planet.jpg",
    "ratings": {
     "ckatzorke": 5.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "fountain-of-youth-2025",
@@ -560,7 +830,25 @@
    "lbRatingCount": 101676,
    "url": "https://letterboxd.com/film/fountain-of-youth-2025/",
    "poster": "assets/posters/fountain-of-youth-2025.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    },
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-wrecking-crew-2026",
@@ -581,7 +869,17 @@
    "poster": "assets/posters/the-wrecking-crew-2026.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "i-know-what-you-did-last-summer-2025",
@@ -601,7 +899,17 @@
    "poster": "assets/posters/i-know-what-you-did-last-summer-2025.jpg",
    "ratings": {
     "ckatzorke": 1.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "predator-badlands",
@@ -621,7 +929,25 @@
    "poster": "assets/posters/predator-badlands.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    },
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-black-phone",
@@ -640,7 +966,17 @@
    "poster": "assets/posters/the-black-phone.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "black-phone-2",
@@ -659,7 +995,17 @@
    "poster": "assets/posters/black-phone-2.jpg",
    "ratings": {
     "ckatzorke": 2.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "baby-assassins-3",
@@ -680,7 +1026,17 @@
    "poster": "assets/posters/baby-assassins-3.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "ballerina-2025",
@@ -700,7 +1056,17 @@
    "poster": "assets/posters/ballerina-2025.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ121",
+     "no": 121,
+     "title": "WATCH - Cool gemacht!",
+     "url": "https://www.geekzone.de/123-gz121/",
+     "date": "2026-03-01",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "silent-night-deadly-night-2025",
@@ -719,7 +1085,17 @@
    "poster": "assets/posters/silent-night-deadly-night-2025.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "together-2025",
@@ -738,7 +1114,17 @@
    "poster": "assets/posters/together-2025.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "u-are-the-universe",
@@ -758,7 +1144,17 @@
    "poster": "assets/posters/u-are-the-universe.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "bring-her-back",
@@ -777,7 +1173,17 @@
    "poster": "assets/posters/bring-her-back.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "war-machine-2026",
@@ -797,7 +1203,17 @@
    "poster": "assets/posters/war-machine-2026.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "28-years-later-the-bone-temple",
@@ -817,7 +1233,25 @@
    "poster": "assets/posters/28-years-later-the-bone-temple.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    },
+    {
+     "id": "GZ125",
+     "no": 125,
+     "title": "WATCH - Der Finnisher",
+     "url": "https://www.geekzone.de/127-gz125/",
+     "date": "2026-04-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "terrifier-2016",
@@ -835,7 +1269,17 @@
    "poster": "assets/posters/terrifier-2016.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "weapons-2025",
@@ -854,7 +1298,17 @@
    "poster": "assets/posters/weapons-2025.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ123",
+     "no": 123,
+     "title": "WATCH - Tabaluga im MCU",
+     "url": "https://www.geekzone.de/125-gz123/",
+     "date": "2026-03-29",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "project-hail-mary",
@@ -875,7 +1329,25 @@
    "poster": "assets/posters/project-hail-mary.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ125",
+     "no": 125,
+     "title": "WATCH - Der Finnisher",
+     "url": "https://www.geekzone.de/127-gz125/",
+     "date": "2026-04-26",
+     "how": "match"
+    },
+    {
+     "id": "GZ127",
+     "no": 127,
+     "title": "WATCH - The Good Boys",
+     "url": "https://www.geekzone.de/129-gz127/",
+     "date": "2026-05-24",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "send-help",
@@ -895,7 +1367,17 @@
    "poster": "assets/posters/send-help.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ125",
+     "no": 125,
+     "title": "WATCH - Der Finnisher",
+     "url": "https://www.geekzone.de/127-gz125/",
+     "date": "2026-04-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "in-the-lost-lands",
@@ -916,7 +1398,17 @@
    "poster": "assets/posters/in-the-lost-lands.jpg",
    "ratings": {
     "ckatzorke": 1.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ125",
+     "no": 125,
+     "title": "WATCH - Der Finnisher",
+     "url": "https://www.geekzone.de/127-gz125/",
+     "date": "2026-04-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "sisu-road-to-revenge",
@@ -936,7 +1428,17 @@
    "poster": "assets/posters/sisu-road-to-revenge.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ125",
+     "no": 125,
+     "title": "WATCH - Der Finnisher",
+     "url": "https://www.geekzone.de/127-gz125/",
+     "date": "2026-04-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "marco-2024",
@@ -956,7 +1458,17 @@
    "poster": "assets/posters/marco-2024.jpg",
    "ratings": {
     "ckatzorke": 2.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ125",
+     "no": 125,
+     "title": "WATCH - Der Finnisher",
+     "url": "https://www.geekzone.de/127-gz125/",
+     "date": "2026-04-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "redux-redux",
@@ -976,7 +1488,25 @@
    "poster": "assets/posters/redux-redux.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ125",
+     "no": 125,
+     "title": "WATCH - Der Finnisher",
+     "url": "https://www.geekzone.de/127-gz125/",
+     "date": "2026-04-26",
+     "how": "match"
+    },
+    {
+     "id": "GZ127",
+     "no": 127,
+     "title": "WATCH - The Good Boys",
+     "url": "https://www.geekzone.de/129-gz127/",
+     "date": "2026-05-24",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "el-camino-a-breaking-bad-movie",
@@ -994,7 +1524,17 @@
    "lbRatingCount": 879231,
    "url": "https://letterboxd.com/film/el-camino-a-breaking-bad-movie/",
    "poster": "assets/posters/el-camino-a-breaking-bad-movie.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ127",
+     "no": 127,
+     "title": "WATCH - The Good Boys",
+     "url": "https://www.geekzone.de/129-gz127/",
+     "date": "2026-05-24",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "they-will-kill-you",
@@ -1014,7 +1554,17 @@
    "poster": "assets/posters/they-will-kill-you.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ127",
+     "no": 127,
+     "title": "WATCH - The Good Boys",
+     "url": "https://www.geekzone.de/129-gz127/",
+     "date": "2026-05-24",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-punisher-one-last-kill",
@@ -1034,7 +1584,17 @@
    "poster": "assets/posters/the-punisher-one-last-kill.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ127",
+     "no": 127,
+     "title": "WATCH - The Good Boys",
+     "url": "https://www.geekzone.de/129-gz127/",
+     "date": "2026-05-24",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "good-boy-2025",
@@ -1052,7 +1612,17 @@
    "poster": "assets/posters/good-boy-2025.jpg",
    "ratings": {
     "ckatzorke": 2.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ127",
+     "no": 127,
+     "title": "WATCH - The Good Boys",
+     "url": "https://www.geekzone.de/129-gz127/",
+     "date": "2026-05-24",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "lee-cronins-the-mummy",
@@ -1071,7 +1641,25 @@
    "poster": "assets/posters/lee-cronins-the-mummy.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ130",
+     "no": 130,
+     "title": "WATCH - Flackerer",
+     "url": "https://www.geekzone.de/132-gz130/",
+     "date": "2026-06-28",
+     "how": "match"
+    },
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "scream-7",
@@ -1091,7 +1679,17 @@
    "poster": "assets/posters/scream-7.jpg",
    "ratings": {
     "ckatzorke": 1.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ130",
+     "no": 130,
+     "title": "WATCH - Flackerer",
+     "url": "https://www.geekzone.de/132-gz130/",
+     "date": "2026-06-28",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "good-luck-have-fun-dont-die",
@@ -1111,7 +1709,17 @@
    "poster": "assets/posters/good-luck-have-fun-dont-die.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ130",
+     "no": 130,
+     "title": "WATCH - Flackerer",
+     "url": "https://www.geekzone.de/132-gz130/",
+     "date": "2026-06-28",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "mortal-kombat-ii",
@@ -1131,7 +1739,17 @@
    "poster": "assets/posters/mortal-kombat-ii.jpg",
    "ratings": {
     "ckatzorke": 2.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ130",
+     "no": 130,
+     "title": "WATCH - Flackerer",
+     "url": "https://www.geekzone.de/132-gz130/",
+     "date": "2026-06-28",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "wolfs",
@@ -1148,7 +1766,17 @@
    "lbRatingCount": 238736,
    "url": "https://letterboxd.com/film/wolfs/",
    "poster": "assets/posters/wolfs.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ130",
+     "no": 130,
+     "title": "WATCH - Flackerer",
+     "url": "https://www.geekzone.de/132-gz130/",
+     "date": "2026-06-28",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-mandalorian-and-grogu",
@@ -1166,7 +1794,17 @@
    "lbRatingCount": 607553,
    "url": "https://letterboxd.com/film/the-mandalorian-and-grogu/",
    "poster": "assets/posters/the-mandalorian-and-grogu.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ130",
+     "no": 130,
+     "title": "WATCH - Flackerer",
+     "url": "https://www.geekzone.de/132-gz130/",
+     "date": "2026-06-28",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "aliens-expanded",
@@ -1184,7 +1822,17 @@
    "poster": "assets/posters/aliens-expanded.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "ready-or-not-2-here-i-come",
@@ -1204,7 +1852,17 @@
    "poster": "assets/posters/ready-or-not-2-here-i-come.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "master-of-the-universe-2026",
@@ -1222,7 +1880,17 @@
    "lbRatingCount": 7223,
    "url": "https://letterboxd.com/film/master-of-the-universe-2026/",
    "poster": "assets/posters/master-of-the-universe-2026.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "get-away-2",
@@ -1241,7 +1909,17 @@
    "poster": "assets/posters/get-away-2.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-drama",
@@ -1259,7 +1937,17 @@
    "lbRatingCount": 3024635,
    "url": "https://letterboxd.com/film/the-drama/",
    "poster": "assets/posters/the-drama.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "spider-man-homecoming",
@@ -1279,7 +1967,17 @@
    "poster": "assets/posters/spider-man-homecoming.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "spider-man-far-from-home",
@@ -1299,7 +1997,17 @@
    "poster": "assets/posters/spider-man-far-from-home.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "spider-man-no-way-home",
@@ -1319,7 +2027,17 @@
    "poster": "assets/posters/spider-man-no-way-home.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "avengers-infinity-war",
@@ -1340,7 +2058,17 @@
    "poster": "assets/posters/avengers-infinity-war.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "avengers-endgame",
@@ -1361,7 +2089,17 @@
    "poster": "assets/posters/avengers-endgame.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "minions-monsters-2026",
@@ -1381,7 +2119,17 @@
    "lbRatingCount": 546440,
    "url": "https://letterboxd.com/film/minions-monsters-2026/",
    "poster": "assets/posters/minions-monsters-2026.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "smugglers-2023",
@@ -1400,7 +2148,17 @@
    "poster": "assets/posters/smugglers-2023.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-gangster-the-cop-the-devil",
@@ -1420,7 +2178,17 @@
    "poster": "assets/posters/the-gangster-the-cop-the-devil.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "deliver-us-from-evil-2020",
@@ -1440,7 +2208,17 @@
    "poster": "assets/posters/deliver-us-from-evil-2020.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "no-tears-for-the-dead",
@@ -1460,7 +2238,17 @@
    "poster": "assets/posters/no-tears-for-the-dead.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-man-from-nowhere",
@@ -1480,7 +2268,17 @@
    "poster": "assets/posters/the-man-from-nowhere.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "a-bittersweet-life",
@@ -1500,7 +2298,17 @@
    "poster": "assets/posters/a-bittersweet-life.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-sheep-detectives",
@@ -1518,7 +2326,17 @@
    "lbRatingCount": 1124689,
    "url": "https://letterboxd.com/film/the-sheep-detectives/",
    "poster": "assets/posters/the-sheep-detectives.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "infinite-2021",
@@ -1536,7 +2354,17 @@
    "lbRatingCount": 53429,
    "url": "https://letterboxd.com/film/infinite-2021/",
    "poster": "assets/posters/infinite-2021.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-odyssey-2026",
@@ -1554,7 +2382,17 @@
    "lbRatingCount": 4693390,
    "url": "https://letterboxd.com/film/the-odyssey-2026/",
    "poster": "assets/posters/the-odyssey-2026.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "spider-man-brand-new-day",
@@ -1574,7 +2412,25 @@
    "poster": "assets/posters/spider-man-brand-new-day.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ132",
+     "no": 132,
+     "title": "WATCH - Swingerfreunde in ihren 60ern",
+     "url": "https://www.geekzone.de/134-gz132/",
+     "date": "2026-07-26",
+     "how": "match"
+    },
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "supergirl-2026",
@@ -1594,7 +2450,25 @@
    "poster": "assets/posters/supergirl-2026.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    },
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "cold-storage-2026",
@@ -1614,7 +2488,17 @@
    "poster": "assets/posters/cold-storage-2026.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-furious",
@@ -1634,7 +2518,17 @@
    "poster": "assets/posters/the-furious.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "obsession-2025",
@@ -1653,7 +2547,25 @@
    "poster": "assets/posters/obsession-2025.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    },
+    {
+     "id": "GZ138",
+     "no": 138,
+     "title": "WATCH - Türlich, türlich (sicher, Digger)",
+     "url": "https://www.geekzone.de/140-gz138/",
+     "date": "2026-10-18",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "deathstalker-2025",
@@ -1673,7 +2585,17 @@
    "poster": "assets/posters/deathstalker-2025.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "primate-2025",
@@ -1692,7 +2614,17 @@
    "poster": "assets/posters/primate-2025.jpg",
    "ratings": {
     "ckatzorke": 2.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "finch",
@@ -1710,7 +2642,17 @@
    "lbRatingCount": 91151,
    "url": "https://letterboxd.com/film/finch/",
    "poster": "assets/posters/finch.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ134",
+     "no": 134,
+     "title": "WATCH - Zusammen in die Strip Mall",
+     "url": "https://www.geekzone.de/136-gz134/",
+     "date": "2026-08-23",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "mad-max",
@@ -1730,7 +2672,17 @@
    "poster": "assets/posters/mad-max.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "mad-max-2",
@@ -1750,7 +2702,17 @@
    "poster": "assets/posters/mad-max-2.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "mad-max-beyond-thunderdome",
@@ -1771,7 +2733,17 @@
    "poster": "assets/posters/mad-max-beyond-thunderdome.jpg",
    "ratings": {
     "ckatzorke": 2.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "mad-max-fury-road",
@@ -1791,7 +2763,17 @@
    "poster": "assets/posters/mad-max-fury-road.jpg",
    "ratings": {
     "ckatzorke": 5.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "furiosa-a-mad-max-saga",
@@ -1811,7 +2793,17 @@
    "poster": "assets/posters/furiosa-a-mad-max-saga.jpg",
    "ratings": {
     "ckatzorke": 4.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "no-other-choice-2025",
@@ -1831,7 +2823,17 @@
    "poster": "assets/posters/no-other-choice-2025.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "little-brother-2026",
@@ -1847,7 +2849,17 @@
    "lbRatingCount": 68592,
    "url": "https://letterboxd.com/film/little-brother-2026/",
    "poster": "assets/posters/little-brother-2026.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "normal-2025",
@@ -1867,7 +2879,17 @@
    "poster": "assets/posters/normal-2025.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "mayday-2026",
@@ -1885,7 +2907,17 @@
    "lbRatingCount": 80194,
    "url": "https://letterboxd.com/film/mayday-2026/",
    "poster": "assets/posters/mayday-2026.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "backrooms-2026",
@@ -1905,7 +2937,25 @@
    "poster": "assets/posters/backrooms-2026.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    },
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "black-widow-2021",
@@ -1925,7 +2975,17 @@
    "poster": "assets/posters/black-widow-2021.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "shang-chi-and-the-legend-of-the-ten-rings",
@@ -1945,7 +3005,17 @@
    "poster": "assets/posters/shang-chi-and-the-legend-of-the-ten-rings.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "eternals",
@@ -1965,7 +3035,17 @@
    "poster": "assets/posters/eternals.jpg",
    "ratings": {
     "ckatzorke": 2.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "doctor-strange-in-the-multiverse-of-madness",
@@ -1985,7 +3065,17 @@
    "poster": "assets/posters/doctor-strange-in-the-multiverse-of-madness.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "thor-love-and-thunder",
@@ -2005,7 +3095,17 @@
    "poster": "assets/posters/thor-love-and-thunder.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "black-panther-wakanda-forever",
@@ -2025,7 +3125,17 @@
    "poster": "assets/posters/black-panther-wakanda-forever.jpg",
    "ratings": {
     "ckatzorke": 2.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "inferred"
+    }
+   ]
   },
   {
    "slug": "insidious-out-of-the-further",
@@ -2044,7 +3154,17 @@
    "poster": "assets/posters/insidious-out-of-the-further.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "return-to-silent-hill",
@@ -2063,7 +3183,17 @@
    "poster": "assets/posters/return-to-silent-hill.jpg",
    "ratings": {
     "ckatzorke": 2.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "companion-2025",
@@ -2083,7 +3213,17 @@
    "poster": "assets/posters/companion-2025.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-runner-2026-2",
@@ -2100,7 +3240,17 @@
    "lbRatingCount": 42602,
    "url": "https://letterboxd.com/film/the-runner-2026-2/",
    "poster": "assets/posters/the-runner-2026-2.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ136",
+     "no": 136,
+     "title": "WATCH - Kann man schon kucken",
+     "url": "https://www.geekzone.de/138-gz136/",
+     "date": "2026-09-19",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "digger-2026",
@@ -2117,7 +3267,17 @@
    "lbRatingCount": 627901,
    "url": "https://letterboxd.com/film/digger-2026/",
    "poster": "assets/posters/digger-2026.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ138",
+     "no": 138,
+     "title": "WATCH - Türlich, türlich (sicher, Digger)",
+     "url": "https://www.geekzone.de/140-gz138/",
+     "date": "2026-10-18",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "resident-evil-2026",
@@ -2135,7 +3295,17 @@
    "lbRatingCount": 1812990,
    "url": "https://letterboxd.com/film/resident-evil-2026/",
    "poster": "assets/posters/resident-evil-2026.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ138",
+     "no": 138,
+     "title": "WATCH - Türlich, türlich (sicher, Digger)",
+     "url": "https://www.geekzone.de/140-gz138/",
+     "date": "2026-10-18",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "hokum",
@@ -2154,7 +3324,17 @@
    "poster": "assets/posters/hokum.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "hotel-inferno",
@@ -2173,7 +3353,17 @@
    "poster": "assets/posters/hotel-inferno.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "host-2020",
@@ -2191,7 +3381,17 @@
    "poster": "assets/posters/host-2020.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-final-girls",
@@ -2210,7 +3410,17 @@
    "poster": "assets/posters/the-final-girls.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "exit-8",
@@ -2230,7 +3440,17 @@
    "poster": "assets/posters/exit-8.jpg",
    "ratings": {
     "ckatzorke": 3.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "barbarian-2022",
@@ -2250,7 +3470,17 @@
    "poster": "assets/posters/barbarian-2022.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "v-h-s-halloween",
@@ -2275,7 +3505,17 @@
    "poster": "assets/posters/v-h-s-halloween.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "zombie-flesh-eaters",
@@ -2293,7 +3533,17 @@
    "poster": "assets/posters/zombie-flesh-eaters.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "evil-dead-burn",
@@ -2311,7 +3561,17 @@
    "poster": "assets/posters/evil-dead-burn.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "pinocchio-unstrung",
@@ -2331,7 +3591,17 @@
    "poster": "assets/posters/pinocchio-unstrung.jpg",
    "ratings": {
     "ckatzorke": 3.5
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "cemetery-of-terror",
@@ -2347,7 +3617,17 @@
    "lbRatingCount": 5001,
    "url": "https://letterboxd.com/film/cemetery-of-terror/",
    "poster": "assets/posters/cemetery-of-terror.jpg",
-   "ratings": {}
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "evil-dead",
@@ -2365,7 +3645,17 @@
    "poster": "assets/posters/evil-dead.jpg",
    "ratings": {
     "ckatzorke": 4.0
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   },
   {
    "slug": "the-beyond",
@@ -2383,7 +3673,17 @@
    "poster": "assets/posters/the-beyond.jpg",
    "ratings": {
     "ckatzorke": null
-   }
+   },
+   "episodes": [
+    {
+     "id": "GZ139",
+     "no": 139,
+     "title": "SPECIAL - Horroctober 2026",
+     "url": "https://www.geekzone.de/141-gz139/",
+     "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
   }
  ]
 }

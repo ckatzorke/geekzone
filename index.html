@@ -251,6 +251,16 @@
   td .na { color: var(--muted); }
   td .seen { color: var(--ink-3); }
   td .top { color: var(--gold); font-weight: 700; }
+  td.ep { white-space: nowrap; }
+  .ep-chip {
+    display: inline-block; font-size: .75rem; font-weight: 700; text-decoration: none;
+    color: var(--gold); background: var(--chip); border: 1px solid var(--border-2);
+    border-radius: 999px; padding: .12rem .55rem; margin: .1rem .15rem .1rem 0;
+    font-variant-numeric: tabular-nums; transition: background .15s, color .15s;
+  }
+  .ep-chip:hover, .ep-chip:focus-visible { background: var(--gold); color: var(--bg); outline: none; }
+  .ep-chip.inf { border-style: dashed; color: var(--ink-2); }
+  .ep-chip.inf:hover { color: var(--bg); }
 
   footer { width: 100%; max-width: 900px; margin-top: 2rem; text-align: center; color: var(--muted); font-size: .8rem; line-height: 1.7; }
   footer a { color: var(--ink-3); }
@@ -307,6 +317,9 @@
   const people = D.podcasters;
   const order = ['audiotax', 'philst', 'misterbeam5000', 'ckatzorke'];
   const nameOf = Object.fromEntries(people.map(p => [p.user, p.name]));
+  D.films.forEach(f => { f.episodes = f.episodes || []; });
+  const episodes = D.episodes || [];
+  const hasEps = D.films.some(f => f.episodes.length);
   const fmtDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' });
 
   document.getElementById('yr').textContent = D.year;
@@ -477,11 +490,16 @@
           <option value="">Alle Genres</option>
           ${S.genres.map(([g]) => `<option value="${esc(g)}">${esc(gde(g))}</option>`).join('')}
         </select>
+        ${hasEps ? `<select id="ep" aria-label="Nach Folge filtern">
+          <option value="">Alle Folgen</option>
+          ${episodes.filter(e => D.films.some(f => f.episodes.some(x => x.id === e.id))).map(e => `<option value="${esc(e.id)}">${esc(e.id)}: ${esc(e.title)}</option>`).join('')}
+        </select>` : ''}
       </div>
       <div class="table-wrap">
         <table>
           <thead><tr>
             <th data-k="title"><button>Film</button></th>
+            ${hasEps ? '<th data-k="ep"><button>Folge</button></th>' : ''}
             <th>Genres</th>
             <th class="n" data-k="lbRating"><button>Letterboxd</button></th>
             ${order.map(u => `<th class="n" data-k="u:${u}"><button>${esc(nameOf[u])}</button></th>`).join('')}
@@ -534,7 +552,11 @@
 
   /* ---------- Tabelle ---------- */
   let sortKey = 'lbRating', sortDir = -1;
-  const val = (f, k) => k.startsWith('u:') ? f.ratings[k.slice(2)] : f[k];
+  const val = (f, k) => k === 'ep' ? f.episodes[0]?.no : k.startsWith('u:') ? f.ratings[k.slice(2)] : f[k];
+  const epCell = f => f.episodes.length
+    ? f.episodes.map(e => `<a class="ep-chip${e.how === 'inferred' ? ' inf' : ''}" href="${esc(e.url)}" target="_blank" rel="noopener"
+        title="${esc(e.id)}: ${esc(e.title)}${e.how === 'inferred' ? ' (aus der Reihenfolge der Liste abgeleitet)' : ''}">${esc(e.id)}</a>`).join('')
+    : '<span class="na">–</span>';
   const cell = (f, u) => {
     if (!(u in f.ratings)) return '<span class="na">–</span>';
     const r = f.ratings[u];
@@ -544,8 +566,9 @@
   const renderRows = () => {
     const q = document.getElementById('q').value.trim().toLowerCase();
     const g = document.getElementById('genre').value;
+    const ep = hasEps ? document.getElementById('ep').value : '';
     const rows = D.films
-      .filter(f => (!q || f.title.toLowerCase().includes(q)) && (!g || f.genres.includes(g)))
+      .filter(f => (!q || f.title.toLowerCase().includes(q)) && (!g || f.genres.includes(g)) && (!ep || f.episodes.some(e => e.id === ep)))
       .sort((a, b) => {
         let va = val(a, sortKey), vb = val(b, sortKey);
         if (sortKey === 'title') return sortDir * String(va).localeCompare(String(vb), 'de');
@@ -557,11 +580,13 @@
     document.getElementById('rows').innerHTML = rows.map(f => `
       <tr>
         <td class="film"><img src="${esc(f.poster)}" alt="" loading="lazy" width="30" height="45"><span><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.title)}</a><span class="y">${f.year ?? ''}</span></span></td>
+        ${hasEps ? `<td class="ep">${epCell(f)}</td>` : ''}
         <td class="g">${f.genres.map(gde).join(', ')}</td>
         <td class="n">${num(f.lbRating)}</td>
         ${order.map(u => `<td class="n">${cell(f, u)}</td>`).join('')}
       </tr>`).join('');
-    document.getElementById('count').textContent = `${rows.length} von ${D.films.length} Filmen` + (anyData ? ' · ✓ = gesehen, aber nicht bewertet' : '');
+    document.getElementById('count').textContent = `${rows.length} von ${D.films.length} Filmen` + (anyData ? ' · ✓ = gesehen, aber nicht bewertet' : '')
+      + (hasEps ? ' · gestrichelte Folge = aus der Reihenfolge der Liste abgeleitet' : '');
     document.querySelectorAll('th[data-k]').forEach(th => {
       if (th.dataset.k === sortKey) th.setAttribute('aria-sort', sortDir > 0 ? 'ascending' : 'descending');
       else th.removeAttribute('aria-sort');
@@ -569,11 +594,12 @@
   };
   document.querySelectorAll('th[data-k] button').forEach(btn => btn.addEventListener('click', () => {
     const k = btn.parentElement.dataset.k;
-    if (k === sortKey) sortDir *= -1; else { sortKey = k; sortDir = k === 'title' ? 1 : -1; }
+    if (k === sortKey) sortDir *= -1; else { sortKey = k; sortDir = (k === 'title' || k === 'ep') ? 1 : -1; }
     renderRows();
   }));
   document.getElementById('q').addEventListener('input', renderRows);
   document.getElementById('genre').addEventListener('change', renderRows);
+  if (hasEps) document.getElementById('ep').addEventListener('change', renderRows);
   renderRows();
 })();
 </script>
