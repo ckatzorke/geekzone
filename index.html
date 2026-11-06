@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geekzone Filmjahr 2026</title>
+<meta name="description" content="Der Jahresrückblick des Geekzone-Podcasts: alle besprochenen Filme 2026 in Zahlen.">
+<link rel="icon" href="assets/logo.jpg">
+<style>
+  :root {
+    --bg: #1c0430;
+    --surface: #2a0a42;
+    --surface-2: #1a0530;
+    --chip: #3d1060;
+    --border: #5a1a80;
+    --border-2: #6b2a90;
+    --ink: #f0e6ff;
+    --ink-2: #c0a0d8;
+    --ink-3: #9a70b0;
+    --muted: #7a5a90;
+    --gold: #FFD700;
+    --gold-hi: #ffe033;
+    --bar-track: #3d1060;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, #6b1a8c55, transparent),
+      radial-gradient(ellipse 60% 40% at 80% 100%, #3d0a5c44, transparent);
+    background-attachment: fixed;
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem 3rem;
+  }
+  a { color: inherit; }
+  img { display: block; }
+
+  /* Header – wie geekzone.de */
+  .hero-header {
+    width: 100%; max-width: 900px;
+    display: flex; align-items: center; gap: 2rem;
+    padding: 1.5rem 0 2rem;
+  }
+  .hero-logo { flex: 0 0 30%; max-width: 220px; }
+  .hero-logo img {
+    width: 100%; height: auto; aspect-ratio: 1;
+    border-radius: 28px;
+    box-shadow: 0 8px 40px #6b1a8c88, 0 2px 8px #00000066;
+  }
+  .hero-text { flex: 1; min-width: 0; }
+  .hero-text h1 { font-size: 2.2rem; font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: .6rem; }
+  .hero-text h1 .yr { color: var(--gold); }
+  .hero-text p { color: var(--ink-2); line-height: 1.6; margin-bottom: 1.2rem; }
+  .hero-nav { display: flex; gap: .5rem; flex-wrap: wrap; }
+  .hero-nav a, .hero-nav span {
+    text-decoration: none; font-weight: 700; font-size: .95rem;
+    padding: .5rem 1.1rem; border-radius: 999px;
+    color: var(--ink-2); border: 1px solid transparent;
+    transition: color .15s, border-color .15s, background .15s;
+  }
+  .hero-nav a:hover { color: #fff; }
+  .hero-nav .active { color: var(--gold); background: var(--chip); border-color: var(--border-2); }
+  .hero-nav .soon { color: var(--muted); cursor: default; }
+  .hero-nav .soon small { font-weight: 600; font-size: .7rem; margin-left: .3rem; }
+  @media (max-width: 680px) {
+    .hero-header { flex-direction: column; text-align: center; padding-top: 1rem; gap: 1.2rem; }
+    .hero-logo { flex: none; width: 45%; max-width: 170px; }
+    .hero-text h1 { font-size: 1.8rem; }
+    .hero-nav { justify-content: center; }
+  }
+
+  main { width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 1.25rem; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.6rem;
+    box-shadow: 0 4px 32px #00000055;
+    min-width: 0;
+  }
+  .card-label {
+    display: inline-block; font-size: .7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .12em;
+    color: var(--gold); background: var(--chip);
+    border: 1px solid var(--border-2); border-radius: 999px;
+    padding: .2rem .7rem; margin-bottom: .9rem;
+  }
+  h2 { font-size: 1.25rem; font-weight: 800; color: #fff; margin-bottom: .3rem; }
+  .sub { color: var(--ink-3); font-size: .9rem; margin-bottom: 1.2rem; line-height: 1.5; }
+  .muted { color: var(--muted); font-size: .85rem; }
+  .section-title { margin: 1.5rem 0 -.25rem; padding: 0 .25rem; }
+  .section-title h2 { font-size: 1.5rem; }
+
+  /* KPI-Reihe */
+  .kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+  .kpi .num { font-size: 3.2rem; font-weight: 800; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
+  .kpi .num small { font-size: 1.2rem; color: var(--ink-3); font-weight: 700; margin-left: .2rem; }
+  .kpi .stars { color: var(--gold); font-size: 1.15rem; letter-spacing: .08em; margin-top: .5rem; }
+  .kpi p { color: var(--ink-2); margin-top: .6rem; font-size: .9rem; line-height: 1.5; }
+
+  /* Top / Flop */
+  .duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+  .feature { display: flex; gap: 1.1rem; align-items: flex-start; }
+  .feature img {
+    width: 96px; aspect-ratio: 2/3; height: auto; flex-shrink: 0;
+    border-radius: 8px; border: 1px solid var(--border-2);
+    box-shadow: 0 4px 18px #00000066; background: var(--surface-2);
+  }
+  .feature h3 { font-size: 1.15rem; font-weight: 800; color: #fff; line-height: 1.25; }
+  .feature h3 a { text-decoration: none; }
+  .feature h3 a:hover { color: var(--gold); }
+  .feature .meta { color: var(--ink-3); font-size: .85rem; margin: .25rem 0 .6rem; }
+  .feature .score { font-size: 2rem; font-weight: 800; color: #fff; font-variant-numeric: tabular-nums; line-height: 1; }
+  .feature .score .stars { color: var(--gold); font-size: 1rem; margin-left: .4rem; letter-spacing: .06em; vertical-align: middle; }
+  .feature + .feature { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+
+  @media (max-width: 680px) {
+    .kpis, .duo { grid-template-columns: minmax(0, 1fr); }
+    .card { padding: 1.25rem; }
+    .kpi .num { font-size: 2.6rem; }
+  }
+
+  /* Balkendiagramme */
+  .bars { display: flex; flex-direction: column; gap: 2px; }
+  .bar-row {
+    display: grid; grid-template-columns: 9.5rem minmax(0, 1fr) 2.5rem;
+    align-items: center; gap: .75rem;
+    padding: .3rem .35rem; border-radius: 6px; cursor: default;
+  }
+  .bar-row:hover, .bar-row:focus-visible { background: #ffffff0d; outline: none; }
+  .bar-label { color: var(--ink-2); font-size: .9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { height: 14px; position: relative; }
+  .bar-fill {
+    position: absolute; left: 0; top: 0; bottom: 0;
+    background: var(--gold); border-radius: 0 4px 4px 0; min-width: 3px;
+  }
+  .bar-row:hover .bar-fill { background: var(--gold-hi); }
+  .bar-val { text-align: right; color: var(--ink); font-weight: 700; font-size: .9rem; font-variant-numeric: tabular-nums; }
+  @media (max-width: 480px) { .bar-row { grid-template-columns: 7rem minmax(0, 1fr) 2rem; gap: .5rem; } }
+
+  /* Säulen (Jahre) */
+  .cols {
+    display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr);
+    gap: 2px; align-items: end; height: 220px;
+    border-bottom: 1px solid var(--border);
+  }
+  .col { height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; cursor: default; border-radius: 6px 6px 0 0; padding: 0 3px; }
+  .col:hover, .col:focus-visible { background: #ffffff0d; outline: none; }
+  .col .v { font-size: .8rem; font-weight: 700; color: var(--ink); margin-bottom: .3rem; font-variant-numeric: tabular-nums; }
+  .col .fill { width: 100%; max-width: 44px; background: var(--gold); border-radius: 4px 4px 0 0; min-height: 3px; }
+  .col:hover .fill { background: var(--gold-hi); }
+  .col-labels { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 2px; margin-top: .4rem; }
+  .col-labels span { text-align: center; color: var(--ink-3); font-size: .75rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  @media (max-width: 480px) { .col .v { font-size: .7rem; } .col-labels span { font-size: .62rem; } }
+
+  /* Tooltip */
+  .tip {
+    position: fixed; z-index: 10; pointer-events: none;
+    max-width: 300px; padding: .65rem .8rem;
+    background: var(--surface-2); border: 1px solid var(--border-2); border-radius: 10px;
+    box-shadow: 0 8px 28px #000000aa;
+    font-size: .82rem; color: var(--ink-2); line-height: 1.45;
+    opacity: 0; transition: opacity .1s;
+  }
+  .tip.on { opacity: 1; }
+  .tip strong { color: #fff; display: block; margin-bottom: .2rem; font-size: .9rem; }
+  .tip .gold { color: var(--gold); font-weight: 700; }
+
+  /* Podcaster */
+  .ranking { display: flex; flex-direction: column; gap: .7rem; margin-bottom: .4rem; }
+  .rank-row { display: grid; grid-template-columns: 2rem 6.5rem minmax(0, 1fr) 4.5rem; align-items: center; gap: .75rem; }
+  .rank-pos { font-weight: 800; color: var(--ink-3); font-size: 1rem; text-align: center; }
+  .rank-row.first .rank-pos { color: var(--gold); font-size: 1.3rem; }
+  .rank-name { font-weight: 700; color: #fff; }
+  .rank-name a { text-decoration: none; }
+  .rank-name a:hover { color: var(--gold); }
+  .rank-track { height: 18px; background: var(--bar-track); border-radius: 4px; overflow: hidden; }
+  .rank-fill { height: 100%; background: var(--gold); border-radius: 0 4px 4px 0; }
+  .rank-val { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .rank-val small { color: var(--muted); font-weight: 600; }
+  @media (max-width: 480px) { .rank-row { grid-template-columns: 1.5rem 4.8rem minmax(0, 1fr) 3.8rem; gap: .5rem; } }
+
+  .people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+  @media (max-width: 680px) { .people { grid-template-columns: minmax(0, 1fr); } }
+  .person-head { display: flex; align-items: center; gap: .9rem; margin-bottom: 1.1rem; }
+  .avatar {
+    width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0;
+    display: grid; place-items: center;
+    background: var(--chip); border: 1.5px solid var(--border-2);
+    color: var(--gold); font-weight: 800; font-size: 1.3rem;
+  }
+  .person-head h3 { font-size: 1.2rem; font-weight: 800; color: #fff; }
+  .person-head a { color: var(--ink-3); font-size: .85rem; text-decoration: none; }
+  .person-head a:hover { color: var(--gold); }
+  .person-stats { display: flex; gap: 1.5rem; margin-bottom: 1.1rem; flex-wrap: wrap; }
+  .person-stats div { display: flex; flex-direction: column; }
+  .person-stats b { font-size: 1.6rem; font-weight: 800; color: #fff; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .person-stats span { font-size: .75rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; }
+  .pick { display: flex; gap: .8rem; align-items: center; padding: .6rem 0; border-top: 1px solid var(--border); }
+  .pick img { width: 42px; aspect-ratio: 2/3; height: auto; border-radius: 5px; border: 1px solid var(--border-2); flex-shrink: 0; background: var(--surface-2); }
+  .pick .tag { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); }
+  .pick .t { color: #fff; font-weight: 700; line-height: 1.3; }
+  .pick .t a { text-decoration: none; }
+  .pick .t a:hover { color: var(--gold); }
+  .pick .r { color: var(--gold); font-size: .85rem; white-space: nowrap; }
+  .pick .more { color: var(--muted); font-size: .8rem; }
+  .info-box {
+    background: #2d1050; border: 1px solid var(--border-2); border-radius: 10px;
+    padding: 1rem; color: var(--ink-2); font-size: .9rem; line-height: 1.6;
+  }
+  .info-box strong { color: var(--gold); }
+  .info-box code { color: var(--gold); font-size: .85em; }
+
+  /* Filmtabelle */
+  .controls { display: flex; gap: .6rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .controls input, .controls select {
+    padding: .6rem .85rem; background: var(--surface-2);
+    border: 1.5px solid var(--border); border-radius: 10px;
+    color: #fff; font: inherit; font-size: .9rem; outline: none;
+  }
+  .controls input { flex: 1; min-width: 0; }
+  .controls input:focus, .controls select:focus { border-color: var(--gold); }
+  .controls input::placeholder { color: var(--muted); }
+  .table-wrap { overflow-x: auto; margin: 0 -.4rem; }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  th {
+    text-align: left; color: var(--ink-3); font-size: .72rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .08em;
+    padding: .5rem .4rem; border-bottom: 1px solid var(--border); white-space: nowrap;
+  }
+  th button { all: unset; cursor: pointer; }
+  th button:hover, th button:focus-visible { color: var(--gold); }
+  th[aria-sort] button { color: var(--gold); }
+  th.n, td.n { text-align: right; }
+  td { padding: .45rem .4rem; border-bottom: 1px solid #5a1a8055; vertical-align: middle; }
+  tr:hover td { background: #ffffff08; }
+  td.film { display: flex; gap: .7rem; align-items: center; min-width: 210px; }
+  td.film img { width: 30px; aspect-ratio: 2/3; height: auto; border-radius: 3px; flex-shrink: 0; }
+  td.film a { color: #fff; font-weight: 700; text-decoration: none; }
+  td.film a:hover { color: var(--gold); }
+  td.film .y { color: var(--ink-3); font-weight: 400; margin-left: .25rem; }
+  td.g { color: var(--ink-3); font-size: .8rem; min-width: 130px; }
+  td.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .na { color: var(--muted); }
+  td .seen { color: var(--ink-3); }
+  td .top { color: var(--gold); font-weight: 700; }
+
+  footer { width: 100%; max-width: 900px; margin-top: 2rem; text-align: center; color: var(--muted); font-size: .8rem; line-height: 1.7; }
+  footer a { color: var(--ink-3); }
+  footer a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<header class="hero-header">
+  <a href="https://www.geekzone.de/" class="hero-logo"><img src="assets/logo.jpg" alt="Geekzone"></a>
+  <div class="hero-text">
+    <h1>Das Filmjahr <span class="yr" id="yr">2026</span></h1>
+    <p id="intro">Alle Filme, die wir im Geekzone-Podcast besprochen haben, in Zahlen: was wir geschaut haben, was begeistert hat und was nicht.</p>
+    <nav class="hero-nav" aria-label="Rubriken">
+      <span class="active">Filme</span>
+      <span class="soon">Serien<small>bald</small></span>
+      <span class="soon">Spiele<small>bald</small></span>
+      <a href="https://www.geekzone.de/">Podcast</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app">
+  <noscript><div class="card"><p>Diese Seite braucht JavaScript.</p></div></noscript>
+</main>
+
+<footer id="footer"></footer>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script src="data/films-2026.js"></script>
+<script>
+(() => {
+  const D = window.GZ_FILMS;
+  const app = document.getElementById('app');
+  if (!D) { app.innerHTML = '<div class="card"><p>Keine Daten gefunden. Bitte <code>python3 scripts/fetch_letterboxd.py</code> ausführen.</p></div>'; return; }
+
+  const GENRE_DE = {
+    'Action': 'Action', 'Adventure': 'Abenteuer', 'Animation': 'Animation', 'Comedy': 'Komödie',
+    'Crime': 'Krimi', 'Documentary': 'Dokumentarfilm', 'Drama': 'Drama', 'Family': 'Familie',
+    'Fantasy': 'Fantasy', 'History': 'Historie', 'Horror': 'Horror', 'Music': 'Musik',
+    'Mystery': 'Mystery', 'Romance': 'Romantik', 'Science Fiction': 'Science-Fiction',
+    'Thriller': 'Thriller', 'TV Movie': 'TV-Film', 'War': 'Kriegsfilm', 'Western': 'Western'
+  };
+  const gde = g => GENRE_DE[g] || g;
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const num = (v, d = 2) => v == null ? '–' : v.toLocaleString('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const stars = v => {
+    if (v == null) return '';
+    const r = Math.round(v * 2) / 2;
+    return '★'.repeat(Math.floor(r)) + (r % 1 ? '½' : '');
+  };
+  const bySlug = Object.fromEntries(D.films.map(f => [f.slug, f]));
+  const S = D.stats;
+  const people = D.podcasters;
+  const order = ['audiotax', 'philst', 'misterbeam5000', 'ckatzorke'];
+  const nameOf = Object.fromEntries(people.map(p => [p.user, p.name]));
+  const fmtDate = iso => new Date(iso + 'T12:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  document.getElementById('yr').textContent = D.year;
+  document.title = `Geekzone Filmjahr ${D.year}`;
+
+  /* ---------- Bausteine ---------- */
+  const feature = (f, label) => `
+    <div class="feature">
+      <a href="${esc(f.url)}" target="_blank" rel="noopener"><img src="${esc(f.poster)}" alt="" loading="lazy" width="96" height="144"></a>
+      <div>
+        <h3><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.title)}</a></h3>
+        <div class="meta">${f.year ?? ''}${f.genres.length ? ' · ' + f.genres.slice(0, 3).map(gde).join(', ') : ''}</div>
+        <div class="score">${num(f.lbRating)}<span class="stars" aria-hidden="true">${stars(f.lbRating)}</span></div>
+        <div class="muted" style="margin-top:.4rem">${label}</div>
+      </div>
+    </div>`;
+
+  const ex = S.lbExtremes;
+  const ratingsCount = f => f.lbRatingCount ? `${f.lbRatingCount.toLocaleString('de-DE')} Bewertungen auf Letterboxd` : 'Letterboxd-Community';
+
+  /* ---------- Jahre gruppieren: Jahrzehnte vor 2020, danach einzelne Jahre ---------- */
+  const yearBuckets = (() => {
+    const m = new Map();
+    for (const f of D.films) {
+      if (!f.year) continue;
+      const key = f.year < 2020 ? `${Math.floor(f.year / 10) * 10}er` : String(f.year);
+      const sortKey = f.year < 2020 ? Math.floor(f.year / 10) * 10 : f.year;
+      if (!m.has(key)) m.set(key, { label: key, sort: sortKey, films: [] });
+      m.get(key).films.push(f);
+    }
+    // Lücken bei Jahrzehnten/Jahren auffüllen, damit die Zeitachse ehrlich bleibt
+    const keys = [...m.values()].map(b => b.sort);
+    const min = Math.min(...keys), out = [];
+    for (let d = Math.floor(min / 10) * 10; d < 2020; d += 10) { const k = `${d}er`; out.push(m.get(k) || { label: k, sort: d, films: [] }); }
+    for (let y = 2020; y <= D.year; y++) { const k = String(y); out.push(m.get(k) || { label: k, sort: y, films: [] }); }
+    return out;
+  })();
+
+  const genreFilms = g => D.films.filter(f => f.genres.includes(g));
+  const titleList = (films, max = 8) => {
+    const s = films.slice().sort((a, b) => (b.lbRating ?? 0) - (a.lbRating ?? 0));
+    return s.slice(0, max).map(f => esc(f.title)).join('<br>') + (s.length > max ? `<br><span class="muted">… und ${s.length - max} weitere</span>` : '');
+  };
+
+  /* ---------- Podcaster ---------- */
+  const anyData = people.some(p => p.hasData);
+  const maxWatched = D.films.length;
+  const ranking = people.slice().sort((a, b) => b.watched - a.watched);
+  const pick = (slugs, value, tag) => {
+    if (!slugs || !slugs.length) return `<div class="pick"><div><div class="tag">${tag}</div><div class="muted">noch nichts bewertet</div></div></div>`;
+    const f = bySlug[slugs[0]];
+    const more = slugs.length > 1 ? `<div class="more">gleichauf mit ${slugs.slice(1, 4).map(s => esc(bySlug[s].title)).join(', ')}${slugs.length > 4 ? ` und ${slugs.length - 4} weiteren` : ''}</div>` : '';
+    return `<div class="pick">
+      <img src="${esc(f.poster)}" alt="" loading="lazy" width="42" height="63">
+      <div style="min-width:0">
+        <div class="tag">${tag}</div>
+        <div class="t"><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.title)}</a> <span class="r">${stars(value)} ${num(value, 1)}</span></div>
+        ${more}
+      </div></div>`;
+  };
+
+  const personCard = p => `
+    <article class="card">
+      <div class="person-head">
+        <div class="avatar" aria-hidden="true">${esc(p.name[0])}</div>
+        <div><h3>${esc(p.name)}</h3><a href="${esc(p.profile)}" target="_blank" rel="noopener">@${esc(p.user)} auf Letterboxd</a></div>
+      </div>
+      ${p.hasData ? `
+      <div class="person-stats">
+        <div><b>${p.watched}</b><span>gesehen</span></div>
+        <div><b>${p.rated}</b><span>bewertet</span></div>
+        <div><b>${num(p.avgRating)}</b><span>Ø Wertung</span></div>
+      </div>
+      ${pick(p.best, p.bestValue, 'Höchste Wertung')}
+      ${pick(p.worst, p.worstValue, 'Niedrigste Wertung')}`
+      : `<div class="info-box">Für ${esc(p.name)} liegen noch keine Letterboxd-Daten vor.</div>`}
+    </article>`;
+
+  /* ---------- Rendern ---------- */
+  app.innerHTML = `
+    <section class="kpis">
+      <div class="card kpi">
+        <span class="card-label">Filme</span>
+        <div class="num">${S.count}</div>
+        <p>Filme auf der <a href="${esc(D.listUrl)}" target="_blank" rel="noopener">Geekzone-Liste ${D.year}</a>, von ${Math.min(...D.films.map(f => f.year).filter(Boolean))} bis ${Math.max(...D.films.map(f => f.year).filter(Boolean))}.</p>
+      </div>
+      <div class="card kpi">
+        <span class="card-label">Durchschnittswertung</span>
+        <div class="num">${num(S.avgLbRating)}<small>/ 5</small></div>
+        <div class="stars" aria-hidden="true">${stars(S.avgLbRating)}</div>
+        <p>Mittelwert der Letterboxd-Community-Wertungen aller Filme der Liste.</p>
+      </div>
+    </section>
+
+    <section class="duo">
+      <div class="card">
+        <span class="card-label">Bestbewertet</span>
+        ${ex.best.map(s => feature(bySlug[s], ratingsCount(bySlug[s]))).join('')}
+      </div>
+      <div class="card">
+        <span class="card-label">Schlechtbewertet</span>
+        ${ex.worst.map(s => feature(bySlug[s], ratingsCount(bySlug[s]))).join('')}
+      </div>
+    </section>
+
+    <section class="card">
+      <span class="card-label">Genres</span>
+      <h2>Verteilung auf Genres</h2>
+      <p class="sub">Anzahl der Filme pro Genre. Ein Film kann mehrere Genres haben, deshalb ergibt die Summe mehr als ${S.count}.</p>
+      <div class="bars" id="genres">
+        ${(() => { const max = S.genres[0][1]; return S.genres.map(([g, n]) => `
+          <div class="bar-row" tabindex="0" data-tip="genre" data-key="${esc(g)}">
+            <span class="bar-label">${esc(gde(g))}</span>
+            <span class="bar-track"><span class="bar-fill" style="width:${(n / max * 100).toFixed(1)}%"></span></span>
+            <span class="bar-val">${n}</span>
+          </div>`).join(''); })()}
+      </div>
+    </section>
+
+    <section class="card">
+      <span class="card-label">Erscheinungsjahr</span>
+      <h2>Verteilung nach Veröffentlichungsjahr</h2>
+      <p class="sub">Vor 2020 nach Jahrzehnten zusammengefasst, danach einzelne Jahre.</p>
+      ${(() => { const max = Math.max(...yearBuckets.map(b => b.films.length)); return `
+      <div class="cols" id="years">
+        ${yearBuckets.map((b, i) => `
+          <div class="col" tabindex="0" data-tip="year" data-key="${i}" aria-label="${esc(b.label)}: ${b.films.length} Filme">
+            ${b.films.length ? `<span class="v">${b.films.length}</span>` : ''}
+            <span class="fill" style="height:${b.films.length ? (b.films.length / max * 82).toFixed(1) : 0}%;${b.films.length ? '' : 'min-height:0'}"></span>
+          </div>`).join('')}
+      </div>
+      <div class="col-labels" aria-hidden="true">${yearBuckets.map(b => `<span>${esc(b.label)}</span>`).join('')}</div>`; })()}
+    </section>
+
+    <div class="section-title"><h2>Die Geekzone-Crew</h2></div>
+
+    <section class="card">
+      <span class="card-label">Rangliste</span>
+      <h2>Wer hat die meisten Filme der Liste geschaut?</h2>
+      ${anyData ? `
+      <p class="sub">Gesehene Filme von ${maxWatched} auf der Liste, unabhängig davon, wann sie geschaut wurden.</p>
+      <div class="ranking">
+        ${ranking.map((p, i) => `
+          <div class="rank-row${i === 0 && p.watched > 0 ? ' first' : ''}">
+            <span class="rank-pos">${p.hasData ? (i === 0 ? '🏆' : i + 1) : '–'}</span>
+            <span class="rank-name"><a href="${esc(p.profile)}" target="_blank" rel="noopener">${esc(p.name)}</a></span>
+            <span class="rank-track"><span class="rank-fill" style="width:${(p.watched / maxWatched * 100).toFixed(1)}%"></span></span>
+            <span class="rank-val">${p.hasData ? `${p.watched} <small>(${Math.round(p.watched / maxWatched * 100)} %)</small>` : '<small>keine Daten</small>'}</span>
+          </div>`).join('')}
+      </div>` : `
+      <div class="info-box" style="margin-top:1rem">
+        <strong>Die Crew-Daten fehlen noch.</strong> Letterboxd blockiert den automatischen Abruf kompletter Profile.
+        Deshalb kommen die Daten aus dem offiziellen Letterboxd-Export: Jede Person exportiert unter
+        <em>Settings → Data → Export your data</em> eine ZIP-Datei. Die Datei kommt nach <code>data/exports/&lt;benutzername&gt;.zip</code>,
+        danach <code>python3 scripts/fetch_letterboxd.py</code> erneut ausführen.
+      </div>`}
+    </section>
+
+    <section class="people">
+      ${order.map(u => people.find(p => p.user === u)).map(personCard).join('')}
+    </section>
+
+    <div class="section-title"><h2>Alle Filme</h2></div>
+    <section class="card">
+      <div class="controls">
+        <input type="search" id="q" placeholder="Film suchen …" aria-label="Film suchen">
+        <select id="genre" aria-label="Nach Genre filtern">
+          <option value="">Alle Genres</option>
+          ${S.genres.map(([g]) => `<option value="${esc(g)}">${esc(gde(g))}</option>`).join('')}
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr>
+            <th data-k="title"><button>Film</button></th>
+            <th>Genres</th>
+            <th class="n" data-k="lbRating"><button>Letterboxd</button></th>
+            ${order.map(u => `<th class="n" data-k="u:${u}"><button>${esc(nameOf[u])}</button></th>`).join('')}
+          </tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="muted" id="count" style="margin-top:.8rem"></p>
+    </section>
+  `;
+
+  document.getElementById('footer').innerHTML = `
+    Stand: ${fmtDate(D.generated)} · Daten von <a href="${esc(D.listUrl)}" target="_blank" rel="noopener">Letterboxd</a> ·
+    <a href="https://www.geekzone.de/">geekzone.de</a>`;
+
+  /* ---------- Tooltips ---------- */
+  const tip = document.getElementById('tip');
+  const tipHtml = el => {
+    if (el.dataset.tip === 'genre') {
+      const g = el.dataset.key, fs = genreFilms(g);
+      return `<strong>${esc(gde(g))}</strong><span class="gold">${fs.length} Filme</span> · ${Math.round(fs.length / S.count * 100)} % der Liste<br>${titleList(fs)}`;
+    }
+    const b = yearBuckets[+el.dataset.key];
+    if (!b.films.length) return `<strong>${esc(b.label)}</strong>Keine Filme`;
+    return `<strong>${esc(b.label)}</strong><span class="gold">${b.films.length} ${b.films.length === 1 ? 'Film' : 'Filme'}</span><br>${titleList(b.films)}`;
+  };
+  const place = (x, y) => {
+    const r = tip.getBoundingClientRect();
+    let left = x + 14, top = y + 14;
+    if (left + r.width > innerWidth - 8) left = x - r.width - 14;
+    if (top + r.height > innerHeight - 8) top = y - r.height - 14;
+    tip.style.left = Math.max(8, left) + 'px';
+    tip.style.top = Math.max(8, top) + 'px';
+  };
+  const show = (el, x, y) => { tip.innerHTML = tipHtml(el); tip.classList.add('on'); place(x, y); };
+  const hide = () => tip.classList.remove('on');
+  app.addEventListener('pointermove', e => {
+    const el = e.target.closest('[data-tip]');
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  app.addEventListener('pointerleave', hide);
+  app.addEventListener('focusin', e => {
+    const el = e.target.closest('[data-tip]');
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    show(el, r.left + r.width / 2, r.top + r.height / 2);
+  });
+  app.addEventListener('focusout', hide);
+  addEventListener('scroll', hide, { passive: true });
+
+  /* ---------- Tabelle ---------- */
+  let sortKey = 'lbRating', sortDir = -1;
+  const val = (f, k) => k.startsWith('u:') ? f.ratings[k.slice(2)] : f[k];
+  const cell = (f, u) => {
+    if (!(u in f.ratings)) return '<span class="na">–</span>';
+    const r = f.ratings[u];
+    if (r == null) return '<span class="seen" title="gesehen, nicht bewertet">✓</span>';
+    return `<span class="${r >= 4.5 ? 'top' : ''}">${num(r, 1)}</span>`;
+  };
+  const renderRows = () => {
+    const q = document.getElementById('q').value.trim().toLowerCase();
+    const g = document.getElementById('genre').value;
+    const rows = D.films
+      .filter(f => (!q || f.title.toLowerCase().includes(q)) && (!g || f.genres.includes(g)))
+      .sort((a, b) => {
+        let va = val(a, sortKey), vb = val(b, sortKey);
+        if (sortKey === 'title') return sortDir * String(va).localeCompare(String(vb), 'de');
+        if (va == null && vb == null) return 0;
+        if (va == null) return 1;
+        if (vb == null) return -1;
+        return sortDir * (va - vb);
+      });
+    document.getElementById('rows').innerHTML = rows.map(f => `
+      <tr>
+        <td class="film"><img src="${esc(f.poster)}" alt="" loading="lazy" width="30" height="45"><span><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.title)}</a><span class="y">${f.year ?? ''}</span></span></td>
+        <td class="g">${f.genres.map(gde).join(', ')}</td>
+        <td class="n">${num(f.lbRating)}</td>
+        ${order.map(u => `<td class="n">${cell(f, u)}</td>`).join('')}
+      </tr>`).join('');
+    document.getElementById('count').textContent = `${rows.length} von ${D.films.length} Filmen` + (anyData ? ' · ✓ = gesehen, aber nicht bewertet' : '');
+    document.querySelectorAll('th[data-k]').forEach(th => {
+      if (th.dataset.k === sortKey) th.setAttribute('aria-sort', sortDir > 0 ? 'ascending' : 'descending');
+      else th.removeAttribute('aria-sort');
+    });
+  };
+  document.querySelectorAll('th[data-k] button').forEach(btn => btn.addEventListener('click', () => {
+    const k = btn.parentElement.dataset.k;
+    if (k === sortKey) sortDir *= -1; else { sortKey = k; sortDir = k === 'title' ? 1 : -1; }
+    renderRows();
+  }));
+  document.getElementById('q').addEventListener('input', renderRows);
+  document.getElementById('genre').addEventListener('change', renderRows);
+  renderRows();
+})();
+</script>
+</body>
+</html>
