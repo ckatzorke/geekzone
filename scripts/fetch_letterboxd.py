@@ -170,17 +170,23 @@ def load_export(user):
     folder = exp / user
     zips = [exp / f"{user}.zip"] + sorted(exp.glob(f"letterboxd-{user}-*.zip"))
     if folder.is_dir():
-        for name in ("watched.csv", "ratings.csv"):
-            if (folder / name).exists():
-                files[name] = (folder / name).read_text(encoding="utf-8")
+        paths = [p.relative_to(folder).as_posix() for p in folder.rglob("*.csv")]
+        read = lambda p: (folder / p).read_text(encoding="utf-8")
     else:
         z = next((p for p in reversed(zips) if p.exists()), None)
         if not z:
             return None
-        with zipfile.ZipFile(z) as zf:
-            for name in ("watched.csv", "ratings.csv"):
-                if name in zf.namelist():
-                    files[name] = zf.read(name).decode("utf-8")
+        zf = zipfile.ZipFile(z)
+        paths = zf.namelist()
+        read = lambda p: zf.read(p).decode("utf-8")
+    for name in ("watched.csv", "ratings.csv"):
+        # Datei kann auch in einem Unterordner liegen (z.B. am Mac neu gepackt);
+        # Mac-Metadaten und die Export-Unterordner deleted/ orphaned/ ignorieren.
+        cands = [p for p in paths
+                 if p.rsplit("/", 1)[-1] == name
+                 and not re.search(r"(^|/)(__MACOSX|deleted|orphaned|likes|lists)/", p)]
+        if cands:
+            files[name] = read(min(cands, key=lambda p: p.count("/")))
     if not files:
         return None
     out = {}

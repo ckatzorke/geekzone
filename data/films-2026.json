@@ -1,7 +1,7 @@
 {
  "year": 2026,
  "listUrl": "https://letterboxd.com/ckatzorke/list/geekzone-2026/",
- "generated": "2026-11-07",
+ "generated": "2026-11-09",
  "stats": {
   "count": 111,
   "avgLbRating": 3.22,
@@ -188,6 +188,26 @@
    "worstValue": 1.0
   },
   {
+   "name": "Peter",
+   "user": "misterbeam5000",
+   "hasData": true,
+   "profile": "https://letterboxd.com/misterbeam5000/",
+   "watched": 28,
+   "rated": 28,
+   "avgRating": 4.23,
+   "best": [
+    "project-hail-mary",
+    "avengers-infinity-war",
+    "the-odyssey-2026",
+    "spider-man-brand-new-day"
+   ],
+   "bestValue": 5.0,
+   "worst": [
+    "the-punisher-one-last-kill"
+   ],
+   "worstValue": 3.0
+  },
+  {
    "name": "Tax",
    "user": "audiotax",
    "hasData": false,
@@ -205,19 +225,6 @@
    "user": "philst",
    "hasData": false,
    "profile": "https://letterboxd.com/philst/",
-   "watched": 0,
-   "rated": 0,
-   "avgRating": null,
-   "best": [],
-   "bestValue": null,
-   "worst": [],
-   "worstValue": null
-  },
-  {
-   "name": "Peter",
-   "user": "misterbeam5000",
-   "hasData": false,
-   "profile": "https://letterboxd.com/misterbeam5000/",
    "watched": 0,
    "rated": 0,
    "avgRating": null,
@@ -331,6 +338,7 @@
    "url": "https://letterboxd.com/film/the-long-walk-2025/",
    "poster": "assets/posters/the-long-walk-2025.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -772,6 +780,7 @@
    "url": "https://letterboxd.com/film/bugonia/",
    "poster": "assets/posters/bugonia.jpg",
    "ratings": {
+    "misterbeam5000": 4.5,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -1232,6 +1241,7 @@
    "url": "https://letterboxd.com/film/28-years-later-the-bone-temple/",
    "poster": "assets/posters/28-years-later-the-bone-temple.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -1297,6 +1307,7 @@
    "url": "https://letterboxd.com/film/weapons-2025/",
    "poster": "assets/posters/weapons-2025.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1328,6 +1339,7 @@
    "url": "https://letterboxd.com/film/project-hail-mary/",
    "poster": "assets/posters/project-hail-mary.jpg",
    "ratings": {
+    "misterbeam5000": 5.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1524,7 +1536,9 @@
    "lbRatingCount": 879231,
    "url": "https://letterboxd.com/film/el-camino-a-breaking-bad-movie/",
    "poster": "assets/posters/el-camino-a-breaking-bad-movie.jpg",
-   "ratings": {},
+   "ratings": {
+    "misterbeam5000": 4.5
+   },
    "episodes": [
     {
      "id": "GZ127",
@@ -1583,6 +1597,7 @@
    "url": "https://letterboxd.com/film/the-punisher-one-last-kill/",
    "poster": "assets/posters/the-punisher-one-last-kill.jpg",
    "ratings": {
+    "misterbeam5000": 3.0,
     "ckatzorke": 3.5
    },
    "episodes": [
@@ -1937,7 +1952,9 @@
    "lbRatingCount": 3024635,
    "url": "https://letterboxd.com/film/the-drama/",
    "poster": "assets/posters/the-drama.jpg",
-   "ratings": {},
+   "ratings": {
+    "misterbeam5000": 4.0
+   },
    "episodes": [
     {
      "id": "GZ132",
@@ -1966,6 +1983,7 @@
    "url": "https://letterboxd.com/film/spider-man-homecoming/",
    "poster": "assets/posters/spider-man-homecoming.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1996,6 +2014,7 @@
    "url": "https://letterboxd.com/film/spider-man-far-from-home/",
    "poster": "assets/posters/spider-man-far-from-home.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -2026,6 +2045,7 @@
    "url": "https://letterboxd.com/film/spider-man-no-way-home/",
    "poster": "assets/posters/spider-man-no-way-home.jpg",
    "ratings": {
+    "misterbeam5000": 4.5,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -2057,6 +2077,7 @@
    "url": "https://letterboxd.com/film/avengers-infinity-war/",
    "poster": "assets/posters/avengers-infinity-war.jpg",
    "ratings": {
+    "misterbeam5000": 5.0,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -2088,6 +2109,7 @@
    "url": "https://letterboxd.com/film/avengers-endgame/",
    "poster": "assets/posters/avengers-endgame.jpg",
    "ratings": {
+    "misterbeam5000": 4.5,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -2382,7 +2404,9 @@
    "lbRatingCount": 4693390,
    "url": "https://letterboxd.com/film/the-odyssey-2026/",
    "poster": "assets/posters/the-odyssey-2026.jpg",
-   "ratings": {},
+   "ratings": {
+    "misterbeam5000": 5.0
+   },
    "episodes": [
     {
      "id": "GZ134",
@@ -2411,6 +2435,7 @@
    "url": "https://letterboxd.com/film/spider-man-brand-new-day/",
    "poster": "assets/posters/spider-man-brand-new-day.jpg",
    "ratings": {
+    "misterbeam5000": 5.0,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -2546,6 +2571,7 @@
    "url": "https://letterboxd.com/film/obsession-2025/",
    "poster": "assets/posters/obsession-2025.jpg",
    "ratings": {
+    "misterbeam5000": 4.5,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -2762,6 +2788,7 @@
    "url": "https://letterboxd.com/film/mad-max-fury-road/",
    "poster": "assets/posters/mad-max-fury-road.jpg",
    "ratings": {
+    "misterbeam5000": 4.5,
     "ckatzorke": 5.0
    },
    "episodes": [
@@ -2792,6 +2819,7 @@
    "url": "https://letterboxd.com/film/furiosa-a-mad-max-saga/",
    "poster": "assets/posters/furiosa-a-mad-max-saga.jpg",
    "ratings": {
+    "misterbeam5000": 3.5,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -2936,6 +2964,7 @@
    "url": "https://letterboxd.com/film/backrooms-2026/",
    "poster": "assets/posters/backrooms-2026.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -2974,6 +3003,7 @@
    "url": "https://letterboxd.com/film/black-widow-2021/",
    "poster": "assets/posters/black-widow-2021.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 3.0
    },
    "episodes": [
@@ -3004,6 +3034,7 @@
    "url": "https://letterboxd.com/film/shang-chi-and-the-legend-of-the-ten-rings/",
    "poster": "assets/posters/shang-chi-and-the-legend-of-the-ten-rings.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -3034,6 +3065,7 @@
    "url": "https://letterboxd.com/film/eternals/",
    "poster": "assets/posters/eternals.jpg",
    "ratings": {
+    "misterbeam5000": 4.5,
     "ckatzorke": 2.0
    },
    "episodes": [
@@ -3064,6 +3096,7 @@
    "url": "https://letterboxd.com/film/doctor-strange-in-the-multiverse-of-madness/",
    "poster": "assets/posters/doctor-strange-in-the-multiverse-of-madness.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 3.5
    },
    "episodes": [
@@ -3094,6 +3127,7 @@
    "url": "https://letterboxd.com/film/thor-love-and-thunder/",
    "poster": "assets/posters/thor-love-and-thunder.jpg",
    "ratings": {
+    "misterbeam5000": 4.5,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -3124,6 +3158,7 @@
    "url": "https://letterboxd.com/film/black-panther-wakanda-forever/",
    "poster": "assets/posters/black-panther-wakanda-forever.jpg",
    "ratings": {
+    "misterbeam5000": 4.0,
     "ckatzorke": 2.5
    },
    "episodes": [
@@ -3212,6 +3247,7 @@
    "url": "https://letterboxd.com/film/companion-2025/",
    "poster": "assets/posters/companion-2025.jpg",
    "ratings": {
+    "misterbeam5000": 3.5,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -3267,7 +3303,9 @@
    "lbRatingCount": 627901,
    "url": "https://letterboxd.com/film/digger-2026/",
    "poster": "assets/posters/digger-2026.jpg",
-   "ratings": {},
+   "ratings": {
+    "misterbeam5000": 4.5
+   },
    "episodes": [
     {
      "id": "GZ138",
@@ -3295,7 +3333,9 @@
    "lbRatingCount": 1812990,
    "url": "https://letterboxd.com/film/resident-evil-2026/",
    "poster": "assets/posters/resident-evil-2026.jpg",
-   "ratings": {},
+   "ratings": {
+    "misterbeam5000": 4.0
+   },
    "episodes": [
     {
      "id": "GZ138",
