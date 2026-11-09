@@ -188,6 +188,24 @@
    "worstValue": 1.0
   },
   {
+   "name": "Fipps",
+   "user": "philst",
+   "hasData": true,
+   "profile": "https://letterboxd.com/philst/",
+   "watched": 49,
+   "rated": 47,
+   "avgRating": 3.29,
+   "best": [
+    "spider-man-brand-new-day"
+   ],
+   "bestValue": 4.5,
+   "worst": [
+    "children-of-the-corn-2020",
+    "in-the-lost-lands"
+   ],
+   "worstValue": 1.0
+  },
+  {
    "name": "Peter",
    "user": "misterbeam5000",
    "hasData": true,
@@ -223,19 +241,6 @@
     "little-brother-2026"
    ],
    "worstValue": 2.5
-  },
-  {
-   "name": "Fipps",
-   "user": "philst",
-   "hasData": false,
-   "profile": "https://letterboxd.com/philst/",
-   "watched": 0,
-   "rated": 0,
-   "avgRating": null,
-   "best": [],
-   "bestValue": null,
-   "worst": [],
-   "worstValue": null
   }
  ],
  "episodes": [
@@ -379,7 +384,9 @@
    "lbRatingCount": 13488,
    "url": "https://letterboxd.com/film/children-of-the-corn-2020/",
    "poster": "assets/posters/children-of-the-corn-2020.jpg",
-   "ratings": {},
+   "ratings": {
+    "philst": 1.0
+   },
    "episodes": [
     {
      "id": "GZ118",
@@ -408,6 +415,7 @@
    "url": "https://letterboxd.com/film/the-running-man-2025/",
    "poster": "assets/posters/the-running-man-2025.jpg",
    "ratings": {
+    "philst": 3.5,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -478,6 +486,7 @@
    "poster": "assets/posters/freaky-tales.jpg",
    "ratings": {
     "audiotax": 4.5,
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -516,6 +525,7 @@
    "url": "https://letterboxd.com/film/nobody-2/",
    "poster": "assets/posters/nobody-2.jpg",
    "ratings": {
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -697,6 +707,7 @@
    "poster": "assets/posters/smile-2-2024.jpg",
    "ratings": {
     "audiotax": 4.0,
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -758,6 +769,7 @@
    "url": "https://letterboxd.com/film/the-toxic-avenger-2023/",
    "poster": "assets/posters/the-toxic-avenger-2023.jpg",
    "ratings": {
+    "philst": 4.0,
     "ckatzorke": 3.0
    },
    "episodes": [
@@ -849,7 +861,8 @@
    "url": "https://letterboxd.com/film/fountain-of-youth-2025/",
    "poster": "assets/posters/fountain-of-youth-2025.jpg",
    "ratings": {
-    "audiotax": 3.5
+    "audiotax": 3.5,
+    "philst": 2.5
    },
    "episodes": [
     {
@@ -889,6 +902,7 @@
    "poster": "assets/posters/the-wrecking-crew-2026.jpg",
    "ratings": {
     "audiotax": 3.0,
+    "philst": 2.0,
     "ckatzorke": 3.0
    },
    "episodes": [
@@ -919,6 +933,7 @@
    "url": "https://letterboxd.com/film/i-know-what-you-did-last-summer-2025/",
    "poster": "assets/posters/i-know-what-you-did-last-summer-2025.jpg",
    "ratings": {
+    "philst": 2.0,
     "ckatzorke": 1.5
    },
    "episodes": [
@@ -1197,6 +1212,7 @@
    "poster": "assets/posters/bring-her-back.jpg",
    "ratings": {
     "audiotax": 4.5,
+    "philst": 4.0,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -1227,6 +1243,7 @@
    "url": "https://letterboxd.com/film/war-machine-2026/",
    "poster": "assets/posters/war-machine-2026.jpg",
    "ratings": {
+    "philst": 3.0,
     "ckatzorke": 3.0
    },
    "episodes": [
@@ -1258,6 +1275,7 @@
    "poster": "assets/posters/28-years-later-the-bone-temple.jpg",
    "ratings": {
     "audiotax": 4.5,
+    "philst": 1.5,
     "misterbeam5000": 4.0,
     "ckatzorke": 4.5
    },
@@ -1325,6 +1343,7 @@
    "poster": "assets/posters/weapons-2025.jpg",
    "ratings": {
     "audiotax": 4.5,
+    "philst": 3.5,
     "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
@@ -1358,6 +1377,7 @@
    "poster": "assets/posters/project-hail-mary.jpg",
    "ratings": {
     "audiotax": 3.5,
+    "philst": 4.0,
     "misterbeam5000": 5.0,
     "ckatzorke": 4.0
    },
@@ -1397,6 +1417,7 @@
    "url": "https://letterboxd.com/film/send-help/",
    "poster": "assets/posters/send-help.jpg",
    "ratings": {
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1428,6 +1449,7 @@
    "url": "https://letterboxd.com/film/in-the-lost-lands/",
    "poster": "assets/posters/in-the-lost-lands.jpg",
    "ratings": {
+    "philst": 1.0,
     "ckatzorke": 1.0
    },
    "episodes": [
@@ -1519,6 +1541,7 @@
    "poster": "assets/posters/redux-redux.jpg",
    "ratings": {
     "audiotax": 4.5,
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1587,6 +1610,7 @@
    "url": "https://letterboxd.com/film/they-will-kill-you/",
    "poster": "assets/posters/they-will-kill-you.jpg",
    "ratings": {
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1617,6 +1641,7 @@
    "url": "https://letterboxd.com/film/the-punisher-one-last-kill/",
    "poster": "assets/posters/the-punisher-one-last-kill.jpg",
    "ratings": {
+    "philst": 4.0,
     "misterbeam5000": 3.0,
     "ckatzorke": 3.5
    },
@@ -1646,6 +1671,7 @@
    "url": "https://letterboxd.com/film/good-boy-2025/",
    "poster": "assets/posters/good-boy-2025.jpg",
    "ratings": {
+    "philst": 3.5,
     "ckatzorke": 2.5
    },
    "episodes": [
@@ -1676,6 +1702,7 @@
    "poster": "assets/posters/lee-cronins-the-mummy.jpg",
    "ratings": {
     "audiotax": 3.0,
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1714,6 +1741,7 @@
    "url": "https://letterboxd.com/film/scream-7/",
    "poster": "assets/posters/scream-7.jpg",
    "ratings": {
+    "philst": 2.0,
     "ckatzorke": 1.5
    },
    "episodes": [
@@ -1745,6 +1773,7 @@
    "poster": "assets/posters/good-luck-have-fun-dont-die.jpg",
    "ratings": {
     "audiotax": 4.0,
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1775,6 +1804,7 @@
    "url": "https://letterboxd.com/film/mortal-kombat-ii/",
    "poster": "assets/posters/mortal-kombat-ii.jpg",
    "ratings": {
+    "philst": 2.5,
     "ckatzorke": 2.0
    },
    "episodes": [
@@ -1803,7 +1833,9 @@
    "lbRatingCount": 238736,
    "url": "https://letterboxd.com/film/wolfs/",
    "poster": "assets/posters/wolfs.jpg",
-   "ratings": {},
+   "ratings": {
+    "philst": 3.5
+   },
    "episodes": [
     {
      "id": "GZ130",
@@ -1890,6 +1922,7 @@
    "url": "https://letterboxd.com/film/ready-or-not-2-here-i-come/",
    "poster": "assets/posters/ready-or-not-2-here-i-come.jpg",
    "ratings": {
+    "philst": 3.5,
     "ckatzorke": 3.5
    },
    "episodes": [
@@ -1947,6 +1980,7 @@
    "url": "https://letterboxd.com/film/get-away-2/",
    "poster": "assets/posters/get-away-2.jpg",
    "ratings": {
+    "philst": 3.5,
     "ckatzorke": 3.5
    },
    "episodes": [
@@ -2007,6 +2041,7 @@
    "url": "https://letterboxd.com/film/spider-man-homecoming/",
    "poster": "assets/posters/spider-man-homecoming.jpg",
    "ratings": {
+    "philst": null,
     "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
@@ -2069,6 +2104,7 @@
    "url": "https://letterboxd.com/film/spider-man-no-way-home/",
    "poster": "assets/posters/spider-man-no-way-home.jpg",
    "ratings": {
+    "philst": 4.0,
     "misterbeam5000": 4.5,
     "ckatzorke": 4.5
    },
@@ -2101,6 +2137,7 @@
    "url": "https://letterboxd.com/film/avengers-infinity-war/",
    "poster": "assets/posters/avengers-infinity-war.jpg",
    "ratings": {
+    "philst": null,
     "misterbeam5000": 5.0,
     "ckatzorke": 4.5
    },
@@ -2374,7 +2411,9 @@
    "lbRatingCount": 1124689,
    "url": "https://letterboxd.com/film/the-sheep-detectives/",
    "poster": "assets/posters/the-sheep-detectives.jpg",
-   "ratings": {},
+   "ratings": {
+    "philst": 4.0
+   },
    "episodes": [
     {
      "id": "GZ132",
@@ -2403,7 +2442,8 @@
    "url": "https://letterboxd.com/film/infinite-2021/",
    "poster": "assets/posters/infinite-2021.jpg",
    "ratings": {
-    "audiotax": 3.0
+    "audiotax": 3.0,
+    "philst": 3.0
    },
    "episodes": [
     {
@@ -2463,6 +2503,7 @@
    "url": "https://letterboxd.com/film/spider-man-brand-new-day/",
    "poster": "assets/posters/spider-man-brand-new-day.jpg",
    "ratings": {
+    "philst": 4.5,
     "misterbeam5000": 5.0,
     "ckatzorke": 4.5
    },
@@ -2502,6 +2543,7 @@
    "url": "https://letterboxd.com/film/supergirl-2026/",
    "poster": "assets/posters/supergirl-2026.jpg",
    "ratings": {
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -2541,6 +2583,7 @@
    "poster": "assets/posters/cold-storage-2026.jpg",
    "ratings": {
     "audiotax": 3.0,
+    "philst": 3.0,
     "ckatzorke": 3.0
    },
    "episodes": [
@@ -2669,6 +2712,7 @@
    "url": "https://letterboxd.com/film/primate-2025/",
    "poster": "assets/posters/primate-2025.jpg",
    "ratings": {
+    "philst": 1.5,
     "ckatzorke": 2.0
    },
    "episodes": [
@@ -2698,7 +2742,9 @@
    "lbRatingCount": 91151,
    "url": "https://letterboxd.com/film/finch/",
    "poster": "assets/posters/finch.jpg",
-   "ratings": {},
+   "ratings": {
+    "philst": 3.0
+   },
    "episodes": [
     {
      "id": "GZ134",
@@ -2939,6 +2985,7 @@
    "url": "https://letterboxd.com/film/normal-2025/",
    "poster": "assets/posters/normal-2025.jpg",
    "ratings": {
+    "philst": 3.5,
     "ckatzorke": 3.5
    },
    "episodes": [
@@ -2968,7 +3015,9 @@
    "lbRatingCount": 80194,
    "url": "https://letterboxd.com/film/mayday-2026/",
    "poster": "assets/posters/mayday-2026.jpg",
-   "ratings": {},
+   "ratings": {
+    "philst": 4.0
+   },
    "episodes": [
     {
      "id": "GZ136",
@@ -2998,6 +3047,7 @@
    "poster": "assets/posters/backrooms-2026.jpg",
    "ratings": {
     "audiotax": 3.0,
+    "philst": 4.0,
     "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
@@ -3192,6 +3242,7 @@
    "url": "https://letterboxd.com/film/black-panther-wakanda-forever/",
    "poster": "assets/posters/black-panther-wakanda-forever.jpg",
    "ratings": {
+    "philst": 4.0,
     "misterbeam5000": 4.0,
     "ckatzorke": 2.5
    },
@@ -3251,6 +3302,7 @@
    "url": "https://letterboxd.com/film/return-to-silent-hill/",
    "poster": "assets/posters/return-to-silent-hill.jpg",
    "ratings": {
+    "philst": 1.5,
     "ckatzorke": 2.0
    },
    "episodes": [
@@ -3282,6 +3334,7 @@
    "poster": "assets/posters/companion-2025.jpg",
    "ratings": {
     "audiotax": 4.5,
+    "philst": 4.0,
     "misterbeam5000": 3.5,
     "ckatzorke": 4.0
    },
@@ -3311,7 +3364,9 @@
    "lbRatingCount": 42602,
    "url": "https://letterboxd.com/film/the-runner-2026-2/",
    "poster": "assets/posters/the-runner-2026-2.jpg",
-   "ratings": {},
+   "ratings": {
+    "philst": 1.5
+   },
    "episodes": [
     {
      "id": "GZ136",
@@ -3369,6 +3424,7 @@
    "url": "https://letterboxd.com/film/resident-evil-2026/",
    "poster": "assets/posters/resident-evil-2026.jpg",
    "ratings": {
+    "philst": 4.0,
     "misterbeam5000": 4.0
    },
    "episodes": [
@@ -3545,6 +3601,7 @@
    "url": "https://letterboxd.com/film/barbarian-2022/",
    "poster": "assets/posters/barbarian-2022.jpg",
    "ratings": {
+    "philst": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -3580,6 +3637,7 @@
    "url": "https://letterboxd.com/film/v-h-s-halloween/",
    "poster": "assets/posters/v-h-s-halloween.jpg",
    "ratings": {
+    "philst": 3.0,
     "ckatzorke": 3.5
    },
    "episodes": [
@@ -3636,6 +3694,7 @@
    "url": "https://letterboxd.com/film/evil-dead-burn/",
    "poster": "assets/posters/evil-dead-burn.jpg",
    "ratings": {
+    "philst": 4.0,
     "ckatzorke": 3.5
    },
    "episodes": [
@@ -3666,6 +3725,7 @@
    "url": "https://letterboxd.com/film/pinocchio-unstrung/",
    "poster": "assets/posters/pinocchio-unstrung.jpg",
    "ratings": {
+    "philst": 3.5,
     "ckatzorke": 3.5
    },
    "episodes": [
