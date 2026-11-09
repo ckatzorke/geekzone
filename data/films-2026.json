@@ -210,15 +210,19 @@
   {
    "name": "Tax",
    "user": "audiotax",
-   "hasData": false,
+   "hasData": true,
    "profile": "https://letterboxd.com/audiotax/",
-   "watched": 0,
-   "rated": 0,
-   "avgRating": null,
-   "best": [],
-   "bestValue": null,
-   "worst": [],
-   "worstValue": null
+   "watched": 27,
+   "rated": 27,
+   "avgRating": 3.83,
+   "best": [
+    "code-3"
+   ],
+   "bestValue": 5.0,
+   "worst": [
+    "little-brother-2026"
+   ],
+   "worstValue": 2.5
   },
   {
    "name": "Fipps",
@@ -473,6 +477,7 @@
    "url": "https://letterboxd.com/film/freaky-tales/",
    "poster": "assets/posters/freaky-tales.jpg",
    "ratings": {
+    "audiotax": 4.5,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -661,6 +666,7 @@
    "url": "https://letterboxd.com/film/the-life-of-chuck/",
    "poster": "assets/posters/the-life-of-chuck.jpg",
    "ratings": {
+    "audiotax": 4.0,
     "ckatzorke": 3.0
    },
    "episodes": [
@@ -690,6 +696,7 @@
    "url": "https://letterboxd.com/film/smile-2-2024/",
    "poster": "assets/posters/smile-2-2024.jpg",
    "ratings": {
+    "audiotax": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -720,6 +727,7 @@
    "url": "https://letterboxd.com/film/code-3/",
    "poster": "assets/posters/code-3.jpg",
    "ratings": {
+    "audiotax": 5.0,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -780,6 +788,7 @@
    "url": "https://letterboxd.com/film/bugonia/",
    "poster": "assets/posters/bugonia.jpg",
    "ratings": {
+    "audiotax": 4.5,
     "misterbeam5000": 4.5,
     "ckatzorke": 4.5
    },
@@ -839,7 +848,9 @@
    "lbRatingCount": 101676,
    "url": "https://letterboxd.com/film/fountain-of-youth-2025/",
    "poster": "assets/posters/fountain-of-youth-2025.jpg",
-   "ratings": {},
+   "ratings": {
+    "audiotax": 3.5
+   },
    "episodes": [
     {
      "id": "GZ121",
@@ -877,6 +888,7 @@
    "url": "https://letterboxd.com/film/the-wrecking-crew-2026/",
    "poster": "assets/posters/the-wrecking-crew-2026.jpg",
    "ratings": {
+    "audiotax": 3.0,
     "ckatzorke": 3.0
    },
    "episodes": [
@@ -937,6 +949,7 @@
    "url": "https://letterboxd.com/film/predator-badlands/",
    "poster": "assets/posters/predator-badlands.jpg",
    "ratings": {
+    "audiotax": 3.5,
     "ckatzorke": 3.5
    },
    "episodes": [
@@ -1064,6 +1077,7 @@
    "url": "https://letterboxd.com/film/ballerina-2025/",
    "poster": "assets/posters/ballerina-2025.jpg",
    "ratings": {
+    "audiotax": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1152,6 +1166,7 @@
    "url": "https://letterboxd.com/film/u-are-the-universe/",
    "poster": "assets/posters/u-are-the-universe.jpg",
    "ratings": {
+    "audiotax": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1181,6 +1196,7 @@
    "url": "https://letterboxd.com/film/bring-her-back/",
    "poster": "assets/posters/bring-her-back.jpg",
    "ratings": {
+    "audiotax": 4.5,
     "ckatzorke": 4.5
    },
    "episodes": [
@@ -1241,6 +1257,7 @@
    "url": "https://letterboxd.com/film/28-years-later-the-bone-temple/",
    "poster": "assets/posters/28-years-later-the-bone-temple.jpg",
    "ratings": {
+    "audiotax": 4.5,
     "misterbeam5000": 4.0,
     "ckatzorke": 4.5
    },
@@ -1307,6 +1324,7 @@
    "url": "https://letterboxd.com/film/weapons-2025/",
    "poster": "assets/posters/weapons-2025.jpg",
    "ratings": {
+    "audiotax": 4.5,
     "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
@@ -1339,6 +1357,7 @@
    "url": "https://letterboxd.com/film/project-hail-mary/",
    "poster": "assets/posters/project-hail-mary.jpg",
    "ratings": {
+    "audiotax": 3.5,
     "misterbeam5000": 5.0,
     "ckatzorke": 4.0
    },
@@ -1499,6 +1518,7 @@
    "url": "https://letterboxd.com/film/redux-redux/",
    "poster": "assets/posters/redux-redux.jpg",
    "ratings": {
+    "audiotax": 4.5,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1655,6 +1675,7 @@
    "url": "https://letterboxd.com/film/lee-cronins-the-mummy/",
    "poster": "assets/posters/lee-cronins-the-mummy.jpg",
    "ratings": {
+    "audiotax": 3.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1723,6 +1744,7 @@
    "url": "https://letterboxd.com/film/good-luck-have-fun-dont-die/",
    "poster": "assets/posters/good-luck-have-fun-dont-die.jpg",
    "ratings": {
+    "audiotax": 4.0,
     "ckatzorke": 4.0
    },
    "episodes": [
@@ -1809,7 +1831,9 @@
    "lbRatingCount": 607553,
    "url": "https://letterboxd.com/film/the-mandalorian-and-grogu/",
    "poster": "assets/posters/the-mandalorian-and-grogu.jpg",
-   "ratings": {},
+   "ratings": {
+    "audiotax": 3.5
+   },
    "episodes": [
     {
      "id": "GZ130",
@@ -2141,7 +2165,9 @@
    "lbRatingCount": 546440,
    "url": "https://letterboxd.com/film/minions-monsters-2026/",
    "poster": "assets/posters/minions-monsters-2026.jpg",
-   "ratings": {},
+   "ratings": {
+    "audiotax": 4.0
+   },
    "episodes": [
     {
      "id": "GZ132",
@@ -2376,7 +2402,9 @@
    "lbRatingCount": 53429,
    "url": "https://letterboxd.com/film/infinite-2021/",
    "poster": "assets/posters/infinite-2021.jpg",
-   "ratings": {},
+   "ratings": {
+    "audiotax": 3.0
+   },
    "episodes": [
     {
      "id": "GZ132",
@@ -2512,6 +2540,7 @@
    "url": "https://letterboxd.com/film/cold-storage-2026/",
    "poster": "assets/posters/cold-storage-2026.jpg",
    "ratings": {
+    "audiotax": 3.0,
     "ckatzorke": 3.0
    },
    "episodes": [
@@ -2571,6 +2600,7 @@
    "url": "https://letterboxd.com/film/obsession-2025/",
    "poster": "assets/posters/obsession-2025.jpg",
    "ratings": {
+    "audiotax": 4.5,
     "misterbeam5000": 4.5,
     "ckatzorke": 4.5
    },
@@ -2819,6 +2849,7 @@
    "url": "https://letterboxd.com/film/furiosa-a-mad-max-saga/",
    "poster": "assets/posters/furiosa-a-mad-max-saga.jpg",
    "ratings": {
+    "audiotax": 3.5,
     "misterbeam5000": 3.5,
     "ckatzorke": 4.5
    },
@@ -2877,7 +2908,9 @@
    "lbRatingCount": 68592,
    "url": "https://letterboxd.com/film/little-brother-2026/",
    "poster": "assets/posters/little-brother-2026.jpg",
-   "ratings": {},
+   "ratings": {
+    "audiotax": 2.5
+   },
    "episodes": [
     {
      "id": "GZ136",
@@ -2964,6 +2997,7 @@
    "url": "https://letterboxd.com/film/backrooms-2026/",
    "poster": "assets/posters/backrooms-2026.jpg",
    "ratings": {
+    "audiotax": 3.0,
     "misterbeam5000": 4.0,
     "ckatzorke": 4.0
    },
@@ -3247,6 +3281,7 @@
    "url": "https://letterboxd.com/film/companion-2025/",
    "poster": "assets/posters/companion-2025.jpg",
    "ratings": {
+    "audiotax": 4.5,
     "misterbeam5000": 3.5,
     "ckatzorke": 4.0
    },
@@ -3449,6 +3484,7 @@
    "url": "https://letterboxd.com/film/the-final-girls/",
    "poster": "assets/posters/the-final-girls.jpg",
    "ratings": {
+    "audiotax": 3.5,
     "ckatzorke": 3.5
    },
    "episodes": [
