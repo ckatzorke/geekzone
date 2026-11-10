@@ -1,0 +1,283 @@
+{
+ "year": 2026,
+ "generated": "2026-11-10",
+ "episodes": [
+  {
+   "id": "GZ117",
+   "no": 117,
+   "type": "PLAY",
+   "title": "Erschreckend gut!",
+   "date": "2026-01-08",
+   "duration": 6724,
+   "url": "https://www.geekzone.de/119-gz117/"
+  },
+  {
+   "id": "GZ118",
+   "no": 118,
+   "type": "WATCH",
+   "title": "Nobody is perfect",
+   "date": "2026-01-21",
+   "duration": 7054,
+   "url": "https://www.geekzone.de/120-gz118/"
+  },
+  {
+   "id": "GZ119",
+   "no": 119,
+   "type": "SPECIAL",
+   "title": "Fantasy Filmfest White Nights 2026",
+   "date": "2026-01-27",
+   "duration": 7045,
+   "url": "https://www.geekzone.de/121-gz119/"
+  },
+  {
+   "id": "GZ120",
+   "no": 120,
+   "type": "PLAY",
+   "title": "Sony Eriksholm",
+   "date": "2026-02-14",
+   "duration": 6866,
+   "url": "https://www.geekzone.de/122-gz120/"
+  },
+  {
+   "id": "GZ121",
+   "no": 121,
+   "type": "WATCH",
+   "title": "Cool gemacht!",
+   "date": "2026-03-01",
+   "duration": 6145,
+   "url": "https://www.geekzone.de/123-gz121/"
+  },
+  {
+   "id": "GZ122",
+   "no": 122,
+   "type": "PLAY",
+   "title": "Klabooster Berry",
+   "date": "2026-03-15",
+   "duration": 4687,
+   "url": "https://www.geekzone.de/124-gz122/"
+  },
+  {
+   "id": "GZ123",
+   "no": 123,
+   "type": "WATCH",
+   "title": "Tabaluga im MCU",
+   "date": "2026-03-29",
+   "duration": 6482,
+   "url": "https://www.geekzone.de/125-gz123/"
+  },
+  {
+   "id": "GZ124",
+   "no": 124,
+   "type": "PLAY",
+   "title": "Indie Fresse 2026",
+   "date": "2026-04-12",
+   "duration": 6952,
+   "url": "https://www.geekzone.de/126-gz124/"
+  },
+  {
+   "id": "GZ125",
+   "no": 125,
+   "type": "WATCH",
+   "title": "Der Finnisher",
+   "date": "2026-04-26",
+   "duration": 6887,
+   "url": "https://www.geekzone.de/127-gz125/"
+  },
+  {
+   "id": "GZ126",
+   "no": 126,
+   "type": "PLAY",
+   "title": "Mein Character hüpft nicht",
+   "date": "2026-05-10",
+   "duration": 7193,
+   "url": "https://www.geekzone.de/128-gz126/"
+  },
+  {
+   "id": "GZ127",
+   "no": 127,
+   "type": "WATCH",
+   "title": "The Good Boys",
+   "date": "2026-05-24",
+   "duration": 5391,
+   "url": "https://www.geekzone.de/129-gz127/"
+  },
+  {
+   "id": "GZ128",
+   "no": 128,
+   "type": "PLAY",
+   "title": "Vulvarine & Speiderman",
+   "date": "2026-06-05",
+   "duration": 7568,
+   "url": "https://www.geekzone.de/130-gz128/"
+  },
+  {
+   "id": "GZ129",
+   "no": 129,
+   "type": "PLAY",
+   "title": "Special: Summer Game Fest und Co.",
+   "date": "2026-06-08",
+   "duration": 3519,
+   "url": "https://www.geekzone.de/131-gz129/"
+  },
+  {
+   "id": "GZ130",
+   "no": 130,
+   "type": "WATCH",
+   "title": "Flackerer",
+   "date": "2026-06-28",
+   "duration": 6060,
+   "url": "https://www.geekzone.de/132-gz130/"
+  },
+  {
+   "id": "GZ131",
+   "no": 131,
+   "type": "PLAY",
+   "title": "Urlaub in Nitsa",
+   "date": "2026-07-09",
+   "duration": 6289,
+   "url": "https://www.geekzone.de/133-gz131/"
+  },
+  {
+   "id": "GZ132",
+   "no": 132,
+   "type": "WATCH",
+   "title": "Swingerfreunde in ihren 60ern",
+   "date": "2026-07-26",
+   "duration": 6310,
+   "url": "https://www.geekzone.de/134-gz132/"
+  },
+  {
+   "id": "GZ133",
+   "no": 133,
+   "type": "PLAY",
+   "title": "Fipps' glasierter Hinterschinken",
+   "date": "2026-08-10",
+   "duration": 5290,
+   "url": "https://www.geekzone.de/135-gz133/"
+  },
+  {
+   "id": "GZ134",
+   "no": 134,
+   "type": "WATCH",
+   "title": "Zusammen in die Strip Mall",
+   "date": "2026-08-23",
+   "duration": 6187,
+   "url": "https://www.geekzone.de/136-gz134/"
+  },
+  {
+   "id": "GZ135",
+   "no": 135,
+   "type": "PLAY",
+   "title": "Big Talk",
+   "date": "2026-09-07",
+   "duration": 7359,
+   "url": "https://www.geekzone.de/137-gz135/"
+  },
+  {
+   "id": "GZ136",
+   "no": 136,
+   "type": "WATCH",
+   "title": "Kann man schon kucken",
+   "date": "2026-09-19",
+   "duration": 6109,
+   "url": "https://www.geekzone.de/138-gz136/"
+  },
+  {
+   "id": "GZ137",
+   "no": 137,
+   "type": "PLAY",
+   "title": "Die Qualität ist hoch!",
+   "date": "2026-10-05",
+   "duration": 7674,
+   "url": "https://www.geekzone.de/139-gz137/"
+  },
+  {
+   "id": "GZ138",
+   "no": 138,
+   "type": "WATCH",
+   "title": "Türlich, türlich (sicher, Digger)",
+   "date": "2026-10-18",
+   "duration": 7449,
+   "url": "https://www.geekzone.de/140-gz138/"
+  },
+  {
+   "id": "GZ139",
+   "no": 139,
+   "type": "SPECIAL",
+   "title": "Horroctober 2026",
+   "date": "2026-10-25",
+   "duration": 5551,
+   "url": "https://www.geekzone.de/141-gz139/"
+  },
+  {
+   "id": "GZ140",
+   "no": 140,
+   "type": "PLAY",
+   "title": "Der Mitternachts-Fleischzug",
+   "date": "2026-11-01",
+   "duration": 6605,
+   "url": "https://www.geekzone.de/142-gz140/"
+  }
+ ],
+ "totalSeconds": 153396,
+ "byType": {
+  "WATCH": 10,
+  "PLAY": 12,
+  "SPECIAL": 2
+ },
+ "gags": {
+  "dinos": {
+   "count": 7,
+   "episodes": [
+    "GZ117",
+    "GZ124",
+    "GZ130",
+    "GZ131",
+    "GZ133",
+    "GZ137",
+    "GZ140"
+   ]
+  },
+  "strumpfhosen": {
+   "count": 6,
+   "episodes": [
+    "GZ127",
+    "GZ132",
+    "GZ134",
+    "GZ140"
+   ]
+  },
+  "partygewalt": {
+   "count": 4,
+   "episodes": [
+    "GZ123",
+    "GZ127",
+    "GZ132",
+    "GZ139"
+   ]
+  },
+  "erotik": {
+   "count": 6,
+   "episodes": [
+    "GZ126",
+    "GZ127",
+    "GZ134",
+    "GZ137"
+   ]
+  },
+  "horroctober": {
+   "count": 11,
+   "episodes": [
+    "GZ136",
+    "GZ138",
+    "GZ139"
+   ]
+  }
+ },
+ "mentions": {
+  "Christian": 141,
+  "Fipps": 124,
+  "Peter": 94,
+  "Tax": 74
+ }
+}
