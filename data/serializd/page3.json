@@ -1,0 +1,39 @@
+{
+    "listItems": [
+        {
+            "showId": 301284,
+            "position": 48,
+            "dateAdded": "2026-10-16T21:47:39Z",
+            "showName": "The Killings at Parrish Station",
+            "bannerImage": "/bhoBX6IddH5ESUKVeZpxKgJBvGH.jpg",
+            "premiereDate": "2026-06-24",
+            "seasonId": 476429,
+            "averageRating": 6.12,
+            "season": {
+                "id": 476429,
+                "seasonId": 476429,
+                "airDate": "2026-06-24",
+                "episodeCount": 6,
+                "name": "Season 1",
+                "overview": "A cosmic mystery intertwines with horror as a gruesome massacre at a remote research station plunges a detective into an inexplicable, decades-long mystery.",
+                "posterPath": "/gP6s0nRTjs7BZeYa2jbbYUo7Hp5.jpg",
+                "seasonNumber": 1
+            },
+            "episode": null,
+            "description": null
+        },
+        {
+            "showId": 80748,
+            "position": 49,
+            "dateAdded": "2026-10-16T21:47:39Z",
+            "showName": "FBI",
+            "bannerImage": "/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+            "premiereDate": "2018-09-25",
+            "seasonId": null,
+            "averageRating": 7.38,
+            "season": null,
+            "episode": null,
+            "description": null
+        }
+    ]
+}
