@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geekzone Spielejahr 2026</title>
+<meta name="description" content="Der Jahresrückblick des Geekzone-Podcasts: alle besprochenen Spiele 2026 und in welcher Folge sie dran waren.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  td.film img.cover { width: 30px; height: 40px; object-fit: cover; }
+  td.film .s { display: block; color: var(--ink-3); font-weight: 400; font-size: .78rem; margin-top: .1rem; }
+  td.pos { color: var(--ink-3); font-variant-numeric: tabular-nums; width: 3rem; }
+  .summary { display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-end; }
+  .summary .num { font-size: 2.6rem; font-weight: 800; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
+  .summary .lbl { font-size: .75rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; margin-top: .3rem; }
+  .summary p { flex: 1 1 260px; margin: 0; color: var(--ink-2); font-size: .9rem; line-height: 1.55; }
+</style>
+</head>
+<body>
+
+<header class="hero-header">
+  <a href="index.html" class="hero-logo"><img src="assets/logo.jpg" alt="Geekzone"></a>
+  <div class="hero-text">
+    <h1>Das Spielejahr <span class="yr" id="yr">2026</span></h1>
+    <p>Alle Spiele, die wir in den PLAY-Folgen der Geekzone besprochen haben, mit Link zur jeweiligen Folge.</p>
+    <nav class="hero-nav" aria-label="Rubriken">
+      <a href="index.html">Übersicht</a>
+      <a href="filme.html">Filme</a>
+      <a href="serien.html">Serien</a>
+      <a href="spiele.html" class="active" aria-current="page">Spiele</a>
+      <a href="https://www.geekzone.de/">Podcast</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app">
+  <noscript><div class="card"><p>Diese Seite braucht JavaScript.</p></div></noscript>
+</main>
+
+<footer id="footer"></footer>
+
+<script src="data/games-2026.js"></script>
+<script>
+(() => {
+  const D = window.GZ_GAMES;
+  const app = document.getElementById('app');
+  if (!D) { app.innerHTML = '<div class="card"><p>Keine Daten gefunden. Bitte <code>python3 scripts/build_games.py</code> ausführen.</p></div>'; return; }
+
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const fmtLong = iso => new Date(iso + 'T12:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  const G = D.games;
+  G.forEach(g => { g.episodes = g.episodes || []; });
+  const usedEps = (D.episodes || []).filter(e => G.some(g => g.episodes.some(x => x.id === e.id)));
+  const multi = G.filter(g => g.episodes.length > 1).length;
+
+  document.getElementById('yr').textContent = D.year;
+  document.title = `Geekzone Spielejahr ${D.year}`;
+
+  app.innerHTML = `
+    <section class="card">
+      <span class="card-label">Spiele</span>
+      <div class="summary">
+        <div><div class="num">${D.count}</div><div class="lbl">Spiele</div></div>
+        <div><div class="num">${usedEps.length}</div><div class="lbl">Folgen mit Spielen</div></div>
+        <div><div class="num">${multi}</div><div class="lbl">mehrfach besprochen</div></div>
+        <p>${D.entries} Einträge auf der <a href="${esc(D.listUrl)}" target="_blank" rel="noopener">Backloggd-Liste „${esc(D.listName)}“</a>.
+        Spiele, die mehrfach auf der Liste stehen (z.B. Ersteindruck und Fazit), sind hier zusammengefasst.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="controls">
+        <input type="search" id="q" placeholder="Spiel suchen …" aria-label="Spiel suchen">
+        <select id="ep" aria-label="Nach Folge filtern">
+          <option value="">Alle Folgen</option>
+          ${usedEps.map(e => `<option value="${esc(e.id)}">${esc(e.id)}: ${esc(e.title)}</option>`).join('')}
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr>
+            <th data-k="position"><button>#</button></th>
+            <th data-k="title"><button>Spiel</button></th>
+            <th data-k="ep"><button>Folge</button></th>
+          </tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="muted" id="count" style="margin-top:.8rem"></p>
+    </section>`;
+
+  document.getElementById('footer').innerHTML = `
+    Stand: ${fmtLong(D.generated)} · Daten von <a href="${esc(D.listUrl)}" target="_blank" rel="noopener">Backloggd</a> ·
+    <a href="https://www.geekzone.de/">geekzone.de</a>`;
+
+  const epCell = g => g.episodes.length
+    ? g.episodes.map(e => `<a class="ep-chip${e.how === 'inferred' ? ' inf' : ''}" href="${esc(e.url)}" target="_blank" rel="noopener"
+        title="${esc(e.id)}: ${esc(e.title)}${e.how === 'inferred' ? ' (aus der Reihenfolge der Liste abgeleitet)' : ''}">${esc(e.id)}</a>`).join('')
+    : '<span class="na">–</span>';
+
+  let sortKey = 'position', sortDir = 1;
+  const val = (g, k) => k === 'ep' ? g.episodes[0]?.no : g[k];
+
+  const render = () => {
+    const q = document.getElementById('q').value.trim().toLowerCase();
+    const ep = document.getElementById('ep').value;
+    const rows = G
+      .filter(g => (!q || g.title.toLowerCase().includes(q)) && (!ep || g.episodes.some(e => e.id === ep)))
+      .sort((a, b) => {
+        const va = val(a, sortKey), vb = val(b, sortKey);
+        if (va == null && vb == null) return 0;
+        if (va == null) return 1;
+        if (vb == null) return -1;
+        if (typeof va === 'string') return sortDir * va.localeCompare(vb, 'de');
+        return sortDir * (va - vb);
+      });
+    document.getElementById('rows').innerHTML = rows.map(g => `
+      <tr>
+        <td class="pos">${g.position + 1}</td>
+        <td class="film">${g.cover ? `<img class="cover" src="${esc(g.cover)}" alt="" loading="lazy" width="30" height="40">` : ''}
+          <span><a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.title)}</a>${g.entries > 1 ? `<span class="s">${g.entries}× auf der Liste</span>` : ''}</span></td>
+        <td class="ep">${epCell(g)}</td>
+      </tr>`).join('');
+    document.getElementById('count').textContent = `${rows.length} von ${G.length} Spielen · # = Position auf der Liste (chronologisch) · gestrichelte Folge = aus der Reihenfolge der Liste abgeleitet`;
+    document.querySelectorAll('th[data-k]').forEach(th => {
+      if (th.dataset.k === sortKey) th.setAttribute('aria-sort', sortDir > 0 ? 'ascending' : 'descending');
+      else th.removeAttribute('aria-sort');
+    });
+  };
+  document.querySelectorAll('th[data-k] button').forEach(btn => btn.addEventListener('click', () => {
+    const k = btn.parentElement.dataset.k;
+    if (k === sortKey) sortDir *= -1; else { sortKey = k; sortDir = 1; }
+    render();
+  }));
+  document.getElementById('q').addEventListener('input', render);
+  document.getElementById('ep').addEventListener('change', render);
+  render();
+})();
+</script>
+</body>
+</html>

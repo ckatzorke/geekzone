@@ -214,8 +214,11 @@ def tokens(s):
     return tuple(ROMAN.get(t, t) for t in toks if t not in ARTICLES)
 
 
-def load_episodes(year):
-    """Liest den Podcast-Feed; liefert Folgen des Jahres (+ Januar des Folgejahres)."""
+def load_episodes(year, play=False):
+    """Liest den Podcast-Feed; liefert Folgen des Jahres (+ Januar des Folgejahres).
+
+    play=False: alle Folgen außer PLAY (Filme/Serien); play=True: nur PLAY-Folgen (Spiele).
+    """
     xml = fetch(FEED_URL, fresh=True)
     eps = []
     for it in re.findall(r"<item>(.*?)</item>", xml, re.S):
@@ -224,7 +227,7 @@ def load_episodes(year):
         if not (date.year == year or (date.year == year + 1 and date.month == 1)):
             continue
         m = re.match(r"GZ\s*(\d+)", title)
-        if not m or re.search(r"\bPLAY\b", title):  # PLAY-Folgen behandeln Spiele, nicht Filme
+        if not m or bool(re.search(r"\bPLAY\b", title)) != play:  # PLAY-Folgen = Spiele
             continue
         link = (re.search(r"<link>(.*?)</link>", it) or [None, ""])[1].strip()
         path = link.rstrip("/").rsplit("/", 1)[-1]
@@ -240,6 +243,12 @@ def load_episodes(year):
     return sorted(eps, key=lambda e: e["no"])
 
 
+def _strip_noise(s):
+    """Zusätze ohne Titelbedeutung: Staffelangaben, 'Revival', 'Staffelstart' …"""
+    s = re.sub(r"\b(?:Staffelstart|Staffelfinale|Revival|Final Verdict)\b", "", s, flags=re.I)
+    return re.sub(r"\b(?:Season|Staffel|Seasons|Staffeln)\s*\d+(?:\s*[-–&+]\s*\d+)?\b|\bS\d{1,2}\b", "", s, flags=re.I)
+
+
 def _bullet_parts(bullet):
     """Bereinigt einen Themenpunkt und zerlegt ihn in Teilstücke [(tokens, jahr|None)]."""
     b = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", bullet)      # Markdown-Links
@@ -247,8 +256,7 @@ def _bullet_parts(bullet):
     b = PEOPLE_PAREN.sub("", b)                                # (Peter, Sidekick: …)
     b = re.sub(r"\((?!\d{4}\))[^()]*\)", "", b)                # sonstige Klammern außer (1979)
     b = re.sub(r"\s+im\s+(?:Kino|Stream\w*)\b", "", b, flags=re.I)
-    b = re.sub(r"\b(?:Staffelstart|Staffelfinale|Revival|Final Verdict)\b", "", b, flags=re.I)
-    b = re.sub(r"\b(?:Season|Staffel|Seasons|Staffeln)\s*\d+(?:\s*[-–&+]\s*\d+)?\b|\bS\d{1,2}\b", "", b, flags=re.I)
+    b = _strip_noise(b)
     pieces = [b] + re.split(r"\s+[-–]\s+|,\s+|\s+&\s+|:\s+|\s+und\s+", b)
     out = []
     for p in pieces:
@@ -266,11 +274,13 @@ def _contains(hay, needle):
     return any(hay[i:i + n] == needle for i in range(len(hay) - n + 1))
 
 
-def assign_episodes(films, year):
-    """Ordnet Einträgen (dicts mit slug, title, year|None) die Geekzone-Folgen zu."""
-    eps = load_episodes(year)
+def assign_episodes(films, year, play=False):
+    """Ordnet Einträgen (dicts mit slug, title, year|None, optional aliases) die Geekzone-Folgen zu."""
+    eps = load_episodes(year, play)
     print(f"Feed: {len(eps)} Folgen aus {year}", file=sys.stderr)
     ftok = {f["slug"]: tokens(f["title"]) for f in films}
+    alts = {f["slug"]: [ftok[f["slug"]]] + [t for t in (tokens(a) for a in [_strip_noise(f["title"])] + f.get("aliases", [])) if t]
+            for f in films}
     hits = {f["slug"]: {} for f in films}  # slug -> {ep_id: "match"|"inferred"|"manual"}
 
     for ep in eps:
@@ -280,13 +290,13 @@ def assign_episodes(films, year):
             exact, partial = set(), set()
             for part, yr in _bullet_parts(bullet):
                 for f in films:
-                    t = ftok[f["slug"]]
                     if yr and f.get("year") and f["year"] != yr:
                         continue
-                    if t == part:
-                        exact.add(f["slug"])
-                    elif len(t) >= 2 and _contains(part, t):
-                        partial.add(f["slug"])
+                    for t in alts[f["slug"]]:
+                        if t == part:
+                            exact.add(f["slug"])
+                        elif len(t) >= 2 and _contains(part, t):
+                            partial.add(f["slug"])
             # "Evil Dead" nicht zusätzlich zu "Evil Dead Burn" zählen
             found = exact | {s for s in partial
                              if not any(o != s and len(ftok[o]) > len(ftok[s]) and _contains(ftok[o], ftok[s])

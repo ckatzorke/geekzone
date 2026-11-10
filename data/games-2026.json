@@ -1,0 +1,1808 @@
+{
+ "year": 2026,
+ "listName": "Geekzone PLAY 2026",
+ "listUrl": "https://backloggd.com/u/katzenmann/list/geekzone-play-2026/",
+ "generated": "2026-11-10",
+ "entries": 87,
+ "count": 80,
+ "episodes": [
+  {
+   "id": "GZ117",
+   "no": 117,
+   "title": "PLAY - Erschreckend gut!",
+   "date": "2026-01-08",
+   "url": "https://www.geekzone.de/119-gz117/"
+  },
+  {
+   "id": "GZ120",
+   "no": 120,
+   "title": "PLAY - Sony Eriksholm",
+   "date": "2026-02-14",
+   "url": "https://www.geekzone.de/122-gz120/"
+  },
+  {
+   "id": "GZ122",
+   "no": 122,
+   "title": "PLAY - Klabooster Berry",
+   "date": "2026-03-15",
+   "url": "https://www.geekzone.de/124-gz122/"
+  },
+  {
+   "id": "GZ124",
+   "no": 124,
+   "title": "PLAY - Indie Fresse 2026",
+   "date": "2026-04-12",
+   "url": "https://www.geekzone.de/126-gz124/"
+  },
+  {
+   "id": "GZ126",
+   "no": 126,
+   "title": "PLAY - Mein Character hüpft nicht",
+   "date": "2026-05-10",
+   "url": "https://www.geekzone.de/128-gz126/"
+  },
+  {
+   "id": "GZ128",
+   "no": 128,
+   "title": "PLAY - Vulvarine & Speiderman",
+   "date": "2026-06-05",
+   "url": "https://www.geekzone.de/130-gz128/"
+  },
+  {
+   "id": "GZ129",
+   "no": 129,
+   "title": "PLAY - Special: Summer Game Fest und Co.",
+   "date": "2026-06-08",
+   "url": "https://www.geekzone.de/131-gz129/"
+  },
+  {
+   "id": "GZ131",
+   "no": 131,
+   "title": "PLAY - Urlaub in Nitsa",
+   "date": "2026-07-09",
+   "url": "https://www.geekzone.de/133-gz131/"
+  },
+  {
+   "id": "GZ133",
+   "no": 133,
+   "title": "PLAY - Fipps' glasierter Hinterschinken",
+   "date": "2026-08-10",
+   "url": "https://www.geekzone.de/135-gz133/"
+  },
+  {
+   "id": "GZ135",
+   "no": 135,
+   "title": "PLAY - Big Talk",
+   "date": "2026-09-07",
+   "url": "https://www.geekzone.de/137-gz135/"
+  },
+  {
+   "id": "GZ137",
+   "no": 137,
+   "title": "PLAY - Die Qualität ist hoch!",
+   "date": "2026-10-05",
+   "url": "https://www.geekzone.de/139-gz137/"
+  },
+  {
+   "id": "GZ140",
+   "no": 140,
+   "title": "PLAY - Der Mitternachts-Fleischzug",
+   "date": "2026-11-01",
+   "url": "https://www.geekzone.de/142-gz140/"
+  }
+ ],
+ "games": [
+  {
+   "slug": "death-stranding-2-on-the-beach",
+   "title": "Death Stranding 2: On the Beach",
+   "position": 0,
+   "entries": 1,
+   "url": "https://backloggd.com/games/death-stranding-2-on-the-beach/",
+   "cover": "assets/games/death-stranding-2-on-the-beach.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "eriksholm-the-stolen-dream",
+   "title": "Eriksholm: The Stolen Dream",
+   "position": 1,
+   "entries": 1,
+   "url": "https://backloggd.com/games/eriksholm-the-stolen-dream/",
+   "cover": "assets/games/eriksholm-the-stolen-dream.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    },
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "mandragora-whispers-of-the-witch-tree",
+   "title": "Mandragora: Whispers of the Witch Tree",
+   "position": 2,
+   "entries": 1,
+   "url": "https://backloggd.com/games/mandragora-whispers-of-the-witch-tree/",
+   "cover": "assets/games/mandragora-whispers-of-the-witch-tree.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "tainted-grail-the-fall-of-avalon",
+   "title": "Tainted Grail: The Fall of Avalon",
+   "position": 3,
+   "entries": 1,
+   "url": "https://backloggd.com/games/tainted-grail-the-fall-of-avalon/",
+   "cover": "assets/games/tainted-grail-the-fall-of-avalon.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    },
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "marvels-deadpool-vr",
+   "title": "Marvel's Deadpool VR",
+   "position": 4,
+   "entries": 1,
+   "url": "https://backloggd.com/games/marvels-deadpool-vr/",
+   "cover": "assets/games/marvels-deadpool-vr.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-outlast-trials",
+   "title": "The Outlast Trials",
+   "position": 5,
+   "entries": 1,
+   "url": "https://backloggd.com/games/the-outlast-trials/",
+   "cover": "assets/games/the-outlast-trials.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "q-remastered",
+   "title": "Q Remastered",
+   "position": 6,
+   "entries": 1,
+   "url": "https://backloggd.com/games/q-remastered/",
+   "cover": "assets/games/q-remastered.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "pioneers-of-pagonia",
+   "title": "Pioneers of Pagonia",
+   "position": 7,
+   "entries": 1,
+   "url": "https://backloggd.com/games/pioneers-of-pagonia/",
+   "cover": "assets/games/pioneers-of-pagonia.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "manor-lords",
+   "title": "Manor Lords",
+   "position": 8,
+   "entries": 1,
+   "url": "https://backloggd.com/games/manor-lords/",
+   "cover": "assets/games/manor-lords.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "tempest-rising",
+   "title": "Tempest Rising",
+   "position": 9,
+   "entries": 2,
+   "url": "https://backloggd.com/games/tempest-rising/",
+   "cover": "assets/games/tempest-rising.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    },
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "call-of-duty-black-ops-7",
+   "title": "Call of Duty: Black Ops 7",
+   "position": 10,
+   "entries": 1,
+   "url": "https://backloggd.com/games/call-of-duty-black-ops-7/",
+   "cover": "assets/games/call-of-duty-black-ops-7.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "inferred"
+    }
+   ]
+  },
+  {
+   "slug": "alone-in-the-dark--1",
+   "title": "Alone in the Dark",
+   "position": 11,
+   "entries": 1,
+   "url": "https://backloggd.com/games/alone-in-the-dark--1/",
+   "cover": "assets/games/alone-in-the-dark--1.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "project-zomboid",
+   "title": "Project Zomboid",
+   "position": 12,
+   "entries": 1,
+   "url": "https://backloggd.com/games/project-zomboid/",
+   "cover": "assets/games/project-zomboid.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "indiana-jones-and-the-great-circle",
+   "title": "Indiana Jones and the Great Circle",
+   "position": 13,
+   "entries": 2,
+   "url": "https://backloggd.com/games/indiana-jones-and-the-great-circle/",
+   "cover": "assets/games/indiana-jones-and-the-great-circle.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    },
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "like-a-dragon-pirate-yakuza-in-hawaii",
+   "title": "Like a Dragon: Pirate Yakuza in Hawaii",
+   "position": 14,
+   "entries": 1,
+   "url": "https://backloggd.com/games/like-a-dragon-pirate-yakuza-in-hawaii/",
+   "cover": "assets/games/like-a-dragon-pirate-yakuza-in-hawaii.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "peridium",
+   "title": "Peridium",
+   "position": 15,
+   "entries": 1,
+   "url": "https://backloggd.com/games/peridium/",
+   "cover": "assets/games/peridium.jpg",
+   "episodes": [
+    {
+     "id": "GZ117",
+     "no": 117,
+     "title": "PLAY - Erschreckend gut!",
+     "url": "https://www.geekzone.de/119-gz117/",
+     "date": "2026-01-08",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "nioh-3",
+   "title": "Nioh 3",
+   "position": 16,
+   "entries": 2,
+   "url": "https://backloggd.com/games/nioh-3/",
+   "cover": "assets/games/nioh-3.jpg",
+   "episodes": [
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    },
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "loco-motive",
+   "title": "Loco Motive",
+   "position": 17,
+   "entries": 1,
+   "url": "https://backloggd.com/games/loco-motive/",
+   "cover": "assets/games/loco-motive.jpg",
+   "episodes": [
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-exit-8",
+   "title": "The Exit 8",
+   "position": 18,
+   "entries": 1,
+   "url": "https://backloggd.com/games/the-exit-8/",
+   "cover": "assets/games/the-exit-8.jpg",
+   "episodes": [
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "high-on-life-2",
+   "title": "High on Life 2",
+   "position": 19,
+   "entries": 1,
+   "url": "https://backloggd.com/games/high-on-life-2/",
+   "cover": "assets/games/high-on-life-2.jpg",
+   "episodes": [
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "kingdom-come-deliverance-ii",
+   "title": "Kingdom Come: Deliverance II",
+   "position": 20,
+   "entries": 1,
+   "url": "https://backloggd.com/games/kingdom-come-deliverance-ii/",
+   "cover": "assets/games/kingdom-come-deliverance-ii.jpg",
+   "episodes": [
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "god-of-war-sons-of-sparta",
+   "title": "God of War Sons of Sparta",
+   "position": 21,
+   "entries": 1,
+   "url": "https://backloggd.com/games/god-of-war-sons-of-sparta/",
+   "cover": "assets/games/god-of-war-sons-of-sparta.jpg",
+   "episodes": [
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "mio-memories-in-orbit",
+   "title": "Mio: Memories in Orbit",
+   "position": 22,
+   "entries": 1,
+   "url": "https://backloggd.com/games/mio-memories-in-orbit/",
+   "cover": "assets/games/mio-memories-in-orbit.jpg",
+   "episodes": [
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "total-chaos--2",
+   "title": "Total Chaos",
+   "position": 23,
+   "entries": 1,
+   "url": "https://backloggd.com/games/total-chaos--2/",
+   "cover": "assets/games/total-chaos--2.jpg",
+   "episodes": [
+    {
+     "id": "GZ120",
+     "no": 120,
+     "title": "PLAY - Sony Eriksholm",
+     "url": "https://www.geekzone.de/122-gz120/",
+     "date": "2026-02-14",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "clair-obscur-expedition-33",
+   "title": "Clair Obscur: Expedition 33",
+   "position": 24,
+   "entries": 1,
+   "url": "https://backloggd.com/games/clair-obscur-expedition-33/",
+   "cover": "assets/games/clair-obscur-expedition-33.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "ghost-of-yotei",
+   "title": "Ghost of Yotei",
+   "position": 25,
+   "entries": 1,
+   "url": "https://backloggd.com/games/ghost-of-yotei/",
+   "cover": "assets/games/ghost-of-yotei.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "resident-evil-requiem",
+   "title": "Resident Evil Requiem",
+   "position": 26,
+   "entries": 2,
+   "url": "https://backloggd.com/games/resident-evil-requiem/",
+   "cover": "assets/games/resident-evil-requiem.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "stellar-blade",
+   "title": "Stellar Blade",
+   "position": 27,
+   "entries": 2,
+   "url": "https://backloggd.com/games/stellar-blade/",
+   "cover": "assets/games/stellar-blade.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "back-in-the-swamp",
+   "title": "Back in the Swamp",
+   "position": 28,
+   "entries": 1,
+   "url": "https://backloggd.com/games/back-in-the-swamp/",
+   "cover": "assets/games/back-in-the-swamp.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "despelote",
+   "title": "Despelote",
+   "position": 29,
+   "entries": 1,
+   "url": "https://backloggd.com/games/despelote/",
+   "cover": "assets/games/despelote.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "sword-of-the-sea",
+   "title": "Sword of the Sea",
+   "position": 30,
+   "entries": 1,
+   "url": "https://backloggd.com/games/sword-of-the-sea/",
+   "cover": "assets/games/sword-of-the-sea.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "menace--1",
+   "title": "Menace",
+   "position": 31,
+   "entries": 1,
+   "url": "https://backloggd.com/games/menace--1/",
+   "cover": "assets/games/menace--1.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "cairn--3",
+   "title": "Cairn",
+   "position": 32,
+   "entries": 1,
+   "url": "https://backloggd.com/games/cairn--3/",
+   "cover": "assets/games/cairn--3.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "fretless-the-wrath-of-riffson--2",
+   "title": "Fretless: The Wrath of Riffson",
+   "position": 33,
+   "entries": 1,
+   "url": "https://backloggd.com/games/fretless-the-wrath-of-riffson--2/",
+   "cover": "assets/games/fretless-the-wrath-of-riffson--2.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "earth-must-die",
+   "title": "Earth Must Die",
+   "position": 34,
+   "entries": 1,
+   "url": "https://backloggd.com/games/earth-must-die/",
+   "cover": "assets/games/earth-must-die.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "anno-mutationem",
+   "title": "Anno: Mutationem",
+   "position": 35,
+   "entries": 1,
+   "url": "https://backloggd.com/games/anno-mutationem/",
+   "cover": "assets/games/anno-mutationem.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "season-a-letter-to-the-future",
+   "title": "Season: A Letter to the Future",
+   "position": 36,
+   "entries": 1,
+   "url": "https://backloggd.com/games/season-a-letter-to-the-future/",
+   "cover": "assets/games/season-a-letter-to-the-future.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "dreamcore",
+   "title": "Dreamcore",
+   "position": 37,
+   "entries": 1,
+   "url": "https://backloggd.com/games/dreamcore/",
+   "cover": "assets/games/dreamcore.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "chromagun-2-dye-hard",
+   "title": "ChromaGun 2: Dye Hard",
+   "position": 38,
+   "entries": 1,
+   "url": "https://backloggd.com/games/chromagun-2-dye-hard/",
+   "cover": "assets/games/chromagun-2-dye-hard.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "crisol-theater-of-idols",
+   "title": "Crisol: Theater of Idols",
+   "position": 39,
+   "entries": 1,
+   "url": "https://backloggd.com/games/crisol-theater-of-idols/",
+   "cover": "assets/games/crisol-theater-of-idols.jpg",
+   "episodes": [
+    {
+     "id": "GZ122",
+     "no": 122,
+     "title": "PLAY - Klabooster Berry",
+     "url": "https://www.geekzone.de/124-gz122/",
+     "date": "2026-03-15",
+     "how": "match"
+    },
+    {
+     "id": "GZ124",
+     "no": 124,
+     "title": "PLAY - Indie Fresse 2026",
+     "url": "https://www.geekzone.de/126-gz124/",
+     "date": "2026-04-12",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "little-nightmares-iii--1",
+   "title": "Little Nightmares III",
+   "position": 40,
+   "entries": 1,
+   "url": "https://backloggd.com/games/little-nightmares-iii--1/",
+   "cover": "assets/games/little-nightmares-iii--1.jpg",
+   "episodes": [
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    },
+    {
+     "id": "GZ128",
+     "no": 128,
+     "title": "PLAY - Vulvarine & Speiderman",
+     "url": "https://www.geekzone.de/130-gz128/",
+     "date": "2026-06-05",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "darwins-paradox",
+   "title": "Darwin's Paradox!",
+   "position": 42,
+   "entries": 1,
+   "url": "https://backloggd.com/games/darwins-paradox/",
+   "cover": "assets/games/darwins-paradox.jpg",
+   "episodes": [
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "guns-of-fury",
+   "title": "Guns of Fury",
+   "position": 45,
+   "entries": 1,
+   "url": "https://backloggd.com/games/guns-of-fury/",
+   "cover": "assets/games/guns-of-fury.jpg",
+   "episodes": [
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "pragmata",
+   "title": "Pragmata",
+   "position": 46,
+   "entries": 1,
+   "url": "https://backloggd.com/games/pragmata/",
+   "cover": "assets/games/pragmata.jpg",
+   "episodes": [
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "saros",
+   "title": "Saros",
+   "position": 47,
+   "entries": 1,
+   "url": "https://backloggd.com/games/saros/",
+   "cover": "assets/games/saros.jpg",
+   "episodes": [
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    },
+    {
+     "id": "GZ128",
+     "no": 128,
+     "title": "PLAY - Vulvarine & Speiderman",
+     "url": "https://www.geekzone.de/130-gz128/",
+     "date": "2026-06-05",
+     "how": "match"
+    },
+    {
+     "id": "GZ131",
+     "no": 131,
+     "title": "PLAY - Urlaub in Nitsa",
+     "url": "https://www.geekzone.de/133-gz131/",
+     "date": "2026-07-09",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "replaced",
+   "title": "Replaced",
+   "position": 48,
+   "entries": 1,
+   "url": "https://backloggd.com/games/replaced/",
+   "cover": "assets/games/replaced.jpg",
+   "episodes": [
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "crimson-desert-enhanced--1",
+   "title": "Crimson Desert Enhanced",
+   "position": 49,
+   "entries": 1,
+   "url": "https://backloggd.com/games/crimson-desert-enhanced--1/",
+   "cover": "assets/games/crimson-desert-enhanced--1.jpg",
+   "episodes": [
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "zero-parades-for-dead-spies",
+   "title": "Zero Parades: For Dead Spies",
+   "position": 50,
+   "entries": 1,
+   "url": "https://backloggd.com/games/zero-parades-for-dead-spies/",
+   "cover": "assets/games/zero-parades-for-dead-spies.jpg",
+   "episodes": [
+    {
+     "id": "GZ126",
+     "no": 126,
+     "title": "PLAY - Mein Character hüpft nicht",
+     "url": "https://www.geekzone.de/128-gz126/",
+     "date": "2026-05-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-legend-of-zelda-echoes-of-wisdom",
+   "title": "The Legend of Zelda: Echoes of Wisdom",
+   "position": 51,
+   "entries": 2,
+   "url": "https://backloggd.com/games/the-legend-of-zelda-echoes-of-wisdom/",
+   "cover": "assets/games/the-legend-of-zelda-echoes-of-wisdom.jpg",
+   "episodes": [
+    {
+     "id": "GZ131",
+     "no": 131,
+     "title": "PLAY - Urlaub in Nitsa",
+     "url": "https://www.geekzone.de/133-gz131/",
+     "date": "2026-07-09",
+     "how": "match"
+    },
+    {
+     "id": "GZ133",
+     "no": 133,
+     "title": "PLAY - Fipps' glasierter Hinterschinken",
+     "url": "https://www.geekzone.de/135-gz133/",
+     "date": "2026-08-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "007-first-light",
+   "title": "007 First Light",
+   "position": 52,
+   "entries": 1,
+   "url": "https://backloggd.com/games/007-first-light/",
+   "cover": "assets/games/007-first-light.jpg",
+   "episodes": [
+    {
+     "id": "GZ128",
+     "no": 128,
+     "title": "PLAY - Vulvarine & Speiderman",
+     "url": "https://www.geekzone.de/130-gz128/",
+     "date": "2026-06-05",
+     "how": "match"
+    },
+    {
+     "id": "GZ131",
+     "no": 131,
+     "title": "PLAY - Urlaub in Nitsa",
+     "url": "https://www.geekzone.de/133-gz131/",
+     "date": "2026-07-09",
+     "how": "match"
+    },
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    },
+    {
+     "id": "GZ137",
+     "no": 137,
+     "title": "PLAY - Die Qualität ist hoch!",
+     "url": "https://www.geekzone.de/139-gz137/",
+     "date": "2026-10-05",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "remember-me",
+   "title": "Remember Me",
+   "position": 53,
+   "entries": 1,
+   "url": "https://backloggd.com/games/remember-me/",
+   "cover": "assets/games/remember-me.jpg",
+   "episodes": [
+    {
+     "id": "GZ131",
+     "no": 131,
+     "title": "PLAY - Urlaub in Nitsa",
+     "url": "https://www.geekzone.de/133-gz131/",
+     "date": "2026-07-09",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "call-of-the-sea",
+   "title": "Call of the Sea",
+   "position": 54,
+   "entries": 1,
+   "url": "https://backloggd.com/games/call-of-the-sea/",
+   "cover": "assets/games/call-of-the-sea.jpg",
+   "episodes": [
+    {
+     "id": "GZ131",
+     "no": 131,
+     "title": "PLAY - Urlaub in Nitsa",
+     "url": "https://www.geekzone.de/133-gz131/",
+     "date": "2026-07-09",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "rubinite",
+   "title": "Rubinite",
+   "position": 55,
+   "entries": 1,
+   "url": "https://backloggd.com/games/rubinite/",
+   "cover": "assets/games/rubinite.jpg",
+   "episodes": [
+    {
+     "id": "GZ133",
+     "no": 133,
+     "title": "PLAY - Fipps' glasierter Hinterschinken",
+     "url": "https://www.geekzone.de/135-gz133/",
+     "date": "2026-08-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "beast-of-reincarnation",
+   "title": "Beast of Reincarnation",
+   "position": 56,
+   "entries": 1,
+   "url": "https://backloggd.com/games/beast-of-reincarnation/",
+   "cover": "assets/games/beast-of-reincarnation.jpg",
+   "episodes": [
+    {
+     "id": "GZ133",
+     "no": 133,
+     "title": "PLAY - Fipps' glasierter Hinterschinken",
+     "url": "https://www.geekzone.de/135-gz133/",
+     "date": "2026-08-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "echoes-of-the-end",
+   "title": "Echoes of the End",
+   "position": 57,
+   "entries": 1,
+   "url": "https://backloggd.com/games/echoes-of-the-end/",
+   "cover": "assets/games/echoes-of-the-end.jpg",
+   "episodes": [
+    {
+     "id": "GZ133",
+     "no": 133,
+     "title": "PLAY - Fipps' glasierter Hinterschinken",
+     "url": "https://www.geekzone.de/135-gz133/",
+     "date": "2026-08-10",
+     "how": "match"
+    },
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "halo-campaign-evolved",
+   "title": "Halo: Campaign Evolved",
+   "position": 59,
+   "entries": 1,
+   "url": "https://backloggd.com/games/halo-campaign-evolved/",
+   "cover": "assets/games/halo-campaign-evolved.jpg",
+   "episodes": [
+    {
+     "id": "GZ133",
+     "no": 133,
+     "title": "PLAY - Fipps' glasierter Hinterschinken",
+     "url": "https://www.geekzone.de/135-gz133/",
+     "date": "2026-08-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "delores-a-thimbleweed-park-mini-adventure",
+   "title": "Delores: A Thimbleweed Park Mini-Adventure",
+   "position": 60,
+   "entries": 1,
+   "url": "https://backloggd.com/games/delores-a-thimbleweed-park-mini-adventure/",
+   "cover": "assets/games/delores-a-thimbleweed-park-mini-adventure.jpg",
+   "episodes": [
+    {
+     "id": "GZ133",
+     "no": 133,
+     "title": "PLAY - Fipps' glasierter Hinterschinken",
+     "url": "https://www.geekzone.de/135-gz133/",
+     "date": "2026-08-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-tarnishing-of-juxtia",
+   "title": "The Tarnishing of Juxtia",
+   "position": 61,
+   "entries": 1,
+   "url": "https://backloggd.com/games/the-tarnishing-of-juxtia/",
+   "cover": "assets/games/the-tarnishing-of-juxtia.jpg",
+   "episodes": [
+    {
+     "id": "GZ133",
+     "no": 133,
+     "title": "PLAY - Fipps' glasierter Hinterschinken",
+     "url": "https://www.geekzone.de/135-gz133/",
+     "date": "2026-08-10",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "resonance-a-plague-tale-legacy",
+   "title": "Resonance: A Plague Tale Legacy",
+   "position": 62,
+   "entries": 1,
+   "url": "https://backloggd.com/games/resonance-a-plague-tale-legacy/",
+   "cover": "assets/games/resonance-a-plague-tale-legacy.jpg",
+   "episodes": [
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    },
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "big-walk",
+   "title": "Big Walk",
+   "position": 64,
+   "entries": 1,
+   "url": "https://backloggd.com/games/big-walk/",
+   "cover": "assets/games/big-walk.jpg",
+   "episodes": [
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    },
+    {
+     "id": "GZ137",
+     "no": 137,
+     "title": "PLAY - Die Qualität ist hoch!",
+     "url": "https://www.geekzone.de/139-gz137/",
+     "date": "2026-10-05",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "mortal-shell-ii",
+   "title": "Mortal Shell II",
+   "position": 65,
+   "entries": 1,
+   "url": "https://backloggd.com/games/mortal-shell-ii/",
+   "cover": "assets/games/mortal-shell-ii.jpg",
+   "episodes": [
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    },
+    {
+     "id": "GZ137",
+     "no": 137,
+     "title": "PLAY - Die Qualität ist hoch!",
+     "url": "https://www.geekzone.de/139-gz137/",
+     "date": "2026-10-05",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "rayman-legends--1",
+   "title": "Rayman Legends",
+   "position": 66,
+   "entries": 1,
+   "url": "https://backloggd.com/games/rayman-legends--1/",
+   "cover": "assets/games/rayman-legends--1.jpg",
+   "episodes": [
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "terminator-2d-no-fate",
+   "title": "Terminator 2D: No Fate",
+   "position": 67,
+   "entries": 1,
+   "url": "https://backloggd.com/games/terminator-2d-no-fate/",
+   "cover": "assets/games/terminator-2d-no-fate.jpg",
+   "episodes": [
+    {
+     "id": "GZ133",
+     "no": 133,
+     "title": "PLAY - Fipps' glasierter Hinterschinken",
+     "url": "https://www.geekzone.de/135-gz133/",
+     "date": "2026-08-10",
+     "how": "match"
+    },
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "marvels-guardians-of-the-galaxy",
+   "title": "Marvel's Guardians of the Galaxy",
+   "position": 68,
+   "entries": 1,
+   "url": "https://backloggd.com/games/marvels-guardians-of-the-galaxy/",
+   "cover": "assets/games/marvels-guardians-of-the-galaxy.jpg",
+   "episodes": [
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-lord-of-the-rings-war-in-the-north-legacy-edition",
+   "title": "The Lord of the Rings: War in the North - Legacy Edition",
+   "position": 69,
+   "entries": 1,
+   "url": "https://backloggd.com/games/the-lord-of-the-rings-war-in-the-north-legacy-edition/",
+   "cover": "assets/games/the-lord-of-the-rings-war-in-the-north-legacy-edition.jpg",
+   "episodes": [
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "stupid-never-dies",
+   "title": "Stupid Never Dies",
+   "position": 70,
+   "entries": 1,
+   "url": "https://backloggd.com/games/stupid-never-dies/",
+   "cover": "assets/games/stupid-never-dies.jpg",
+   "episodes": [
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-witcher-3-wild-hunt-remastered",
+   "title": "The Witcher 3: Wild Hunt Remastered",
+   "position": 72,
+   "entries": 2,
+   "url": "https://backloggd.com/games/the-witcher-3-wild-hunt-remastered/",
+   "cover": "assets/games/the-witcher-3-wild-hunt-remastered.jpg",
+   "episodes": [
+    {
+     "id": "GZ137",
+     "no": 137,
+     "title": "PLAY - Die Qualität ist hoch!",
+     "url": "https://www.geekzone.de/139-gz137/",
+     "date": "2026-10-05",
+     "how": "match"
+    },
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "isle-of-reveries",
+   "title": "Isle of Reveries",
+   "position": 73,
+   "entries": 1,
+   "url": "https://backloggd.com/games/isle-of-reveries/",
+   "cover": "assets/games/isle-of-reveries.jpg",
+   "episodes": [
+    {
+     "id": "GZ137",
+     "no": 137,
+     "title": "PLAY - Die Qualität ist hoch!",
+     "url": "https://www.geekzone.de/139-gz137/",
+     "date": "2026-10-05",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "well-dweller",
+   "title": "Well Dweller",
+   "position": 74,
+   "entries": 1,
+   "url": "https://backloggd.com/games/well-dweller/",
+   "cover": "assets/games/well-dweller.jpg",
+   "episodes": [
+    {
+     "id": "GZ137",
+     "no": 137,
+     "title": "PLAY - Die Qualität ist hoch!",
+     "url": "https://www.geekzone.de/139-gz137/",
+     "date": "2026-10-05",
+     "how": "match"
+    },
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "wanderburg",
+   "title": "Wanderburg",
+   "position": 75,
+   "entries": 1,
+   "url": "https://backloggd.com/games/wanderburg/",
+   "cover": "assets/games/wanderburg.jpg",
+   "episodes": [
+    {
+     "id": "GZ137",
+     "no": 137,
+     "title": "PLAY - Die Qualität ist hoch!",
+     "url": "https://www.geekzone.de/139-gz137/",
+     "date": "2026-10-05",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "marvels-wolverine",
+   "title": "Marvel's Wolverine",
+   "position": 76,
+   "entries": 1,
+   "url": "https://backloggd.com/games/marvels-wolverine/",
+   "cover": "assets/games/marvels-wolverine.jpg",
+   "episodes": [
+    {
+     "id": "GZ137",
+     "no": 137,
+     "title": "PLAY - Die Qualität ist hoch!",
+     "url": "https://www.geekzone.de/139-gz137/",
+     "date": "2026-10-05",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "control-resonant--1",
+   "title": "Control Resonant",
+   "position": 77,
+   "entries": 1,
+   "url": "https://backloggd.com/games/control-resonant--1/",
+   "cover": "assets/games/control-resonant--1.jpg",
+   "episodes": [
+    {
+     "id": "GZ137",
+     "no": 137,
+     "title": "PLAY - Die Qualität ist hoch!",
+     "url": "https://www.geekzone.de/139-gz137/",
+     "date": "2026-10-05",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "gears-of-war-e-day",
+   "title": "Gears of War: E-Day",
+   "position": 78,
+   "entries": 1,
+   "url": "https://backloggd.com/games/gears-of-war-e-day/",
+   "cover": "assets/games/gears-of-war-e-day.jpg",
+   "episodes": [
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "clive-barkers-hellraiser-revival",
+   "title": "Clive Barker's Hellraiser: Revival",
+   "position": 79,
+   "entries": 1,
+   "url": "https://backloggd.com/games/clive-barkers-hellraiser-revival/",
+   "cover": "assets/games/clive-barkers-hellraiser-revival.jpg",
+   "episodes": [
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "tenebris-somnia",
+   "title": "Tenebris Somnia",
+   "position": 80,
+   "entries": 1,
+   "url": "https://backloggd.com/games/tenebris-somnia/",
+   "cover": "assets/games/tenebris-somnia.jpg",
+   "episodes": [
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "valor-mortis",
+   "title": "Valor Mortis",
+   "position": 81,
+   "entries": 1,
+   "url": "https://backloggd.com/games/valor-mortis/",
+   "cover": "assets/games/valor-mortis.jpg",
+   "episodes": [
+    {
+     "id": "GZ131",
+     "no": 131,
+     "title": "PLAY - Urlaub in Nitsa",
+     "url": "https://www.geekzone.de/133-gz131/",
+     "date": "2026-07-09",
+     "how": "match"
+    },
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "silver-pines",
+   "title": "Silver Pines",
+   "position": 82,
+   "entries": 1,
+   "url": "https://backloggd.com/games/silver-pines/",
+   "cover": "assets/games/silver-pines.jpg",
+   "episodes": [
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "star-wars-galactic-racer",
+   "title": "Star Wars: Galactic Racer",
+   "position": 83,
+   "entries": 1,
+   "url": "https://backloggd.com/games/star-wars-galactic-racer/",
+   "cover": "assets/games/star-wars-galactic-racer.jpg",
+   "episodes": [
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-talos-principle-ii",
+   "title": "The Talos Principle II",
+   "position": 85,
+   "entries": 1,
+   "url": "https://backloggd.com/games/the-talos-principle-ii/",
+   "cover": "assets/games/the-talos-principle-ii.jpg",
+   "episodes": [
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "thimbleweed-park",
+   "title": "Thimbleweed Park",
+   "position": 86,
+   "entries": 1,
+   "url": "https://backloggd.com/games/thimbleweed-park/",
+   "cover": "assets/games/thimbleweed-park.jpg",
+   "episodes": [
+    {
+     "id": "GZ140",
+     "no": 140,
+     "title": "PLAY - Der Mitternachts-Fleischzug",
+     "url": "https://www.geekzone.de/142-gz140/",
+     "date": "2026-11-01",
+     "how": "match"
+    }
+   ]
+  }
+ ]
+}

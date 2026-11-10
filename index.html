@@ -8,12 +8,12 @@
 <link rel="icon" href="assets/logo.jpg">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-  .kpi-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; }
+  .kpi-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; }
   .kpi-row .card { padding: 1.25rem 1.4rem; }
   .kpi-row .num { font-size: 2.4rem; font-weight: 800; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
   .kpi-row .lbl { font-size: .75rem; color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; margin-top: .45rem; }
   .kpi-row .sub2 { font-size: .82rem; color: var(--ink-3); margin-top: .3rem; line-height: 1.4; }
-  @media (max-width: 760px) { .kpi-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } .kpi-row .num { font-size: 2rem; } }
+  @media (max-width: 860px) { .kpi-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } .kpi-row > :first-child { grid-column: 1 / -1; } .kpi-row .num { font-size: 2rem; } }
 
   .tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
   @media (max-width: 760px) { .tiles { grid-template-columns: minmax(0, 1fr); } }
@@ -65,7 +65,7 @@
       <a href="index.html" class="active" aria-current="page">Übersicht</a>
       <a href="filme.html">Filme</a>
       <a href="serien.html">Serien</a>
-      <span class="soon">Spiele<small>bald</small></span>
+      <a href="spiele.html">Spiele</a>
       <a href="https://www.geekzone.de/">Podcast</a>
     </nav>
   </div>
@@ -80,12 +80,13 @@
 <script src="data/overview-2026.js"></script>
 <script src="data/films-2026.js"></script>
 <script src="data/series-2026.js"></script>
+<script src="data/games-2026.js"></script>
 <script>
 (() => {
-  const O = window.GZ_OVERVIEW, F = window.GZ_FILMS, SE = window.GZ_SERIES;
+  const O = window.GZ_OVERVIEW, F = window.GZ_FILMS, SE = window.GZ_SERIES, GA = window.GZ_GAMES;
   const app = document.getElementById('app');
-  if (!O || !F || !SE) {
-    app.innerHTML = '<div class="card"><p>Daten fehlen. Bitte <code>scripts/build_overview.py</code>, <code>fetch_letterboxd.py</code> und <code>build_series.py</code> ausführen.</p></div>';
+  if (!O || !F || !SE || !GA) {
+    app.innerHTML = '<div class="card"><p>Daten fehlen. Bitte <code>scripts/build_overview.py</code>, <code>fetch_letterboxd.py</code>, <code>build_series.py</code> und <code>build_games.py</code> ausführen.</p></div>';
     return;
   }
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -109,6 +110,7 @@
   const sAvg = avg(series.filter(s => s.rating != null).map(s => s.rating));
   const topFilm = films.find(f => f.slug === F.stats.lbExtremes.best[0]);
   const topSeries = series.filter(s => s.rating != null).reduce((a, b) => b.rating > a.rating ? b : a);
+  const topGame = GA.games.reduce((a, b) => b.episodes.length > a.episodes.length ? b : a);
 
   /* ---------- Statistik-Trophäen (aus den Daten) ---------- */
   const crew = F.podcasters.filter(p => p.hasData);
@@ -120,7 +122,8 @@
   const foe = scored.reduce((a, b) => b.c.v < a.c.v ? b : a);
   const fav = scored.filter(x => x.c.n >= 3).reduce((a, b) => b.c.v > a.c.v || (b.c.v === a.c.v && b.c.n > a.c.n) ? b : a, { c: { v: -1, n: 0 } });
   const talked = [...films.map(f => ({ t: f.title, n: f.episodes.filter(e => e.how === 'match').length })),
-                  ...series.map(s => ({ t: s.title, n: s.episodes.filter(e => e.how === 'match').length }))]
+                  ...series.map(s => ({ t: s.title, n: s.episodes.filter(e => e.how === 'match').length })),
+                  ...GA.games.map(g => ({ t: g.title, n: g.episodes.filter(e => e.how === 'match').length }))]
                  .reduce((a, b) => b.n > a.n ? b : a);
   const men = Object.entries(O.mentions).sort((a, b) => b[1] - a[1]);
   const MONTHS = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
@@ -139,6 +142,8 @@
         <div class="sub2">Ø ${num(fAvg)} auf Letterboxd</div></div>
       <div class="card"><div class="num">${SE.shows}</div><div class="lbl">Serien</div>
         <div class="sub2">Ø ${num(sAvg)} auf Serializd</div></div>
+      <div class="card"><div class="num">${GA.count}</div><div class="lbl">Spiele</div>
+        <div class="sub2">in ${O.byType.PLAY} PLAY-Folgen</div></div>
     </section>
 
     <section class="tiles" aria-label="Rubriken">
@@ -152,11 +157,11 @@
         <p>Bestbewertet: <b>${esc(topSeries.title)}</b> (${num(topSeries.rating)}). Jede Serie mit Link zur Folge.</p>
         <span class="go">Zum Serienjahr →</span>
       </a>
-      <div class="card tile" aria-disabled="true">
-        <div class="tile-head"><img src="assets/icons/spiele.svg" alt="" width="52" height="52"><div><h3>Spiele</h3><div class="cnt">${O.byType.PLAY} PLAY-Folgen</div></div></div>
-        <p>Die Spiele-Liste von Backloggd folgt. Bis dahin: Ohren auf, GeekZone rein.</p>
-        <span class="go">Kommt bald</span>
-      </div>
+      <a class="card tile" href="spiele.html">
+        <div class="tile-head"><img src="assets/icons/spiele.svg" alt="" width="52" height="52"><div><h3>Spiele</h3><div class="cnt">${GA.count} Spiele · ${O.byType.PLAY} PLAY-Folgen</div></div></div>
+        <p>Dauergast: <b>${esc(topGame.title)}</b>, besprochen in ${topGame.episodes.length} Folgen. Jedes Spiel mit Link zur Folge.</p>
+        <span class="go">Zum Spielejahr →</span>
+      </a>
     </section>
 
     <div class="section-title"><h2>Die Goldenen Dinos ${O.year}</h2></div>
@@ -274,7 +279,7 @@
     <section class="card">
       <span class="card-label">Statistik-Trophäen</span>
       <h2>Zahlen, die niemand braucht</h2>
-      <p class="sub">Berechnet aus Letterboxd, Serializd und unseren Folgentexten, also unbestechlich.</p>
+      <p class="sub">Berechnet aus Letterboxd, Serializd, Backloggd und unseren Folgentexten, also unbestechlich.</p>
       <div class="trophies">
         <div class="trophy"><div class="t">Der Unermüdliche</div><div class="w">${esc(most.name)}</div>
           <div class="d"><b>${most.watched}</b> von ${films.length} Filmen der Jahresliste gesehen.</div></div>
@@ -301,7 +306,7 @@
 
   document.getElementById('footer').innerHTML = `
     Stand: ${new Date(O.generated + 'T12:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })} ·
-    Daten von Letterboxd, Serializd und dem <a href="https://www.geekzone.de/feed/mp3">Geekzone-Feed</a> ·
+    Daten von Letterboxd, Serializd, Backloggd und dem <a href="https://www.geekzone.de/feed/mp3">Geekzone-Feed</a> ·
     <a href="https://www.geekzone.de/">geekzone.de</a>`;
 })();
 </script>
