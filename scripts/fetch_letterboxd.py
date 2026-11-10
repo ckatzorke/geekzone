@@ -247,6 +247,8 @@ def _bullet_parts(bullet):
     b = PEOPLE_PAREN.sub("", b)                                # (Peter, Sidekick: …)
     b = re.sub(r"\((?!\d{4}\))[^()]*\)", "", b)                # sonstige Klammern außer (1979)
     b = re.sub(r"\s+im\s+(?:Kino|Stream\w*)\b", "", b, flags=re.I)
+    b = re.sub(r"\b(?:Staffelstart|Staffelfinale|Revival|Final Verdict)\b", "", b, flags=re.I)
+    b = re.sub(r"\b(?:Season|Staffel|Seasons|Staffeln)\s*\d+(?:\s*[-–&+]\s*\d+)?\b|\bS\d{1,2}\b", "", b, flags=re.I)
     pieces = [b] + re.split(r"\s+[-–]\s+|,\s+|\s+&\s+|:\s+|\s+und\s+", b)
     out = []
     for p in pieces:
@@ -265,6 +267,7 @@ def _contains(hay, needle):
 
 
 def assign_episodes(films, year):
+    """Ordnet Einträgen (dicts mit slug, title, year|None) die Geekzone-Folgen zu."""
     eps = load_episodes(year)
     print(f"Feed: {len(eps)} Folgen aus {year}", file=sys.stderr)
     ftok = {f["slug"]: tokens(f["title"]) for f in films}
@@ -278,7 +281,7 @@ def assign_episodes(films, year):
             for part, yr in _bullet_parts(bullet):
                 for f in films:
                     t = ftok[f["slug"]]
-                    if yr and f["year"] != yr:
+                    if yr and f.get("year") and f["year"] != yr:
                         continue
                     if t == part:
                         exact.add(f["slug"])

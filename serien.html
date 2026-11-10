@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geekzone Serienjahr 2026</title>
+<meta name="description" content="Der Jahresrückblick des Geekzone-Podcasts: alle besprochenen Serien 2026 und in welcher Folge sie dran waren.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  td.film img.banner { width: 30px; height: 45px; object-fit: cover; }
+  td.film .s { display: block; color: var(--ink-3); font-weight: 400; font-size: .78rem; margin-top: .1rem; }
+  td.d { color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  td.n .st { color: var(--gold); font-size: .75rem; margin-left: .35rem; letter-spacing: .04em; }
+  .summary { display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-end; }
+  .summary .num { font-size: 2.6rem; font-weight: 800; color: #fff; line-height: 1; font-variant-numeric: tabular-nums; }
+  .summary .lbl { font-size: .75rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; margin-top: .3rem; }
+  .summary p { flex: 1 1 260px; margin: 0; color: var(--ink-2); font-size: .9rem; line-height: 1.55; }
+</style>
+</head>
+<body>
+
+<header class="hero-header">
+  <a href="https://www.geekzone.de/" class="hero-logo"><img src="assets/logo.jpg" alt="Geekzone"></a>
+  <div class="hero-text">
+    <h1>Das Serienjahr <span class="yr" id="yr">2026</span></h1>
+    <p>Alle Serien, die wir im Geekzone-Podcast besprochen haben, mit Link zur jeweiligen Folge.</p>
+    <nav class="hero-nav" aria-label="Rubriken">
+      <a href="index.html">Filme</a>
+      <a href="serien.html" class="active" aria-current="page">Serien</a>
+      <span class="soon">Spiele<small>bald</small></span>
+      <a href="https://www.geekzone.de/">Podcast</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app">
+  <noscript><div class="card"><p>Diese Seite braucht JavaScript.</p></div></noscript>
+</main>
+
+<footer id="footer"></footer>
+
+<script src="data/series-2026.js"></script>
+<script>
+(() => {
+  const D = window.GZ_SERIES;
+  const app = document.getElementById('app');
+  if (!D) { app.innerHTML = '<div class="card"><p>Keine Daten gefunden. Bitte <code>python3 scripts/build_series.py</code> ausführen.</p></div>'; return; }
+
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const num = (v, d = 2) => v == null ? '–' : v.toLocaleString('de-DE', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const stars = v => { if (v == null) return ''; const r = Math.round(v * 2) / 2; return '★'.repeat(Math.floor(r)) + (r % 1 ? '½' : ''); };
+  const fmtDate = iso => new Date(iso.length > 10 ? iso : iso + 'T12:00:00').toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  const fmtLong = iso => new Date(iso + 'T12:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  const S = D.series;
+  S.forEach(s => { s.episodes = s.episodes || []; });
+  const rated = S.filter(s => s.rating != null);
+  const avg = rated.reduce((a, s) => a + s.rating, 0) / (rated.length || 1);
+  const usedEps = (D.episodes || []).filter(e => S.some(s => s.episodes.some(x => x.id === e.id)));
+
+  document.getElementById('yr').textContent = D.year;
+  document.title = `Geekzone Serienjahr ${D.year}`;
+
+  app.innerHTML = `
+    <section class="card">
+      <span class="card-label">Serien</span>
+      <div class="summary">
+        <div><div class="num">${D.shows}</div><div class="lbl">Serien</div></div>
+        <div><div class="num">${usedEps.length}</div><div class="lbl">Folgen</div></div>
+        <div><div class="num">${num(avg)}</div><div class="lbl">Ø Serializd</div></div>
+        <p>${D.count} Einträge auf der <a href="${esc(D.listUrl)}" target="_blank" rel="noopener">Serializd-Liste „${esc(D.listName)}“</a>.
+        Die Wertung ist der Serializd-Community-Durchschnitt, umgerechnet auf 5 Sterne.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="controls">
+        <input type="search" id="q" placeholder="Serie suchen …" aria-label="Serie suchen">
+        <select id="ep" aria-label="Nach Folge filtern">
+          <option value="">Alle Folgen</option>
+          ${usedEps.map(e => `<option value="${esc(e.id)}">${esc(e.id)}: ${esc(e.title)}</option>`).join('')}
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr>
+            <th data-k="title"><button>Serie</button></th>
+            <th data-k="added"><button>Hinzugefügt</button></th>
+            <th data-k="ep"><button>Folge</button></th>
+            <th class="n" data-k="rating"><button>Serializd</button></th>
+          </tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="muted" id="count" style="margin-top:.8rem"></p>
+    </section>`;
+
+  document.getElementById('footer').innerHTML = `
+    Stand: ${fmtLong(D.generated)} · Daten von <a href="${esc(D.listUrl)}" target="_blank" rel="noopener">Serializd</a> ·
+    <a href="https://www.geekzone.de/">geekzone.de</a>`;
+
+  const epCell = s => s.episodes.length
+    ? s.episodes.map(e => `<a class="ep-chip${e.how === 'inferred' ? ' inf' : ''}" href="${esc(e.url)}" target="_blank" rel="noopener"
+        title="${esc(e.id)}: ${esc(e.title)}${e.how === 'inferred' ? ' (abgeleitet)' : ''}">${esc(e.id)}</a>`).join('')
+    : '<span class="na">–</span>';
+  const seasonLabel = s => s.season != null ? `Staffel ${s.season}` : 'Serie';
+
+  let sortKey = 'added', sortDir = 1;
+  const val = (s, k) => k === 'ep' ? s.episodes[0]?.no : k === 'added' ? (s.added || '') + String(s.position).padStart(4, '0') : s[k];
+
+  const render = () => {
+    const q = document.getElementById('q').value.trim().toLowerCase();
+    const ep = document.getElementById('ep').value;
+    const rows = S
+      .filter(s => (!q || s.title.toLowerCase().includes(q)) && (!ep || s.episodes.some(e => e.id === ep)))
+      .sort((a, b) => {
+        const va = val(a, sortKey), vb = val(b, sortKey);
+        if (va == null && vb == null) return 0;
+        if (va == null) return 1;
+        if (vb == null) return -1;
+        if (typeof va === 'string') return sortDir * va.localeCompare(vb, 'de');
+        return sortDir * (va - vb);
+      });
+    document.getElementById('rows').innerHTML = rows.map(s => `
+      <tr>
+        <td class="film">${s.poster ? `<img class="banner" src="${esc(s.poster)}" alt="" loading="lazy" width="30" height="45">` : ''}
+          <span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a><span class="s">${seasonLabel(s)}${s.premiere ? ' · ' + s.premiere.slice(0, 4) : ''}</span></span></td>
+        <td class="d">${s.added ? fmtDate(s.added) : '–'}</td>
+        <td class="ep">${epCell(s)}</td>
+        <td class="n">${num(s.rating)}<span class="st" aria-hidden="true">${stars(s.rating)}</span></td>
+      </tr>`).join('');
+    document.getElementById('count').textContent = `${rows.length} von ${S.length} Einträgen · gestrichelte Folge = abgeleitet (Listenreihenfolge bzw. gleiches Hinzufügedatum)`;
+    document.querySelectorAll('th[data-k]').forEach(th => {
+      if (th.dataset.k === sortKey) th.setAttribute('aria-sort', sortDir > 0 ? 'ascending' : 'descending');
+      else th.removeAttribute('aria-sort');
+    });
+  };
+  document.querySelectorAll('th[data-k] button').forEach(btn => btn.addEventListener('click', () => {
+    const k = btn.parentElement.dataset.k;
+    if (k === sortKey) sortDir *= -1; else { sortKey = k; sortDir = k === 'rating' ? -1 : 1; }
+    render();
+  }));
+  document.getElementById('q').addEventListener('input', render);
+  document.getElementById('ep').addEventListener('change', render);
+  render();
+})();
+</script>
+</body>
+</html>
