@@ -86,19 +86,19 @@ Flop: Star Wars: Galactic Racer
 ## Christian
 
 ### Filme
-1. Save the Green Planet!
-2. Bugonia
-3. Mad Max: Fury Road
-Flop: In the Lost Lands
+1. The Furious
+2. Spider-Man: Brand New Day
+3. Obsession
+Flop: The End of Oak Street
 
 ### Serien
-1. Pluribus
-2. Widow's Bay
-3. Below
-Flop: Under the Dome
+1. Widow's Bay
+2. Carrie, Stranger Things, Nocturne ??
+3. A Knight of the Seven Kingdoms
+Flop: Below
 
 ### Spiele
-1. Mortal Shell II
-2. Valor Mortis
-3. Resonance: A Plague Tale Legacy
-Flop: Terminator 2D: No Fate
+1. Big Walk
+2. Pragmata
+3. Mortal Shell II
+Flop: Beast of Reincarnation
