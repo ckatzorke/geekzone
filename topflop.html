@@ -214,7 +214,7 @@
         </ol></div>
         <div><h3>Flop der Crew</h3>
           ${!hidden && noCommonFlop
-            ? `<p class="muted" style="margin:0">Kein gemeinsamer Flop. Jeder hat seinen eigenen Reinfall, siehe unten.</p>`
+            ? `<p class="muted" style="margin:0">Kein gemeinsamer Flop. Jeder hat seinen eigenen Reinfall, siehe oben.</p>`
             : `<ol class="pick-list">${hidden || !flopWinners.length ? row(cat, 'Flop', null, 'flop-row')
                 : flopWinners.map(f => row(cat, 'Flop', f.e, 'flop-row', `<div class="pts">${f.votes}× genannt · ${esc(f.by.join(', '))}</div>`)).join('')}</ol>`}
         </div>
@@ -239,8 +239,8 @@
           <img src="${c.icon}" alt="" width="22" height="22">${c.label}</button>`).join('')}
       </div>
       <div id="panel" role="tabpanel" aria-labelledby="tab-${current}" style="display:flex;flex-direction:column;gap:1.25rem">
-        ${crewTotal(current)}
         <div class="crew-grid">${people.map(p => personCard(current, p)).join('')}</div>
+        ${crewTotal(current)}
       </div>`;
     app.querySelectorAll('[data-cat]').forEach(b => b.addEventListener('click', () => {
       current = b.dataset.cat; history.replaceState(null, '', '#' + current); render();
