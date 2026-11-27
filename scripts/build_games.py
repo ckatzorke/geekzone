@@ -54,14 +54,32 @@ def load_entries():
     return meta, entries
 
 
-def aliases(title):
-    """Kurzformen, wie sie in Folgentexten vorkommen: ohne Untertitel, ohne 'Marvel's ' etc."""
+ABBREV = {"Grand Theft Auto": "GTA", "Call of Duty": "CoD"}
+
+
+def _head(title):
+    t = re.sub(r"^(?:Marvel's|Clive Barker's|Tom Clancy's|Sid Meier's)\s+", "", title)
+    return t.split(":", 1)[0].strip() if ":" in t else None
+
+
+def aliases(title, shared_heads=()):
+    """Kurzformen, wie sie in Folgentexten vorkommen: ohne Untertitel, ohne 'Marvel's ', Abkürzungen.
+
+    Der Teil vor dem Doppelpunkt wird nur genutzt, wenn ihn kein anderes Spiel der Liste teilt
+    (sonst würde "The Legend of Zelda" bei jedem Zelda-Spiel treffen).
+    """
     out = set()
     t = re.sub(r"^(?:Marvel's|Clive Barker's|Tom Clancy's|Sid Meier's)\s+", "", title)
     out.add(t)
     if ":" in t:
         head, tail = t.split(":", 1)
-        out.update({head.strip(), tail.strip()})
+        out.add(tail.strip())
+        if head.strip().lower() not in shared_heads:
+            out.add(head.strip())
+    for long, short in ABBREV.items():
+        for a in list(out):
+            if a.startswith(long):
+                out.add(short + a[len(long):])
     out.add(re.sub(r"\s+(?:Remastered|Remake|Enhanced|Legacy Edition|Definitive Edition)\b.*$", "", t))
     out.add(re.sub(r"\s+-\s+.*$", "", t))
     out.discard(title)
@@ -94,11 +112,17 @@ def main():
     # Jeder Listeneintrag einzeln (Reihenfolge = chronologisch), Doppelte bekommen eigene Schlüssel
     seen = {}
     items = []
+    heads = {}
+    for e in {e["slug"]: e for e in entries}.values():
+        h = _head(e["title"])
+        if h:
+            heads[h.lower()] = heads.get(h.lower(), 0) + 1
+    shared_heads = {h for h, n in heads.items() if n > 1}
     for pos, e in enumerate(entries):
         k = seen.get(e["slug"], 0)
         seen[e["slug"]] = k + 1
         items.append({"slug": e["slug"] if k == 0 else f"{e['slug']}@{k}", "game": e["slug"], "title": e["title"],
-                      "year": None, "aliases": aliases(e["title"]), "position": pos, "coverSrc": e["cover"]})
+                      "year": None, "aliases": aliases(e["title"], shared_heads), "position": pos, "coverSrc": e["cover"]})
 
     episodes = lb.assign_episodes(items, args.year, play=True)
 

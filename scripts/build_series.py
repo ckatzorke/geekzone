@@ -69,8 +69,12 @@ def main():
     meta, raw = load_items()
     print(f"Serializd-Liste '{meta.get('listName')}': {len(raw)} Einträge"
           + (f" (laut Liste {meta['totalItems']})" if meta.get("totalItems") else ""), file=sys.stderr)
-    if meta.get("totalItems") and meta["totalItems"] != len(raw):
-        print("WARNUNG: Anzahl weicht ab – fehlt eine page*.json?", file=sys.stderr)
+    positions = [it["position"] for it in raw]
+    if positions != list(range(len(raw))):
+        missing = sorted(set(range(max(positions) + 1)) - set(positions))
+        print(f"WARNUNG: Lücken in der Liste (Positionen {missing[:10]}…) – fehlt eine page*.json?", file=sys.stderr)
+    elif meta.get("totalItems") and meta["totalItems"] != len(raw):
+        print(f"Hinweis: page0.json nennt {meta['totalItems']} Einträge (veraltet?), die Seiten sind aber lückenlos.", file=sys.stderr)
 
     series = []
     for it in raw:

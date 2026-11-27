@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geekzone Top &amp; Flop 2026</title>
+<meta name="description" content="Die Top 3 und Flops der Geekzone-Crew 2026 in Filmen, Serien und Spielen.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .banner { display: flex; gap: .9rem; align-items: center; }
+  .banner .ico { font-size: 1.8rem; line-height: 1; }
+  .banner p { margin: 0; color: var(--ink-2); line-height: 1.55; }
+  .banner b { color: var(--gold); }
+
+  .tabs { display: flex; gap: .5rem; flex-wrap: wrap; }
+  .tabs button {
+    font: inherit; font-weight: 700; font-size: .95rem; cursor: pointer;
+    padding: .5rem 1.1rem; border-radius: 999px; color: var(--ink-2);
+    background: transparent; border: 1px solid var(--border);
+    display: inline-flex; align-items: center; gap: .5rem;
+    transition: color .15s, border-color .15s, background .15s;
+  }
+  .tabs button img { width: 22px; height: 22px; }
+  .tabs button:hover { color: #fff; }
+  .tabs button[aria-selected="true"] { color: var(--gold); background: var(--chip); border-color: var(--border-2); }
+  .tabs button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  .crew-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+  @media (max-width: 760px) { .crew-grid { grid-template-columns: minmax(0, 1fr); } }
+
+  .pick-list { list-style: none; margin: 0; display: flex; flex-direction: column; }
+  .pick-list li { display: flex; gap: .8rem; align-items: center; padding: .6rem 0; border-top: 1px solid var(--border); }
+  .pick-list li:first-child { border-top: none; padding-top: 0; }
+  .rank { width: 2rem; flex-shrink: 0; text-align: center; font-size: 1.5rem; font-weight: 800; color: var(--gold); font-variant-numeric: tabular-nums; }
+  .rank.flop { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: #ff8099; }
+  .thumb { width: 40px; height: 60px; flex-shrink: 0; border-radius: 5px; border: 1px solid var(--border-2); background: var(--surface-2); object-fit: cover; }
+  .thumb.empty { display: grid; place-items: center; color: var(--muted); font-weight: 800; font-size: 1.2rem; }
+  .pick-text { min-width: 0; }
+  .pick-text .t { color: #fff; font-weight: 700; line-height: 1.3; }
+  .pick-text .t a { text-decoration: none; }
+  .pick-text .t a:hover { color: var(--gold); }
+  .pick-text .c { color: var(--ink-3); font-size: .85rem; line-height: 1.4; margin-top: .15rem; }
+  .pick-text .pts { color: var(--gold); font-size: .8rem; font-weight: 700; }
+  .pick-list li.flop-row { margin-top: .3rem; border-top: 1px dashed #aa204088; }
+  .pick-list li.mystery .t { color: var(--muted); }
+
+  .crew-total h2 { margin-bottom: .2rem; }
+  .crew-total .cols2 { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 1.5rem; }
+  @media (max-width: 760px) { .crew-total .cols2 { grid-template-columns: minmax(0, 1fr); } }
+  .crew-total h3 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); margin-bottom: .6rem; }
+</style>
+</head>
+<body>
+
+<header class="hero-header">
+  <a href="index.html" class="hero-logo"><img src="assets/logo.jpg" alt="Geekzone"></a>
+  <div class="hero-text">
+    <h1>Top &amp; Flop <span class="yr" id="yr">2026</span></h1>
+    <p>Jeder von uns kürt seine drei Highlights und seinen größten Reinfall des Jahres, getrennt nach Filmen, Serien und Spielen.
+      Unten steht, was dabei als Crew-Wertung herauskommt.</p>
+    <nav class="hero-nav" aria-label="Rubriken">
+      <a href="index.html">Übersicht</a>
+      <a href="topflop.html" class="active" aria-current="page">Top &amp; Flop</a>
+      <a href="filme.html">Filme</a>
+      <a href="serien.html">Serien</a>
+      <a href="spiele.html">Spiele</a>
+      <a href="https://www.geekzone.de/">Podcast</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app"><div class="card"><p class="muted" style="margin:0">Lade Top &amp; Flop …</p></div></main>
+
+<footer id="footer"></footer>
+
+<script src="data/films-2026.js"></script>
+<script src="data/series-2026.js"></script>
+<script src="data/games-2026.js"></script>
+<script src="data/overview-2026.js"></script>
+<script>
+(async () => {
+  const YEAR = 2026;
+  const SOURCE = `data/topflop-${YEAR}.md`;
+  const app = document.getElementById('app');
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const norm = s => String(s || '').toLowerCase().replace(/&/g, 'and').replace(/[’‘´`]/g, "'").replace(/[^\p{L}\p{N}]+/gu, '');
+
+  const CATS = [
+    { key: 'filme', label: 'Filme', icon: 'assets/icons/filme.svg', match: /^filme?$/ },
+    { key: 'serien', label: 'Serien', icon: 'assets/icons/serien.svg', match: /^serien?$/ },
+    { key: 'spiele', label: 'Spiele', icon: 'assets/icons/spiele.svg', match: /^(spiele?|games?)$/ },
+  ];
+  const PEOPLE = ['Tax', 'Fipps', 'Peter', 'Christian'];
+  const POINTS = [3, 2, 1];
+
+  /* ---------- Bekannte Titel → Poster & Link ---------- */
+  const lookup = { filme: new Map(), serien: new Map(), spiele: new Map() };
+  const add = (cat, title, img, url) => { const k = norm(title); if (k && !lookup[cat].has(k)) lookup[cat].set(k, { img, url, title }); };
+  (window.GZ_FILMS?.films || []).forEach(f => add('filme', f.title, f.poster, f.url));
+  (window.GZ_SERIES?.series || []).forEach(s => add('serien', s.title, s.poster, s.url));
+  (window.GZ_GAMES?.games || []).forEach(g => add('spiele', g.title, g.cover, g.url));
+  const find = (cat, title) => {
+    const k = norm(title), m = lookup[cat];
+    if (!k) return null;
+    if (m.has(k)) return m.get(k);
+    for (const [key, v] of m) if (key.startsWith(k) || k.startsWith(key)) return v;  // "Death Stranding 2" ↔ "…: On the Beach"
+    return null;
+  };
+
+  /* ---------- Markdown-Datei parsen ---------- */
+  const parse = text => {
+    const meta = {}, people = {};
+    let person = null, cat = null;
+    for (const raw of text.replace(/<!--[\s\S]*?-->/g, '').split(/\r?\n/)) {
+      const line = raw.trim();
+      if (!line) continue;
+      let m;
+      if ((m = line.match(/^##\s+(.+?)\s*$/)) && !line.startsWith('###')) {
+        person = m[1]; cat = null; people[person] = people[person] || {}; continue;
+      }
+      if ((m = line.match(/^###\s+(.+?)\s*$/))) {
+        const c = CATS.find(c => c.match.test(m[1].toLowerCase()));
+        cat = c ? c.key : null;
+        if (person && cat) people[person][cat] = people[person][cat] || { top: [], flop: null };
+        continue;
+      }
+      if (!person && (m = line.match(/^(status|folge|datum)\s*:\s*(.*)$/i))) { meta[m[1].toLowerCase()] = m[2].trim(); continue; }
+      if (!person || !cat) continue;
+      const entry = s => { const [t, ...c] = s.split('|'); const title = t.trim(); return title ? { title, comment: c.join('|').trim() } : null; };
+      if ((m = line.match(/^([1-3])[.)]\s*(.*)$/))) { people[person][cat].top[+m[1] - 1] = entry(m[2]); continue; }
+      if ((m = line.match(/^flop\s*:\s*(.*)$/i))) { people[person][cat].flop = entry(m[1]); }
+    }
+    return { meta, people };
+  };
+
+  let data;
+  try {
+    const res = await fetch(SOURCE, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    data = parse(await res.text());
+  } catch (e) {
+    app.innerHTML = `<div class="card"><p style="margin:0">Die Datei <code>${esc(SOURCE)}</code> konnte nicht geladen werden (${esc(e.message)}).
+      Lokal muss die Seite über einen Webserver laufen, z.B. <code>python3 -m http.server</code>, weil Browser Dateien per <code>file://</code> nicht nachladen.</p></div>`;
+    return;
+  }
+
+  const status = (data.meta.status || 'platzhalter').toLowerCase();
+  const hidden = status.startsWith('platz');
+  const epNo = (data.meta.folge || '').toUpperCase().replace(/\s+/g, '');
+  const ep = (window.GZ_OVERVIEW?.episodes || []).find(e => e.id === epNo);
+  const date = /^\d{4}-\d{2}-\d{2}$/.test(data.meta.datum || '')
+    ? new Date(data.meta.datum + 'T12:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+  const epLabel = epNo ? (ep ? `<a class="ep-chip" href="${esc(ep.url)}" target="_blank" rel="noopener">${esc(epNo)}</a>` : `<b>${esc(epNo)}</b>`) : 'der Rückblicksfolge';
+  const people = [...PEOPLE.filter(p => data.people[p]), ...Object.keys(data.people).filter(p => !PEOPLE.includes(p))];
+
+  /* ---------- Bausteine ---------- */
+  const thumb = (cat, e) => {
+    const hit = e && find(cat, e.title);
+    return hit?.img ? `<img class="thumb" src="${esc(hit.img)}" alt="" loading="lazy" width="40" height="60">` : `<span class="thumb empty" aria-hidden="true">?</span>`;
+  };
+  const titleHtml = (cat, e) => {
+    const hit = find(cat, e.title);
+    return hit?.url ? `<a href="${esc(hit.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title);
+  };
+  const row = (cat, rankHtml, e, cls = '', extra = '') => hidden || !e
+    ? `<li class="mystery ${cls}"><span class="rank${cls ? ' flop' : ''}">${rankHtml}</span><span class="thumb empty" aria-hidden="true">?</span>
+        <div class="pick-text"><div class="t">${hidden ? 'Wird enthüllt …' : 'noch offen'}</div></div></li>`
+    : `<li class="${cls}"><span class="rank${cls ? ' flop' : ''}">${rankHtml}</span>${thumb(cat, e)}
+        <div class="pick-text"><div class="t">${titleHtml(cat, e)}</div>${e.comment ? `<div class="c">${esc(e.comment)}</div>` : ''}${extra}</div></li>`;
+
+  const personCard = (cat, name) => {
+    const d = data.people[name]?.[cat] || { top: [], flop: null };
+    return `<article class="card">
+      <div class="person-head">
+        <div class="avatar" aria-hidden="true">${esc(name[0])}</div>
+        <div><h3>${esc(name)}</h3><span class="muted">Top 3 &amp; Flop</span></div>
+      </div>
+      <ol class="pick-list">
+        ${[0, 1, 2].map(i => row(cat, i + 1, d.top[i])).join('')}
+        ${row(cat, 'Flop', d.flop, 'flop-row')}
+      </ol>
+    </article>`;
+  };
+
+  const crewTotal = cat => {
+    const score = new Map(), flops = new Map();
+    for (const p of people) {
+      const d = data.people[p]?.[cat];
+      if (!d) continue;
+      d.top.forEach((e, i) => {
+        if (!e) return;
+        const k = norm(e.title), s = score.get(k) || { e, pts: 0, votes: 0, best: 9, by: [] };
+        s.pts += POINTS[i]; s.votes++; s.best = Math.min(s.best, i); s.by.push(p); score.set(k, s);
+      });
+      if (d.flop) { const k = norm(d.flop.title), f = flops.get(k) || { e: d.flop, votes: 0, by: [] }; f.votes++; f.by.push(p); flops.set(k, f); }
+    }
+    // Sortiert nach Punkten; Gleichstand teilt sich den Platz, wer mit Platz 3 gleichauf liegt, kommt mit rein
+    const sorted = [...score.values()].sort((a, b) => b.pts - a.pts || b.votes - a.votes || a.best - b.best);
+    const cut = sorted.length > 3 ? sorted[2].pts : 0;
+    const top = sorted.filter((s, i) => i < 3 || s.pts === cut).slice(0, 6);
+    top.forEach(s => { s.rank = 1 + sorted.filter(o => o.pts > s.pts).length; });
+    const maxFlop = Math.max(0, ...[...flops.values()].map(f => f.votes));
+    const flopWinners = [...flops.values()].filter(f => f.votes === maxFlop && maxFlop > 0);
+    const noCommonFlop = maxFlop === 1 && flopWinners.length > 1;
+    const by = s => `<div class="pts">${s.pts} ${s.pts === 1 ? 'Punkt' : 'Punkte'} · ${esc(s.by.join(', '))}</div>`;
+    return `<section class="card crew-total">
+      <span class="card-label">Crew-Wertung</span>
+      <h2>Die Geekzone-${esc(CATS.find(c => c.key === cat).label)} des Jahres</h2>
+      <p class="sub">Platz 1 bringt 3 Punkte, Platz 2 bringt 2 und Platz 3 einen Punkt. Beim Flop zählt jede Nennung.</p>
+      <div class="cols2">
+        <div><h3>Top 3</h3><ol class="pick-list">
+          ${hidden || !top.length ? [1, 2, 3].map(i => row(cat, i, null)).join('') : top.map(s => row(cat, s.rank, s.e, '', by(s))).join('')}
+        </ol></div>
+        <div><h3>Flop der Crew</h3>
+          ${!hidden && noCommonFlop
+            ? `<p class="muted" style="margin:0">Kein gemeinsamer Flop. Jeder hat seinen eigenen Reinfall, siehe oben.</p>`
+            : `<ol class="pick-list">${hidden || !flopWinners.length ? row(cat, 'Flop', null, 'flop-row')
+                : flopWinners.map(f => row(cat, 'Flop', f.e, 'flop-row', `<div class="pts">${f.votes}× genannt · ${esc(f.by.join(', '))}</div>`)).join('')}</ol>`}
+        </div>
+      </div>
+    </section>`;
+  };
+
+  /* ---------- Rendern ---------- */
+  const banner = hidden
+    ? `<section class="card banner"><span class="ico" aria-hidden="true">🎁</span><p>Noch geheim! Die Top 3 und Flops werden in ${epLabel}${date ? ` am <b>${esc(date)}</b>` : ''} gekürt. Bis dahin bleiben die Karten verdeckt.</p></section>`
+    : status === 'test'
+      ? `<section class="card banner"><span class="ico" aria-hidden="true">🧪</span><p><b>Testdaten:</b> Das sind Platzhalter-Einträge, nicht unsere echten Picks.</p></section>`
+      : `<section class="card banner"><span class="ico" aria-hidden="true">🏆</span><p>Gekürt in ${epLabel}${date ? ` am <b>${esc(date)}</b>` : ''}. Reinhören lohnt sich, die Begründungen sind besser als die Listen.</p></section>`;
+
+  let current = (location.hash.slice(1) || 'filme');
+  if (!CATS.some(c => c.key === current)) current = 'filme';
+  const render = () => {
+    app.innerHTML = `
+      ${banner}
+      <div class="tabs" role="tablist" aria-label="Kategorie">
+        ${CATS.map(c => `<button role="tab" id="tab-${c.key}" aria-selected="${c.key === current}" aria-controls="panel" data-cat="${c.key}">
+          <img src="${c.icon}" alt="" width="22" height="22">${c.label}</button>`).join('')}
+      </div>
+      <div id="panel" role="tabpanel" aria-labelledby="tab-${current}" style="display:flex;flex-direction:column;gap:1.25rem">
+        <div class="crew-grid">${people.map(p => personCard(current, p)).join('')}</div>
+        ${crewTotal(current)}
+      </div>`;
+    app.querySelectorAll('[data-cat]').forEach(b => b.addEventListener('click', () => {
+      current = b.dataset.cat; history.replaceState(null, '', '#' + current); render();
+      document.getElementById('tab-' + current)?.focus();
+    }));
+  };
+  render();
+
+  document.getElementById('yr').textContent = YEAR;
+  document.getElementById('footer').innerHTML = `Daten aus <code>${esc(SOURCE)}</code> · <a href="https://www.geekzone.de/">geekzone.de</a>`;
+})();
+</script>
+</body>
+</html>
