@@ -2,9 +2,9 @@
  "year": 2026,
  "listName": "Geekzone 2026",
  "listUrl": "https://www.serializd.com/list/474625",
- "generated": "2026-11-10",
- "count": 50,
- "shows": 49,
+ "generated": "2026-11-27",
+ "count": 58,
+ "shows": 57,
  "episodes": [
   {
    "id": "GZ118",
@@ -89,6 +89,13 @@
    "title": "SPECIAL - Horroctober 2026",
    "date": "2026-10-25",
    "url": "https://www.geekzone.de/141-gz139/"
+  },
+  {
+   "id": "GZ141",
+   "no": 141,
+   "title": "WATCH - Am Ende der Eichelstraße",
+   "date": "2026-11-17",
+   "url": "https://www.geekzone.de/143-gz141/"
   }
  ],
  "series": [
@@ -1305,6 +1312,14 @@
      "url": "https://www.geekzone.de/140-gz138/",
      "date": "2026-10-18",
      "how": "match"
+    },
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
     }
    ]
   },
@@ -1342,7 +1357,7 @@
    "premiere": "2026-06-24",
    "added": "2026-10-16T21:47:39Z",
    "position": 48,
-   "rating": 3.06,
+   "rating": 3.19,
    "url": "https://www.serializd.com/show/The-Killings-at-Parrish-Station-301284/season/476429/1",
    "poster": "assets/series/301284-476429.jpg",
    "episodes": [
@@ -1376,6 +1391,198 @@
      "title": "WATCH - Türlich, türlich (sicher, Digger)",
      "url": "https://www.geekzone.de/140-gz138/",
      "date": "2026-10-18",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "serie-213562-s1",
+   "title": "Crystal Lake",
+   "year": null,
+   "season": 1,
+   "seasonName": "Season 1",
+   "episodeCount": 8,
+   "premiere": "2026-10-15",
+   "added": "2026-11-16T21:59:48Z",
+   "position": 50,
+   "rating": 3.81,
+   "url": "https://www.serializd.com/show/Crystal-Lake-213562/season/314829/1",
+   "poster": "assets/series/213562-314829.jpg",
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "serie-259909-s2",
+   "title": "Dexter: Resurrection",
+   "year": null,
+   "season": 2,
+   "seasonName": "Season 2",
+   "episodeCount": 10,
+   "premiere": "2026-11-01",
+   "added": "2026-11-16T21:59:48Z",
+   "position": 51,
+   "rating": 4.11,
+   "url": "https://www.serializd.com/show/Dexter-Resurrection-259909/season/479648/2",
+   "poster": "assets/series/259909-479648.jpg",
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "serie-117488",
+   "title": "Yellowjackets",
+   "year": null,
+   "season": null,
+   "seasonName": null,
+   "episodeCount": null,
+   "premiere": "2021-11-14",
+   "added": "2026-11-16T21:59:48Z",
+   "position": 52,
+   "rating": 4.16,
+   "url": "https://www.serializd.com/show/Yellowjackets-117488",
+   "poster": "assets/series/117488-0.jpg",
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "serie-339037-s1",
+   "title": "Die Friesenjunkies",
+   "year": null,
+   "season": 1,
+   "seasonName": "Season 1",
+   "episodeCount": 8,
+   "premiere": "2026-11-06",
+   "added": "2026-11-16T21:59:48Z",
+   "position": 53,
+   "rating": 3.32,
+   "url": "https://www.serializd.com/show/Die-Friesenjunkies-339037/season/551351/1",
+   "poster": "assets/series/339037-551351.jpg",
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "serie-4087-s1",
+   "title": "The X-Files",
+   "year": null,
+   "season": 1,
+   "seasonName": "Season 1",
+   "episodeCount": 24,
+   "premiere": "1993-09-10",
+   "added": "2026-11-16T22:38:19Z",
+   "position": 54,
+   "rating": 4.22,
+   "url": "https://www.serializd.com/show/The-X-Files-4087/season/12078/1",
+   "poster": "assets/series/4087-12078.jpg",
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "inferred"
+    }
+   ]
+  },
+  {
+   "slug": "serie-226174-s1",
+   "title": "Matlock",
+   "year": null,
+   "season": 1,
+   "seasonName": "Season 1",
+   "episodeCount": 19,
+   "premiere": "2024-09-22",
+   "added": "2026-11-16T22:38:19Z",
+   "position": 55,
+   "rating": 3.8,
+   "url": "https://www.serializd.com/show/Matlock-226174/season/340272/1",
+   "poster": "assets/series/226174-340272.jpg",
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "serie-96677-s3",
+   "title": "Lupin",
+   "year": null,
+   "season": 3,
+   "seasonName": "Part 4",
+   "episodeCount": 8,
+   "premiere": "2026-10-23",
+   "added": "2026-11-16T22:38:19Z",
+   "position": 56,
+   "rating": 3.19,
+   "url": "https://www.serializd.com/show/Lupin-96677/season/456251/3",
+   "poster": "assets/series/96677-456251.jpg",
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "serie-292741-s1",
+   "title": "Nocturne",
+   "year": null,
+   "season": 1,
+   "seasonName": "Season 1",
+   "episodeCount": 10,
+   "premiere": "2026-10-29",
+   "added": "2026-11-16T22:38:19Z",
+   "position": 57,
+   "rating": 3.6,
+   "url": "https://www.serializd.com/show/Nocturne-292741/season/458731/1",
+   "poster": "assets/series/292741-458731.jpg",
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
      "how": "match"
     }
    ]

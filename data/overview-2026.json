@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "generated": "2026-11-10",
+ "generated": "2026-11-27",
  "episodes": [
   {
    "id": "GZ117",
@@ -217,11 +217,20 @@
    "date": "2026-11-01",
    "duration": 6605,
    "url": "https://www.geekzone.de/142-gz140/"
+  },
+  {
+   "id": "GZ141",
+   "no": 141,
+   "type": "WATCH",
+   "title": "Am Ende der Eichelstraße",
+   "date": "2026-11-17",
+   "duration": 7198,
+   "url": "https://www.geekzone.de/143-gz141/"
   }
  ],
- "totalSeconds": 153396,
+ "totalSeconds": 160594,
  "byType": {
-  "WATCH": 10,
+  "WATCH": 11,
   "PLAY": 12,
   "SPECIAL": 2
  },
@@ -275,9 +284,9 @@
   }
  },
  "mentions": {
-  "Christian": 141,
-  "Fipps": 124,
-  "Peter": 94,
-  "Tax": 74
+  "Christian": 149,
+  "Fipps": 131,
+  "Peter": 97,
+  "Tax": 81
  }
 }

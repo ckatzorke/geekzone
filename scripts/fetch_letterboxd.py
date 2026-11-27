@@ -142,7 +142,7 @@ def download_poster(film):
     small = re.sub(r"-0-\d+-0-\d+-crop", "-0-230-0-345-crop", src)
     dest = ROOT / "assets" / "posters" / f"{film['slug']}.jpg"
     dest.parent.mkdir(parents=True, exist_ok=True)
-    if not dest.exists() or REFRESH:
+    if not dest.exists():  # Poster ändern sich nicht – nur fehlende laden
         data = fetch(small, binary=True) or fetch(src, binary=True)
         if data:
             dest.write_bytes(data)

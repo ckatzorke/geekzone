@@ -2,9 +2,9 @@
  "year": 2026,
  "listName": "Geekzone PLAY 2026",
  "listUrl": "https://backloggd.com/u/katzenmann/list/geekzone-play-2026/",
- "generated": "2026-11-10",
- "entries": 87,
- "count": 80,
+ "generated": "2026-11-27",
+ "entries": 92,
+ "count": 85,
  "episodes": [
   {
    "id": "GZ117",
@@ -1803,6 +1803,68 @@
      "how": "match"
     }
    ]
+  },
+  {
+   "slug": "grand-theft-auto-vi",
+   "title": "Grand Theft Auto VI",
+   "position": 87,
+   "entries": 1,
+   "url": "https://backloggd.com/games/grand-theft-auto-vi/",
+   "cover": "assets/games/grand-theft-auto-vi.jpg",
+   "episodes": [
+    {
+     "id": "GZ131",
+     "no": 131,
+     "title": "PLAY - Urlaub in Nitsa",
+     "url": "https://www.geekzone.de/133-gz131/",
+     "date": "2026-07-09",
+     "how": "match"
+    },
+    {
+     "id": "GZ135",
+     "no": 135,
+     "title": "PLAY - Big Talk",
+     "url": "https://www.geekzone.de/137-gz135/",
+     "date": "2026-09-07",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-legend-of-zelda-ocarina-of-time--1",
+   "title": "The Legend of Zelda: Ocarina of Time",
+   "position": 88,
+   "entries": 1,
+   "url": "https://backloggd.com/games/the-legend-of-zelda-ocarina-of-time--1/",
+   "cover": "assets/games/the-legend-of-zelda-ocarina-of-time--1.jpg",
+   "episodes": []
+  },
+  {
+   "slug": "call-of-duty-modern-warfare-4",
+   "title": "Call of Duty: Modern Warfare 4",
+   "position": 89,
+   "entries": 1,
+   "url": "https://backloggd.com/games/call-of-duty-modern-warfare-4/",
+   "cover": "assets/games/call-of-duty-modern-warfare-4.jpg",
+   "episodes": []
+  },
+  {
+   "slug": "grand-theft-auto-v--1",
+   "title": "Grand Theft Auto V",
+   "position": 90,
+   "entries": 1,
+   "url": "https://backloggd.com/games/grand-theft-auto-v--1/",
+   "cover": "assets/games/grand-theft-auto-v--1.jpg",
+   "episodes": []
+  },
+  {
+   "slug": "tomb-raider-legend",
+   "title": "Tomb Raider: Legend",
+   "position": 91,
+   "entries": 1,
+   "url": "https://backloggd.com/games/tomb-raider-legend/",
+   "cover": "assets/games/tomb-raider-legend.jpg",
+   "episodes": []
   }
  ]
 }

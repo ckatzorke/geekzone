@@ -1,10 +1,10 @@
 {
  "year": 2026,
  "listUrl": "https://letterboxd.com/ckatzorke/list/geekzone-2026/",
- "generated": "2026-11-10",
+ "generated": "2026-11-27",
  "stats": {
-  "count": 111,
-  "avgLbRating": 3.22,
+  "count": 118,
+  "avgLbRating": 3.21,
   "lbExtremes": {
    "best": [
     "the-odyssey-2026"
@@ -12,49 +12,53 @@
    "worst": [
     "return-to-silent-hill"
    ],
-   "bestValue": 4.34,
+   "bestValue": 4.33,
    "worstValue": 1.43
   },
   "genres": [
    [
     "Action",
-    56
+    57
    ],
    [
     "Horror",
-    42
+    44
    ],
    [
     "Science Fiction",
-    38
+    39
    ],
    [
     "Thriller",
-    35
+    37
    ],
    [
     "Adventure",
-    29
+    32
    ],
    [
     "Comedy",
-    28
+    30
    ],
    [
     "Crime",
     19
    ],
    [
-    "Fantasy",
-    12
+    "Mystery",
+    14
    ],
    [
-    "Mystery",
+    "Fantasy",
     12
    ],
    [
     "Drama",
     11
+   ],
+   [
+    "Family",
+    3
    ],
    [
     "War",
@@ -65,15 +69,11 @@
     2
    ],
    [
-    "Family",
+    "Animation",
     2
    ],
    [
     "Documentary",
-    1
-   ],
-   [
-    "Animation",
     1
    ]
   ],
@@ -164,7 +164,7 @@
    ],
    [
     2026,
-    31
+    38
    ]
   ]
  },
@@ -174,8 +174,8 @@
    "user": "ckatzorke",
    "hasData": true,
    "profile": "https://letterboxd.com/ckatzorke/",
-   "watched": 93,
-   "rated": 92,
+   "watched": 95,
+   "rated": 94,
    "avgRating": 3.65,
    "best": [
     "save-the-green-planet",
@@ -327,6 +327,13 @@
    "title": "SPECIAL - Horroctober 2026",
    "date": "2026-10-25",
    "url": "https://www.geekzone.de/141-gz139/"
+  },
+  {
+   "id": "GZ141",
+   "no": 141,
+   "title": "WATCH - Am Ende der Eichelstraße",
+   "date": "2026-11-17",
+   "url": "https://www.geekzone.de/143-gz141/"
   }
  ],
  "films": [
@@ -343,7 +350,7 @@
     "Francis Lawrence"
    ],
    "lbRating": 3.47,
-   "lbRatingCount": 1203277,
+   "lbRatingCount": 1222653,
    "url": "https://letterboxd.com/film/the-long-walk-2025/",
    "poster": "assets/posters/the-long-walk-2025.jpg",
    "ratings": {
@@ -381,7 +388,7 @@
     "Kurt Wimmer"
    ],
    "lbRating": 1.73,
-   "lbRatingCount": 13488,
+   "lbRatingCount": 13562,
    "url": "https://letterboxd.com/film/children-of-the-corn-2020/",
    "poster": "assets/posters/children-of-the-corn-2020.jpg",
    "ratings": {
@@ -411,7 +418,7 @@
     "Edgar Wright"
    ],
    "lbRating": 3.13,
-   "lbRatingCount": 612063,
+   "lbRatingCount": 618488,
    "url": "https://letterboxd.com/film/the-running-man-2025/",
    "poster": "assets/posters/the-running-man-2025.jpg",
    "ratings": {
@@ -450,7 +457,7 @@
     "Paul Michael Glaser"
    ],
    "lbRating": 3.16,
-   "lbRatingCount": 184331,
+   "lbRatingCount": 185814,
    "url": "https://letterboxd.com/film/the-running-man/",
    "poster": "assets/posters/the-running-man.jpg",
    "ratings": {
@@ -481,7 +488,7 @@
     "Ryan Fleck"
    ],
    "lbRating": 3.45,
-   "lbRatingCount": 88941,
+   "lbRatingCount": 89228,
    "url": "https://letterboxd.com/film/freaky-tales/",
    "poster": "assets/posters/freaky-tales.jpg",
    "ratings": {
@@ -521,7 +528,7 @@
     "Timo Tjahjanto"
    ],
    "lbRating": 2.89,
-   "lbRatingCount": 270263,
+   "lbRatingCount": 273988,
    "url": "https://letterboxd.com/film/nobody-2/",
    "poster": "assets/posters/nobody-2.jpg",
    "ratings": {
@@ -552,7 +559,7 @@
     "Alex Garland"
    ],
    "lbRating": 3.53,
-   "lbRatingCount": 601643,
+   "lbRatingCount": 606133,
    "url": "https://letterboxd.com/film/warfare/",
    "poster": "assets/posters/warfare.jpg",
    "ratings": {
@@ -583,7 +590,7 @@
     "Kang Hyoung-chul"
    ],
    "lbRating": 3.42,
-   "lbRatingCount": 10150,
+   "lbRatingCount": 10431,
    "url": "https://letterboxd.com/film/hi-five/",
    "poster": "assets/posters/hi-five.jpg",
    "ratings": {
@@ -613,7 +620,7 @@
     "Li Yang"
    ],
    "lbRating": 3.72,
-   "lbRatingCount": 19557,
+   "lbRatingCount": 19852,
    "url": "https://letterboxd.com/film/escape-from-the-21st-century/",
    "poster": "assets/posters/escape-from-the-21st-century.jpg",
    "ratings": {
@@ -642,8 +649,8 @@
    "directors": [
     "Stewart Raffill"
    ],
-   "lbRating": 3.03,
-   "lbRatingCount": 31701,
+   "lbRating": 3.02,
+   "lbRatingCount": 31912,
    "url": "https://letterboxd.com/film/tammy-and-the-t-rex/",
    "poster": "assets/posters/tammy-and-the-t-rex.jpg",
    "ratings": {
@@ -672,7 +679,7 @@
     "Mike Flanagan"
    ],
    "lbRating": 3.7,
-   "lbRatingCount": 355282,
+   "lbRatingCount": 359261,
    "url": "https://letterboxd.com/film/the-life-of-chuck/",
    "poster": "assets/posters/the-life-of-chuck.jpg",
    "ratings": {
@@ -702,7 +709,7 @@
     "Parker Finn"
    ],
    "lbRating": 3.19,
-   "lbRatingCount": 1180352,
+   "lbRatingCount": 1195098,
    "url": "https://letterboxd.com/film/smile-2-2024/",
    "poster": "assets/posters/smile-2-2024.jpg",
    "ratings": {
@@ -734,7 +741,7 @@
     "Christopher Leone"
    ],
    "lbRating": 3.58,
-   "lbRatingCount": 45618,
+   "lbRatingCount": 47017,
    "url": "https://letterboxd.com/film/code-3/",
    "poster": "assets/posters/code-3.jpg",
    "ratings": {
@@ -765,7 +772,7 @@
     "Macon Blair"
    ],
    "lbRating": 2.93,
-   "lbRatingCount": 79265,
+   "lbRatingCount": 79865,
    "url": "https://letterboxd.com/film/the-toxic-avenger-2023/",
    "poster": "assets/posters/the-toxic-avenger-2023.jpg",
    "ratings": {
@@ -796,7 +803,7 @@
     "Yorgos Lanthimos"
    ],
    "lbRating": 3.83,
-   "lbRatingCount": 2164093,
+   "lbRatingCount": 2195181,
    "url": "https://letterboxd.com/film/bugonia/",
    "poster": "assets/posters/bugonia.jpg",
    "ratings": {
@@ -828,7 +835,7 @@
     "Jang Joon-hwan"
    ],
    "lbRating": 3.8,
-   "lbRatingCount": 34501,
+   "lbRatingCount": 34938,
    "url": "https://letterboxd.com/film/save-the-green-planet/",
    "poster": "assets/posters/save-the-green-planet.jpg",
    "ratings": {
@@ -857,7 +864,7 @@
     "Guy Ritchie"
    ],
    "lbRating": 2.27,
-   "lbRatingCount": 101676,
+   "lbRatingCount": 102260,
    "url": "https://letterboxd.com/film/fountain-of-youth-2025/",
    "poster": "assets/posters/fountain-of-youth-2025.jpg",
    "ratings": {
@@ -897,7 +904,7 @@
     "Ángel Manuel Soto"
    ],
    "lbRating": 2.76,
-   "lbRatingCount": 88043,
+   "lbRatingCount": 89134,
    "url": "https://letterboxd.com/film/the-wrecking-crew-2026/",
    "poster": "assets/posters/the-wrecking-crew-2026.jpg",
    "ratings": {
@@ -929,7 +936,7 @@
     "Jennifer Kaytin Robinson"
    ],
    "lbRating": 2.37,
-   "lbRatingCount": 429671,
+   "lbRatingCount": 433007,
    "url": "https://letterboxd.com/film/i-know-what-you-did-last-summer-2025/",
    "poster": "assets/posters/i-know-what-you-did-last-summer-2025.jpg",
    "ratings": {
@@ -960,7 +967,7 @@
     "Dan Trachtenberg"
    ],
    "lbRating": 3.49,
-   "lbRatingCount": 549496,
+   "lbRatingCount": 554356,
    "url": "https://letterboxd.com/film/predator-badlands/",
    "poster": "assets/posters/predator-badlands.jpg",
    "ratings": {
@@ -998,7 +1005,7 @@
     "Scott Derrickson"
    ],
    "lbRating": 3.34,
-   "lbRatingCount": 1693174,
+   "lbRatingCount": 1711058,
    "url": "https://letterboxd.com/film/the-black-phone/",
    "poster": "assets/posters/the-black-phone.jpg",
    "ratings": {
@@ -1027,7 +1034,7 @@
     "Scott Derrickson"
    ],
    "lbRating": 3.05,
-   "lbRatingCount": 674916,
+   "lbRatingCount": 683805,
    "url": "https://letterboxd.com/film/black-phone-2/",
    "poster": "assets/posters/black-phone-2.jpg",
    "ratings": {
@@ -1058,7 +1065,7 @@
     "Yugo Sakamoto"
    ],
    "lbRating": 3.91,
-   "lbRatingCount": 6746,
+   "lbRatingCount": 6839,
    "url": "https://letterboxd.com/film/baby-assassins-3/",
    "poster": "assets/posters/baby-assassins-3.jpg",
    "ratings": {
@@ -1088,7 +1095,7 @@
     "Len Wiseman"
    ],
    "lbRating": 3.28,
-   "lbRatingCount": 553066,
+   "lbRatingCount": 558150,
    "url": "https://letterboxd.com/film/ballerina-2025/",
    "poster": "assets/posters/ballerina-2025.jpg",
    "ratings": {
@@ -1118,7 +1125,7 @@
     "Mike P. Nelson"
    ],
    "lbRating": 2.98,
-   "lbRatingCount": 33569,
+   "lbRatingCount": 34694,
    "url": "https://letterboxd.com/film/silent-night-deadly-night-2025/",
    "poster": "assets/posters/silent-night-deadly-night-2025.jpg",
    "ratings": {
@@ -1147,7 +1154,7 @@
     "Michael Shanks"
    ],
    "lbRating": 3.26,
-   "lbRatingCount": 904721,
+   "lbRatingCount": 914809,
    "url": "https://letterboxd.com/film/together-2025/",
    "poster": "assets/posters/together-2025.jpg",
    "ratings": {
@@ -1176,8 +1183,8 @@
    "directors": [
     "Pavlo Ostrikov"
    ],
-   "lbRating": 3.89,
-   "lbRatingCount": 14045,
+   "lbRating": 3.9,
+   "lbRatingCount": 14352,
    "url": "https://letterboxd.com/film/u-are-the-universe/",
    "poster": "assets/posters/u-are-the-universe.jpg",
    "ratings": {
@@ -1207,7 +1214,7 @@
     "Danny Philippou"
    ],
    "lbRating": 3.68,
-   "lbRatingCount": 1147038,
+   "lbRatingCount": 1159530,
    "url": "https://letterboxd.com/film/bring-her-back/",
    "poster": "assets/posters/bring-her-back.jpg",
    "ratings": {
@@ -1239,7 +1246,7 @@
     "Patrick Hughes"
    ],
    "lbRating": 2.67,
-   "lbRatingCount": 269626,
+   "lbRatingCount": 277403,
    "url": "https://letterboxd.com/film/war-machine-2026/",
    "poster": "assets/posters/war-machine-2026.jpg",
    "ratings": {
@@ -1270,7 +1277,7 @@
     "Nia DaCosta"
    ],
    "lbRating": 3.81,
-   "lbRatingCount": 876365,
+   "lbRatingCount": 889107,
    "url": "https://letterboxd.com/film/28-years-later-the-bone-temple/",
    "poster": "assets/posters/28-years-later-the-bone-temple.jpg",
    "ratings": {
@@ -1309,7 +1316,7 @@
     "Damien Leone"
    ],
    "lbRating": 2.39,
-   "lbRatingCount": 807186,
+   "lbRatingCount": 819372,
    "url": "https://letterboxd.com/film/terrifier-2016/",
    "poster": "assets/posters/terrifier-2016.jpg",
    "ratings": {
@@ -1338,7 +1345,7 @@
     "Zach Cregger"
    ],
    "lbRating": 3.57,
-   "lbRatingCount": 3460777,
+   "lbRatingCount": 3513552,
    "url": "https://letterboxd.com/film/weapons-2025/",
    "poster": "assets/posters/weapons-2025.jpg",
    "ratings": {
@@ -1372,7 +1379,7 @@
     "Christopher Miller"
    ],
    "lbRating": 4.31,
-   "lbRatingCount": 4730611,
+   "lbRatingCount": 4842363,
    "url": "https://letterboxd.com/film/project-hail-mary/",
    "poster": "assets/posters/project-hail-mary.jpg",
    "ratings": {
@@ -1413,7 +1420,7 @@
     "Sam Raimi"
    ],
    "lbRating": 3.3,
-   "lbRatingCount": 1184760,
+   "lbRatingCount": 1200752,
    "url": "https://letterboxd.com/film/send-help/",
    "poster": "assets/posters/send-help.jpg",
    "ratings": {
@@ -1445,7 +1452,7 @@
     "Paul W. S. Anderson"
    ],
    "lbRating": 1.97,
-   "lbRatingCount": 31705,
+   "lbRatingCount": 32019,
    "url": "https://letterboxd.com/film/in-the-lost-lands/",
    "poster": "assets/posters/in-the-lost-lands.jpg",
    "ratings": {
@@ -1476,7 +1483,7 @@
     "Jalmari Helander"
    ],
    "lbRating": 3.24,
-   "lbRatingCount": 78131,
+   "lbRatingCount": 79203,
    "url": "https://letterboxd.com/film/sisu-road-to-revenge/",
    "poster": "assets/posters/sisu-road-to-revenge.jpg",
    "ratings": {
@@ -1506,7 +1513,7 @@
     "Haneef Adeni"
    ],
    "lbRating": 2.63,
-   "lbRatingCount": 26528,
+   "lbRatingCount": 26840,
    "url": "https://letterboxd.com/film/marco-2024/",
    "poster": "assets/posters/marco-2024.jpg",
    "ratings": {
@@ -1535,8 +1542,8 @@
     "Kevin McManus",
     "Matthew McManus"
    ],
-   "lbRating": 3.34,
-   "lbRatingCount": 21757,
+   "lbRating": 3.33,
+   "lbRatingCount": 22143,
    "url": "https://letterboxd.com/film/redux-redux/",
    "poster": "assets/posters/redux-redux.jpg",
    "ratings": {
@@ -1576,7 +1583,7 @@
     "Vince Gilligan"
    ],
    "lbRating": 3.6,
-   "lbRatingCount": 879231,
+   "lbRatingCount": 889030,
    "url": "https://letterboxd.com/film/el-camino-a-breaking-bad-movie/",
    "poster": "assets/posters/el-camino-a-breaking-bad-movie.jpg",
    "ratings": {
@@ -1606,7 +1613,7 @@
     "Kirill Sokolov"
    ],
    "lbRating": 2.93,
-   "lbRatingCount": 335510,
+   "lbRatingCount": 341804,
    "url": "https://letterboxd.com/film/they-will-kill-you/",
    "poster": "assets/posters/they-will-kill-you.jpg",
    "ratings": {
@@ -1637,7 +1644,7 @@
     "Reinaldo Marcus Green"
    ],
    "lbRating": 3.18,
-   "lbRatingCount": 184520,
+   "lbRatingCount": 189544,
    "url": "https://letterboxd.com/film/the-punisher-one-last-kill/",
    "poster": "assets/posters/the-punisher-one-last-kill.jpg",
    "ratings": {
@@ -1667,7 +1674,7 @@
     "Ben Leonberg"
    ],
    "lbRating": 2.98,
-   "lbRatingCount": 276625,
+   "lbRatingCount": 280173,
    "url": "https://letterboxd.com/film/good-boy-2025/",
    "poster": "assets/posters/good-boy-2025.jpg",
    "ratings": {
@@ -1697,7 +1704,7 @@
     "Lee Cronin"
    ],
    "lbRating": 2.63,
-   "lbRatingCount": 450627,
+   "lbRatingCount": 457411,
    "url": "https://letterboxd.com/film/lee-cronins-the-mummy/",
    "poster": "assets/posters/lee-cronins-the-mummy.jpg",
    "ratings": {
@@ -1736,8 +1743,8 @@
    "directors": [
     "Kevin Williamson"
    ],
-   "lbRating": 2.21,
-   "lbRatingCount": 632405,
+   "lbRating": 2.2,
+   "lbRatingCount": 647883,
    "url": "https://letterboxd.com/film/scream-7/",
    "poster": "assets/posters/scream-7.jpg",
    "ratings": {
@@ -1760,6 +1767,7 @@
    "title": "Good Luck, Have Fun, Don't Die",
    "year": 2025,
    "genres": [
+    "Adventure",
     "Action",
     "Science Fiction",
     "Comedy"
@@ -1768,7 +1776,7 @@
     "Gore Verbinski"
    ],
    "lbRating": 3.37,
-   "lbRatingCount": 334381,
+   "lbRatingCount": 344107,
    "url": "https://letterboxd.com/film/good-luck-have-fun-dont-die/",
    "poster": "assets/posters/good-luck-have-fun-dont-die.jpg",
    "ratings": {
@@ -1800,7 +1808,7 @@
     "Simon McQuoid"
    ],
    "lbRating": 2.82,
-   "lbRatingCount": 347814,
+   "lbRatingCount": 354334,
    "url": "https://letterboxd.com/film/mortal-kombat-ii/",
    "poster": "assets/posters/mortal-kombat-ii.jpg",
    "ratings": {
@@ -1830,7 +1838,7 @@
     "Jon Watts"
    ],
    "lbRating": 3.13,
-   "lbRatingCount": 238736,
+   "lbRatingCount": 244264,
    "url": "https://letterboxd.com/film/wolfs/",
    "poster": "assets/posters/wolfs.jpg",
    "ratings": {
@@ -1860,7 +1868,7 @@
     "Jon Favreau"
    ],
    "lbRating": 3.07,
-   "lbRatingCount": 607553,
+   "lbRatingCount": 620091,
    "url": "https://letterboxd.com/film/the-mandalorian-and-grogu/",
    "poster": "assets/posters/the-mandalorian-and-grogu.jpg",
    "ratings": {
@@ -1888,7 +1896,7 @@
     "Ian Nathan"
    ],
    "lbRating": 3.94,
-   "lbRatingCount": 1660,
+   "lbRatingCount": 1674,
    "url": "https://letterboxd.com/film/aliens-expanded/",
    "poster": "assets/posters/aliens-expanded.jpg",
    "ratings": {
@@ -1918,7 +1926,7 @@
     "Tyler Gillett"
    ],
    "lbRating": 3.27,
-   "lbRatingCount": 707688,
+   "lbRatingCount": 722180,
    "url": "https://letterboxd.com/film/ready-or-not-2-here-i-come/",
    "poster": "assets/posters/ready-or-not-2-here-i-come.jpg",
    "ratings": {
@@ -1949,7 +1957,7 @@
     "Marcel Walz"
    ],
    "lbRating": 2.68,
-   "lbRatingCount": 7223,
+   "lbRatingCount": 7506,
    "url": "https://letterboxd.com/film/master-of-the-universe-2026/",
    "poster": "assets/posters/master-of-the-universe-2026.jpg",
    "ratings": {},
@@ -1976,7 +1984,7 @@
     "Steffen Haars"
    ],
    "lbRating": 2.48,
-   "lbRatingCount": 37645,
+   "lbRatingCount": 37935,
    "url": "https://letterboxd.com/film/get-away-2/",
    "poster": "assets/posters/get-away-2.jpg",
    "ratings": {
@@ -2007,7 +2015,7 @@
     "Kristoffer Borgli"
    ],
    "lbRating": 3.62,
-   "lbRatingCount": 3024635,
+   "lbRatingCount": 3135829,
    "url": "https://letterboxd.com/film/the-drama/",
    "poster": "assets/posters/the-drama.jpg",
    "ratings": {
@@ -2037,7 +2045,7 @@
     "Jon Watts"
    ],
    "lbRating": 3.51,
-   "lbRatingCount": 3518696,
+   "lbRatingCount": 3570301,
    "url": "https://letterboxd.com/film/spider-man-homecoming/",
    "poster": "assets/posters/spider-man-homecoming.jpg",
    "ratings": {
@@ -2068,8 +2076,8 @@
    "directors": [
     "Jon Watts"
    ],
-   "lbRating": 3.42,
-   "lbRatingCount": 3154774,
+   "lbRating": 3.43,
+   "lbRatingCount": 3203827,
    "url": "https://letterboxd.com/film/spider-man-far-from-home/",
    "poster": "assets/posters/spider-man-far-from-home.jpg",
    "ratings": {
@@ -2100,7 +2108,7 @@
     "Jon Watts"
    ],
    "lbRating": 3.86,
-   "lbRatingCount": 4366348,
+   "lbRatingCount": 4425662,
    "url": "https://letterboxd.com/film/spider-man-no-way-home/",
    "poster": "assets/posters/spider-man-no-way-home.jpg",
    "ratings": {
@@ -2133,7 +2141,7 @@
     "Joe Russo"
    ],
    "lbRating": 4.1,
-   "lbRatingCount": 4166623,
+   "lbRatingCount": 4235104,
    "url": "https://letterboxd.com/film/avengers-infinity-war/",
    "poster": "assets/posters/avengers-infinity-war.jpg",
    "ratings": {
@@ -2166,7 +2174,7 @@
     "Joe Russo"
    ],
    "lbRating": 4.04,
-   "lbRatingCount": 4231701,
+   "lbRatingCount": 4309118,
    "url": "https://letterboxd.com/film/avengers-endgame/",
    "poster": "assets/posters/avengers-endgame.jpg",
    "ratings": {
@@ -2198,8 +2206,8 @@
    "directors": [
     "Pierre Coffin"
    ],
-   "lbRating": 3.19,
-   "lbRatingCount": 546440,
+   "lbRating": 3.18,
+   "lbRatingCount": 563936,
    "url": "https://letterboxd.com/film/minions-monsters-2026/",
    "poster": "assets/posters/minions-monsters-2026.jpg",
    "ratings": {
@@ -2228,7 +2236,7 @@
     "Ryoo Seung-wan"
    ],
    "lbRating": 3.4,
-   "lbRatingCount": 6789,
+   "lbRatingCount": 6834,
    "url": "https://letterboxd.com/film/smugglers-2023/",
    "poster": "assets/posters/smugglers-2023.jpg",
    "ratings": {
@@ -2257,8 +2265,8 @@
    "directors": [
     "Lee Won-tae"
    ],
-   "lbRating": 3.58,
-   "lbRatingCount": 95653,
+   "lbRating": 3.59,
+   "lbRatingCount": 97209,
    "url": "https://letterboxd.com/film/the-gangster-the-cop-the-devil/",
    "poster": "assets/posters/the-gangster-the-cop-the-devil.jpg",
    "ratings": {
@@ -2288,7 +2296,7 @@
     "Hong Won-chan"
    ],
    "lbRating": 3.37,
-   "lbRatingCount": 12127,
+   "lbRatingCount": 12218,
    "url": "https://letterboxd.com/film/deliver-us-from-evil-2020/",
    "poster": "assets/posters/deliver-us-from-evil-2020.jpg",
    "ratings": {
@@ -2318,7 +2326,7 @@
     "Lee Jeong-beom"
    ],
    "lbRating": 3.34,
-   "lbRatingCount": 5370,
+   "lbRatingCount": 5415,
    "url": "https://letterboxd.com/film/no-tears-for-the-dead/",
    "poster": "assets/posters/no-tears-for-the-dead.jpg",
    "ratings": {
@@ -2348,7 +2356,7 @@
     "Lee Jeong-beom"
    ],
    "lbRating": 3.89,
-   "lbRatingCount": 66967,
+   "lbRatingCount": 67667,
    "url": "https://letterboxd.com/film/the-man-from-nowhere/",
    "poster": "assets/posters/the-man-from-nowhere.jpg",
    "ratings": {
@@ -2378,7 +2386,7 @@
     "Kim Jee-woon"
    ],
    "lbRating": 3.93,
-   "lbRatingCount": 66511,
+   "lbRatingCount": 67387,
    "url": "https://letterboxd.com/film/a-bittersweet-life/",
    "poster": "assets/posters/a-bittersweet-life.jpg",
    "ratings": {
@@ -2408,7 +2416,7 @@
     "Kyle Balda"
    ],
    "lbRating": 3.77,
-   "lbRatingCount": 1124689,
+   "lbRatingCount": 1151754,
    "url": "https://letterboxd.com/film/the-sheep-detectives/",
    "poster": "assets/posters/the-sheep-detectives.jpg",
    "ratings": {
@@ -2438,7 +2446,7 @@
     "Antoine Fuqua"
    ],
    "lbRating": 2.14,
-   "lbRatingCount": 53429,
+   "lbRatingCount": 53939,
    "url": "https://letterboxd.com/film/infinite-2021/",
    "poster": "assets/posters/infinite-2021.jpg",
    "ratings": {
@@ -2468,8 +2476,8 @@
    "directors": [
     "Christopher Nolan"
    ],
-   "lbRating": 4.34,
-   "lbRatingCount": 4693390,
+   "lbRating": 4.33,
+   "lbRatingCount": 4908748,
    "url": "https://letterboxd.com/film/the-odyssey-2026/",
    "poster": "assets/posters/the-odyssey-2026.jpg",
    "ratings": {
@@ -2499,7 +2507,7 @@
     "Destin Daniel Cretton"
    ],
    "lbRating": 4.02,
-   "lbRatingCount": 4713909,
+   "lbRatingCount": 4868509,
    "url": "https://letterboxd.com/film/spider-man-brand-new-day/",
    "poster": "assets/posters/spider-man-brand-new-day.jpg",
    "ratings": {
@@ -2538,8 +2546,8 @@
    "directors": [
     "Craig Gillespie"
    ],
-   "lbRating": 2.92,
-   "lbRatingCount": 915679,
+   "lbRating": 2.91,
+   "lbRatingCount": 939593,
    "url": "https://letterboxd.com/film/supergirl-2026/",
    "poster": "assets/posters/supergirl-2026.jpg",
    "ratings": {
@@ -2577,8 +2585,8 @@
    "directors": [
     "Jonny Campbell"
    ],
-   "lbRating": 2.76,
-   "lbRatingCount": 132221,
+   "lbRating": 2.75,
+   "lbRatingCount": 135809,
    "url": "https://letterboxd.com/film/cold-storage-2026/",
    "poster": "assets/posters/cold-storage-2026.jpg",
    "ratings": {
@@ -2593,6 +2601,14 @@
      "title": "WATCH - Zusammen in die Strip Mall",
      "url": "https://www.geekzone.de/136-gz134/",
      "date": "2026-08-23",
+     "how": "match"
+    },
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
      "how": "match"
     }
    ]
@@ -2610,7 +2626,7 @@
     "Kenji Tanigaki"
    ],
    "lbRating": 3.81,
-   "lbRatingCount": 160891,
+   "lbRatingCount": 165385,
    "url": "https://letterboxd.com/film/the-furious/",
    "poster": "assets/posters/the-furious.jpg",
    "ratings": {
@@ -2639,7 +2655,7 @@
     "Curry Barker"
    ],
    "lbRating": 4.05,
-   "lbRatingCount": 5475380,
+   "lbRatingCount": 5665610,
    "url": "https://letterboxd.com/film/obsession-2025/",
    "poster": "assets/posters/obsession-2025.jpg",
    "ratings": {
@@ -2679,7 +2695,7 @@
     "Steven Kostanski"
    ],
    "lbRating": 3.27,
-   "lbRatingCount": 11433,
+   "lbRatingCount": 11634,
    "url": "https://letterboxd.com/film/deathstalker-2025/",
    "poster": "assets/posters/deathstalker-2025.jpg",
    "ratings": {
@@ -2708,7 +2724,7 @@
     "Johannes Roberts"
    ],
    "lbRating": 2.55,
-   "lbRatingCount": 305227,
+   "lbRatingCount": 309713,
    "url": "https://letterboxd.com/film/primate-2025/",
    "poster": "assets/posters/primate-2025.jpg",
    "ratings": {
@@ -2739,7 +2755,7 @@
     "Miguel Sapochnik"
    ],
    "lbRating": 3.43,
-   "lbRatingCount": 91151,
+   "lbRatingCount": 91900,
    "url": "https://letterboxd.com/film/finch/",
    "poster": "assets/posters/finch.jpg",
    "ratings": {
@@ -2768,8 +2784,8 @@
    "directors": [
     "George Miller"
    ],
-   "lbRating": 3.29,
-   "lbRatingCount": 339981,
+   "lbRating": 3.3,
+   "lbRatingCount": 342297,
    "url": "https://letterboxd.com/film/mad-max/",
    "poster": "assets/posters/mad-max.jpg",
    "ratings": {
@@ -2799,7 +2815,7 @@
     "George Miller"
    ],
    "lbRating": 3.89,
-   "lbRatingCount": 268435,
+   "lbRatingCount": 270143,
    "url": "https://letterboxd.com/film/mad-max-2/",
    "poster": "assets/posters/mad-max-2.jpg",
    "ratings": {
@@ -2830,7 +2846,7 @@
     "George Ogilvie"
    ],
    "lbRating": 2.98,
-   "lbRatingCount": 177393,
+   "lbRatingCount": 178563,
    "url": "https://letterboxd.com/film/mad-max-beyond-thunderdome/",
    "poster": "assets/posters/mad-max-beyond-thunderdome.jpg",
    "ratings": {
@@ -2860,7 +2876,7 @@
     "George Miller"
    ],
    "lbRating": 4.17,
-   "lbRatingCount": 2311402,
+   "lbRatingCount": 2329771,
    "url": "https://letterboxd.com/film/mad-max-fury-road/",
    "poster": "assets/posters/mad-max-fury-road.jpg",
    "ratings": {
@@ -2891,7 +2907,7 @@
     "George Miller"
    ],
    "lbRating": 3.77,
-   "lbRatingCount": 1108334,
+   "lbRatingCount": 1115151,
    "url": "https://letterboxd.com/film/furiosa-a-mad-max-saga/",
    "poster": "assets/posters/furiosa-a-mad-max-saga.jpg",
    "ratings": {
@@ -2923,7 +2939,7 @@
     "Park Chan-wook"
    ],
    "lbRating": 4.08,
-   "lbRatingCount": 917562,
+   "lbRatingCount": 927921,
    "url": "https://letterboxd.com/film/no-other-choice-2025/",
    "poster": "assets/posters/no-other-choice-2025.jpg",
    "ratings": {
@@ -2951,7 +2967,7 @@
     "Matt Spicer"
    ],
    "lbRating": 2.39,
-   "lbRatingCount": 68592,
+   "lbRatingCount": 70027,
    "url": "https://letterboxd.com/film/little-brother-2026/",
    "poster": "assets/posters/little-brother-2026.jpg",
    "ratings": {
@@ -2981,7 +2997,7 @@
     "Ben Wheatley"
    ],
    "lbRating": 2.95,
-   "lbRatingCount": 99726,
+   "lbRatingCount": 103798,
    "url": "https://letterboxd.com/film/normal-2025/",
    "poster": "assets/posters/normal-2025.jpg",
    "ratings": {
@@ -3012,7 +3028,7 @@
     "John Francis Daley"
    ],
    "lbRating": 3.15,
-   "lbRatingCount": 80194,
+   "lbRatingCount": 85428,
    "url": "https://letterboxd.com/film/mayday-2026/",
    "poster": "assets/posters/mayday-2026.jpg",
    "ratings": {
@@ -3041,8 +3057,8 @@
    "directors": [
     "Kane Parsons"
    ],
-   "lbRating": 3.3,
-   "lbRatingCount": 3452137,
+   "lbRating": 3.29,
+   "lbRatingCount": 3578477,
    "url": "https://letterboxd.com/film/backrooms-2026/",
    "poster": "assets/posters/backrooms-2026.jpg",
    "ratings": {
@@ -3067,6 +3083,14 @@
      "url": "https://www.geekzone.de/141-gz139/",
      "date": "2026-10-25",
      "how": "match"
+    },
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
     }
    ]
   },
@@ -3083,7 +3107,7 @@
     "Cate Shortland"
    ],
    "lbRating": 2.98,
-   "lbRatingCount": 1828842,
+   "lbRatingCount": 1861167,
    "url": "https://letterboxd.com/film/black-widow-2021/",
    "poster": "assets/posters/black-widow-2021.jpg",
    "ratings": {
@@ -3114,7 +3138,7 @@
     "Destin Daniel Cretton"
    ],
    "lbRating": 3.41,
-   "lbRatingCount": 1683252,
+   "lbRatingCount": 1726364,
    "url": "https://letterboxd.com/film/shang-chi-and-the-legend-of-the-ten-rings/",
    "poster": "assets/posters/shang-chi-and-the-legend-of-the-ten-rings.jpg",
    "ratings": {
@@ -3144,8 +3168,8 @@
    "directors": [
     "Chloé Zhao"
    ],
-   "lbRating": 2.68,
-   "lbRatingCount": 1357205,
+   "lbRating": 2.67,
+   "lbRatingCount": 1377901,
    "url": "https://letterboxd.com/film/eternals/",
    "poster": "assets/posters/eternals.jpg",
    "ratings": {
@@ -3176,7 +3200,7 @@
     "Sam Raimi"
    ],
    "lbRating": 2.98,
-   "lbRatingCount": 2389223,
+   "lbRatingCount": 2438409,
    "url": "https://letterboxd.com/film/doctor-strange-in-the-multiverse-of-madness/",
    "poster": "assets/posters/doctor-strange-in-the-multiverse-of-madness.jpg",
    "ratings": {
@@ -3206,8 +3230,8 @@
    "directors": [
     "Taika Waititi"
    ],
-   "lbRating": 2.32,
-   "lbRatingCount": 1792869,
+   "lbRating": 2.31,
+   "lbRatingCount": 1824185,
    "url": "https://letterboxd.com/film/thor-love-and-thunder/",
    "poster": "assets/posters/thor-love-and-thunder.jpg",
    "ratings": {
@@ -3237,8 +3261,8 @@
    "directors": [
     "Ryan Coogler"
    ],
-   "lbRating": 3.27,
-   "lbRatingCount": 1454280,
+   "lbRating": 3.26,
+   "lbRatingCount": 1485311,
    "url": "https://letterboxd.com/film/black-panther-wakanda-forever/",
    "poster": "assets/posters/black-panther-wakanda-forever.jpg",
    "ratings": {
@@ -3269,7 +3293,7 @@
     "Jacob Chase"
    ],
    "lbRating": 2.71,
-   "lbRatingCount": 316962,
+   "lbRatingCount": 338295,
    "url": "https://letterboxd.com/film/insidious-out-of-the-further/",
    "poster": "assets/posters/insidious-out-of-the-further.jpg",
    "ratings": {
@@ -3298,7 +3322,7 @@
     "Christophe Gans"
    ],
    "lbRating": 1.43,
-   "lbRatingCount": 190248,
+   "lbRatingCount": 194443,
    "url": "https://letterboxd.com/film/return-to-silent-hill/",
    "poster": "assets/posters/return-to-silent-hill.jpg",
    "ratings": {
@@ -3329,7 +3353,7 @@
     "Drew Hancock"
    ],
    "lbRating": 3.38,
-   "lbRatingCount": 1729916,
+   "lbRatingCount": 1749727,
    "url": "https://letterboxd.com/film/companion-2025/",
    "poster": "assets/posters/companion-2025.jpg",
    "ratings": {
@@ -3361,7 +3385,7 @@
     "Kevin Macdonald"
    ],
    "lbRating": 1.73,
-   "lbRatingCount": 42602,
+   "lbRatingCount": 44334,
    "url": "https://letterboxd.com/film/the-runner-2026-2/",
    "poster": "assets/posters/the-runner-2026-2.jpg",
    "ratings": {
@@ -3390,7 +3414,7 @@
     "Alejandro G. Iñárritu"
    ],
    "lbRating": 3.91,
-   "lbRatingCount": 627901,
+   "lbRatingCount": 651586,
    "url": "https://letterboxd.com/film/digger-2026/",
    "poster": "assets/posters/digger-2026.jpg",
    "ratings": {
@@ -3419,8 +3443,8 @@
    "directors": [
     "Zach Cregger"
    ],
-   "lbRating": 3.74,
-   "lbRatingCount": 1812990,
+   "lbRating": 3.73,
+   "lbRatingCount": 2095020,
    "url": "https://letterboxd.com/film/resident-evil-2026/",
    "poster": "assets/posters/resident-evil-2026.jpg",
    "ratings": {
@@ -3449,8 +3473,8 @@
    "directors": [
     "Damian McCarthy"
    ],
-   "lbRating": 3.26,
-   "lbRatingCount": 646293,
+   "lbRating": 3.25,
+   "lbRatingCount": 673176,
    "url": "https://letterboxd.com/film/hokum/",
    "poster": "assets/posters/hokum.jpg",
    "ratings": {
@@ -3479,7 +3503,7 @@
     "Giulio De Santi"
    ],
    "lbRating": 2.61,
-   "lbRatingCount": 2078,
+   "lbRatingCount": 2113,
    "url": "https://letterboxd.com/film/hotel-inferno/",
    "poster": "assets/posters/hotel-inferno.jpg",
    "ratings": {
@@ -3507,7 +3531,7 @@
     "Rob Savage"
    ],
    "lbRating": 3.14,
-   "lbRatingCount": 271583,
+   "lbRatingCount": 275386,
    "url": "https://letterboxd.com/film/host-2020/",
    "poster": "assets/posters/host-2020.jpg",
    "ratings": {
@@ -3536,7 +3560,7 @@
     "Todd Strauss-Schulson"
    ],
    "lbRating": 3.16,
-   "lbRatingCount": 122246,
+   "lbRatingCount": 122775,
    "url": "https://letterboxd.com/film/the-final-girls/",
    "poster": "assets/posters/the-final-girls.jpg",
    "ratings": {
@@ -3560,14 +3584,13 @@
    "year": 2025,
    "genres": [
     "Mystery",
-    "Horror",
-    "Thriller"
+    "Horror"
    ],
    "directors": [
     "Genki Kawamura"
    ],
    "lbRating": 3.16,
-   "lbRatingCount": 385437,
+   "lbRatingCount": 399616,
    "url": "https://letterboxd.com/film/exit-8/",
    "poster": "assets/posters/exit-8.jpg",
    "ratings": {
@@ -3597,7 +3620,7 @@
     "Zach Cregger"
    ],
    "lbRating": 3.43,
-   "lbRatingCount": 1732291,
+   "lbRatingCount": 1749629,
    "url": "https://letterboxd.com/film/barbarian-2022/",
    "poster": "assets/posters/barbarian-2022.jpg",
    "ratings": {
@@ -3633,7 +3656,7 @@
     "Anna Zlokovic"
    ],
    "lbRating": 2.88,
-   "lbRatingCount": 80081,
+   "lbRatingCount": 81092,
    "url": "https://letterboxd.com/film/v-h-s-halloween/",
    "poster": "assets/posters/v-h-s-halloween.jpg",
    "ratings": {
@@ -3662,7 +3685,7 @@
     "Lucio Fulci"
    ],
    "lbRating": 3.59,
-   "lbRatingCount": 60161,
+   "lbRatingCount": 60559,
    "url": "https://letterboxd.com/film/zombie-flesh-eaters/",
    "poster": "assets/posters/zombie-flesh-eaters.jpg",
    "ratings": {
@@ -3689,8 +3712,8 @@
    "directors": [
     "Sébastien Vaniček"
    ],
-   "lbRating": 3.01,
-   "lbRatingCount": 521398,
+   "lbRating": 3,
+   "lbRatingCount": 540338,
    "url": "https://letterboxd.com/film/evil-dead-burn/",
    "poster": "assets/posters/evil-dead-burn.jpg",
    "ratings": {
@@ -3720,8 +3743,8 @@
    "directors": [
     "Rhys Frake-Waterfield"
    ],
-   "lbRating": 2.51,
-   "lbRatingCount": 21580,
+   "lbRating": 2.48,
+   "lbRatingCount": 23858,
    "url": "https://letterboxd.com/film/pinocchio-unstrung/",
    "poster": "assets/posters/pinocchio-unstrung.jpg",
    "ratings": {
@@ -3750,7 +3773,7 @@
     "Rubén Galindo Jr."
    ],
    "lbRating": 3.04,
-   "lbRatingCount": 5001,
+   "lbRatingCount": 5035,
    "url": "https://letterboxd.com/film/cemetery-of-terror/",
    "poster": "assets/posters/cemetery-of-terror.jpg",
    "ratings": {},
@@ -3776,7 +3799,7 @@
     "Fede Álvarez"
    ],
    "lbRating": 3.4,
-   "lbRatingCount": 529194,
+   "lbRatingCount": 534134,
    "url": "https://letterboxd.com/film/evil-dead/",
    "poster": "assets/posters/evil-dead.jpg",
    "ratings": {
@@ -3804,7 +3827,7 @@
     "Lucio Fulci"
    ],
    "lbRating": 3.52,
-   "lbRatingCount": 73505,
+   "lbRatingCount": 74193,
    "url": "https://letterboxd.com/film/the-beyond/",
    "poster": "assets/posters/the-beyond.jpg",
    "ratings": {
@@ -3817,6 +3840,201 @@
      "title": "SPECIAL - Horroctober 2026",
      "url": "https://www.geekzone.de/141-gz139/",
      "date": "2026-10-25",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-cycle-2026-2",
+   "title": "The Cycle",
+   "year": 2026,
+   "genres": [
+    "Thriller",
+    "Horror",
+    "Mystery"
+   ],
+   "directors": [
+    "Jordan Downey"
+   ],
+   "lbRating": 3.24,
+   "lbRatingCount": 43524,
+   "url": "https://letterboxd.com/film/the-cycle-2026-2/",
+   "poster": "assets/posters/the-cycle-2026-2.jpg",
+   "ratings": {
+    "ckatzorke": 4.0
+   },
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "the-end-of-oak-street",
+   "title": "The End of Oak Street",
+   "year": 2026,
+   "genres": [
+    "Mystery",
+    "Thriller",
+    "Science Fiction"
+   ],
+   "directors": [
+    "David Robert Mitchell"
+   ],
+   "lbRating": 2.94,
+   "lbRatingCount": 843744,
+   "url": "https://letterboxd.com/film/the-end-of-oak-street/",
+   "poster": "assets/posters/the-end-of-oak-street.jpg",
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "toy-story-5",
+   "title": "Toy Story 5",
+   "year": 2026,
+   "genres": [
+    "Comedy",
+    "Family",
+    "Adventure",
+    "Animation"
+   ],
+   "directors": [
+    "Andrew Stanton"
+   ],
+   "lbRating": 3.6,
+   "lbRatingCount": 1310731,
+   "url": "https://letterboxd.com/film/toy-story-5/",
+   "poster": "assets/posters/toy-story-5.jpg",
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "fall-2-deadpoint",
+   "title": "Fall 2: Deadpoint",
+   "year": 2026,
+   "genres": [
+    "Thriller"
+   ],
+   "directors": [
+    "Michael Spierig",
+    "Peter Spierig"
+   ],
+   "lbRating": 2.1,
+   "lbRatingCount": 83053,
+   "url": "https://letterboxd.com/film/fall-2-deadpoint/",
+   "poster": "assets/posters/fall-2-deadpoint.jpg",
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "inferred"
+    }
+   ]
+  },
+  {
+   "slug": "ali-g-who-iz-i",
+   "title": "Ali G: Who Iz I?",
+   "year": 2026,
+   "genres": [
+    "Comedy"
+   ],
+   "directors": [
+    "Sacha Baron Cohen"
+   ],
+   "lbRating": 2.49,
+   "lbRatingCount": 51155,
+   "url": "https://letterboxd.com/film/ali-g-who-iz-i/",
+   "poster": "assets/posters/ali-g-who-iz-i.jpg",
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "blades-of-the-guardians",
+   "title": "Blades of the Guardians",
+   "year": 2026,
+   "genres": [
+    "Adventure",
+    "Action"
+   ],
+   "directors": [
+    "Yuen Woo-ping"
+   ],
+   "lbRating": 3.59,
+   "lbRatingCount": 12341,
+   "url": "https://letterboxd.com/film/blades-of-the-guardians/",
+   "poster": "assets/posters/blades-of-the-guardians.jpg",
+   "ratings": {},
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
+     "how": "match"
+    }
+   ]
+  },
+  {
+   "slug": "remain-calm-2026",
+   "title": "Remain Calm",
+   "year": 2026,
+   "genres": [
+    "Horror"
+   ],
+   "directors": [
+    "Jake Lewis"
+   ],
+   "lbRating": 3.56,
+   "lbRatingCount": 26593,
+   "url": "https://letterboxd.com/film/remain-calm-2026/",
+   "poster": "assets/posters/remain-calm-2026.jpg",
+   "ratings": {
+    "ckatzorke": 4.0
+   },
+   "episodes": [
+    {
+     "id": "GZ141",
+     "no": 141,
+     "title": "WATCH - Am Ende der Eichelstraße",
+     "url": "https://www.geekzone.de/143-gz141/",
+     "date": "2026-11-17",
      "how": "match"
     }
    ]
