@@ -19,7 +19,7 @@
   Leere Plätze einfach weglassen oder "1." ohne Titel stehen lassen.
 -->
 
-status: test
+status: platzhalter
 folge: GZ144
 datum: 2026-12-21
 
