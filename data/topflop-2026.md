@@ -19,8 +19,8 @@
   Leere Plätze einfach weglassen oder "1." ohne Titel stehen lassen.
 -->
 
-status: platzhalter
-folge: GZ144 Rückblick
+status: test
+folge: GZ144
 datum: 2026-12-21
 
 ## Tax
